@@ -1,0 +1,3 @@
+[submodule "frameworks/cocos2d-x-3.6-lib"]
+	path = frameworks/cocos2d-x-3.6-lib
+	url = https://github.com/yinjimmy/cocos2d-x-3.6-lib.git

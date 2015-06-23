@@ -3,7 +3,7 @@ Copyright (c) 2008-2010 Ricardo Quesada
 Copyright (c) 2010-2012 cocos2d-x.org
 Copyright (c) 2011      Zynga Inc.
 Copyright (c) 2013-2014 Chukong Technologies Inc.
- 
+
 http://www.cocos2d-x.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,29 +34,23 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import org.cocos2dx.plugin.PluginWrapper;
+import android.content.Intent;
+
 
 // The name of .so is specified in AndroidMenifest.xml. NativityActivity will load it automatically for you.
 // You can use "System.loadLibrary()" to load other .so files.
 
 public class AppActivity extends Cocos2dxActivity{
 
-    static String hostIPAdress = "0.0.0.0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        
-        if(nativeIsLandScape()) {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
-        } else {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
-        }
-        if(nativeIsDebug()){
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        }
-        hostIPAdress = getHostIpAddress();
+        PluginWrapper.init(this);
+
     }
-    
+
     @Override
     public Cocos2dxGLSurfaceView onCreateView() {
         Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
@@ -66,18 +60,41 @@ public class AppActivity extends Cocos2dxActivity{
         return glSurfaceView;
     }
 
-    public String getHostIpAddress() {
-        WifiManager wifiMgr = (WifiManager) getSystemService(WIFI_SERVICE);
-        WifiInfo wifiInfo = wifiMgr.getConnectionInfo();
-        int ip = wifiInfo.getIpAddress();
-        return ((ip & 0xFF) + "." + ((ip >>>= 8) & 0xFF) + "." + ((ip >>>= 8) & 0xFF) + "." + ((ip >>>= 8) & 0xFF));
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        PluginWrapper.onStart();
     }
-    
-    public static String getLocalIpAddress() {
-        return hostIPAdress;
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        PluginWrapper.onStop();
     }
-    
-    private static native boolean nativeIsLandScape();
-    private static native boolean nativeIsDebug();
-    
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        PluginWrapper.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        PluginWrapper.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(PluginWrapper.onBackPressed())
+        {
+            return;
+        }
+        else
+        {
+            super.onBackPressed();
+        }
+    }
+
 }

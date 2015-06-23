@@ -1,0 +1,10 @@
+frameworks/runtime-src/proj.android/assets
+frameworks/runtime-src/proj.android/bin
+frameworks/runtime-src/proj.android/gen
+frameworks/runtime-src/proj.android/obj
+frameworks/runtime-src/proj.ios_mac/sdkbox-starter-kit.xcodeproj/project.xcworkspace
+frameworks/runtime-src/proj.ios_mac/sdkbox-starter-kit.xcodeproj/xcuserdata
+local.properties
+frameworks/runtime-src/proj.android/libs/armeabi/gdb.setup
+frameworks/runtime-src/proj.android/libs/armeabi/gdbserver
+frameworks/runtime-src/proj.android/libs/armeabi/libcocos2djs.so

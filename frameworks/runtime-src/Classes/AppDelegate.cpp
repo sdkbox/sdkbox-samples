@@ -1,7 +1,13 @@
 #include "AppDelegate.h"
 #include "SimpleAudioEngine.h"
 
+#include "HelloWorldScene.h"
 #include "js_module_register.h"
+
+#include "lua_module_register.h"
+#include "CCLuaEngine.h"
+
+#include "MyPluginsMgr.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -34,7 +40,19 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+    
+    //
+    director->setDisplayStats(true);
 
+    // init plugins
+    MyPluginsMgr::getInstance()->init();
+    
+#if (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeCpp)
+    FileUtils::getInstance()->addSearchPath("res");
+    director->runWithScene(HelloWorld::createScene());
+    
+#elif (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeJs)
+    
    js_module_register();
    ScriptingCore* sc = ScriptingCore::getInstance();
    sc->start();
@@ -42,7 +60,21 @@ bool AppDelegate::applicationDidFinishLaunching()
    ScriptEngineProtocol *engine = ScriptingCore::getInstance();
    ScriptEngineManager::getInstance()->setScriptEngine(engine);
    ScriptingCore::getInstance()->runScript("main.js");
-
+    
+#elif (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeLua)
+    
+    // register lua module
+    auto engine = LuaEngine::getInstance();
+    ScriptEngineManager::getInstance()->setScriptEngine(engine);
+    lua_State* L = engine->getLuaStack()->getLuaState();
+    lua_module_register(L);
+    
+    if (engine->executeScriptFile("src/main.lua"))
+    {
+        return false;
+    }
+#endif
+    
     return true;
 }
 
@@ -64,5 +96,6 @@ void AppDelegate::applicationWillEnterForeground()
     director->getEventDispatcher()->dispatchCustomEvent("game_on_show");
     SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
     SimpleAudioEngine::getInstance()->resumeAllEffects();
+    
+    MyPluginsMgr::getInstance()->applicationWillEnterForeground();
 }
-

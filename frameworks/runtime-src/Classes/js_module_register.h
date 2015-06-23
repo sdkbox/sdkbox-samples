@@ -27,6 +27,36 @@
 #include "platform/ios/JavaScriptObjCBridge.h"
 #endif
 
+// AdColonuy
+#include "jsbindings/PluginAdColonyJS.hpp"
+#include "jsbindings/PluginAdcolonyJSHelper.hpp"
+
+// charboost
+#include "jsbindings/PluginChartboostJS.hpp"
+#include "jsbindings/PluginChartboostJSHelper.h"
+
+// flurry analytics
+#include "jsbindings/PluginFlurryAnalyticsJS.hpp"
+#include "jsbindings/PluginFlurryAnalyticsJSHelper.h"
+
+// google analytics
+#include "jsbindings/PluginGoogleAnalyticsJS.hpp"
+
+// iap
+#include "jsbindings/PluginIAPJS.hpp"
+#include "jsbindings/PluginIAPJSHelper.hpp"
+
+// kochava
+#include "jsbindings/PluginKochavaJS.hpp"
+
+// tune
+#include "jsbindings/PluginTuneJS.hpp"
+#include "jsbindings/PluginTuneJSHelper.h"
+
+// vungle
+#include "jsbindings/PluginVungleJS.hpp"
+#include "jsbindings/PluginVungleJSHelper.h"
+
 USING_NS_CC;
 int js_module_register()
 {
@@ -35,44 +65,75 @@ int js_module_register()
     sc->addRegisterCallback(register_cocos2dx_js_core);
     //sc->addRegisterCallback(register_cocos2dx_js_extensions);
     sc->addRegisterCallback(jsb_register_system);
-    
+
     // extension can be commented out to reduce the package
     sc->addRegisterCallback(register_all_cocos2dx_extension);
     sc->addRegisterCallback(register_all_cocos2dx_extension_manual);
-    
+
     // chipmunk can be commented out to reduce the package
     sc->addRegisterCallback(jsb_register_chipmunk);
     // opengl can be commented out to reduce the package
     sc->addRegisterCallback(JSB_register_opengl);
-    
+
     // builder can be commented out to reduce the package
     sc->addRegisterCallback(register_all_cocos2dx_builder);
     sc->addRegisterCallback(register_CCBuilderReader);
-    
+
     // ui can be commented out to reduce the package, attension studio need ui module
     sc->addRegisterCallback(register_all_cocos2dx_ui);
     sc->addRegisterCallback(register_all_cocos2dx_ui_manual);
-    
+
     // studio can be commented out to reduce the package,
     sc->addRegisterCallback(register_all_cocos2dx_studio);
     sc->addRegisterCallback(register_all_cocos2dx_studio_manual);
-    
+
     // spine can be commented out to reduce the package
     sc->addRegisterCallback(register_all_cocos2dx_spine);
     sc->addRegisterCallback(register_all_cocos2dx_spine_manual);
-    
+
     // XmlHttpRequest can be commented out to reduce the package
     sc->addRegisterCallback(MinXmlHttpRequest::_js_register);
     // websocket can be commented out to reduce the package
     sc->addRegisterCallback(register_jsb_websocket);
     // sokcet io can be commented out to reduce the package
     sc->addRegisterCallback(register_jsb_socketio);
-    
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     sc->addRegisterCallback(JavascriptJavaBridge::_js_register);
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS|| CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
     sc->addRegisterCallback(JavaScriptObjCBridge::_js_register);
 #endif
+
+    // adcolony
+    sc->addRegisterCallback(register_all_PluginAdColonyJS);
+    sc->addRegisterCallback(register_all_PluginAdColonyJS_helper);
+
+    // chartboost
+    sc->addRegisterCallback(register_all_PluginChartboostJS);
+    sc->addRegisterCallback(register_PluginChartboostJs_helper);
+
+    // flurry analytics
+    sc->addRegisterCallback(register_all_PluginFlurryAnalyticsJS);
+    sc->addRegisterCallback(register_PluginFlurryAnalyticsJs_helper);
+
+    // google analytics
+    sc->addRegisterCallback(register_all_PluginGoogleAnalyticsJS);
+
+    // iap
+    sc->addRegisterCallback(register_all_PluginIAPJS);
+//    sc->addRegisterCallback(register_all_PluginIAPJS_helper);
+
+    // kochava
+    sc->addRegisterCallback(register_all_PluginKochavaJS);
+
+    // tune
+    sc->addRegisterCallback(register_all_PluginTuneJS);
+    sc->addRegisterCallback(register_PluginTuneJs_helper);
+
+    // vungle
+    sc->addRegisterCallback(register_all_PluginVungleJS);
+    sc->addRegisterCallback(register_PluginVungelJs_helper);
+
     return 1;
 }
 

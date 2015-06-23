@@ -1,0 +1,196 @@
+{
+    "ios" :
+    {
+        "AdColony":{
+            "id":"appbdee68ae27024084bb334a",
+            "debug":true,
+            "ads":{
+                "video":{
+                    "zone": "vzf8fb4670a60e4a139d01b5",
+                    "v4vc": false
+                },
+                "v4vc":{
+                    "zone": "vzf8e4e97704c4445c87504e",
+                    "v4vc": true,
+                    "pre_popup" : true,
+                    "post_popup": true
+                }
+            }
+        },
+        "Chartboost":{
+            "id":"4f21c409cd1cb2fb7000001b",
+            "signature":"92e2de2fd7070327bdeb54c15a5295309c6fcd2d",
+            "ads":{
+                "Default":{
+                    "type":"interstitial"
+                },
+                "Level Complete":{
+                    "type":"rewarded_video"
+                },
+                "MoreApp":{
+                    "type":"more_app"
+                }
+            }
+        },
+        "FlurryAnalytics":{
+            "APIKey":"GCFCB72BPD76GHXWQZWT",
+            "AppVersion":"V0.1",
+            "Debug":false,
+            "Level":2,
+            "SessionTimeout":10,
+            "CrashReport":true
+        },
+        "GoogleAnalytics": {
+            "trackingCode": "UA-62417901-1"
+        },
+        "iap":{
+            "items":{
+                "remove_ads":{
+                    "id":"com.cocos2dx.non1"
+                },
+                "double_coin":{
+                    "id":"com.cocos2dx.non2"
+                },
+                "coin_package":{
+                    "id":"com.cocos2dx.plugintest2"
+                },
+                "coin_package2":{
+                    "id":"com.cocos2dx.plugintest3"
+                }
+            }
+        },
+        "kochava" :
+        {
+            "kochavaAppId" : "<YOUR APP ID>",
+            "enableLogging" : 1,
+            "retrieveAttribution" : 1
+        },
+        "Tune":{
+            "id":"185422",
+            "key":"851f0fb884c63baf92214ef9cd339ed8",
+            "debug":false
+        },
+        "Vungle" :
+        {
+            "id":"5535dc14a104ddf07600001c",
+            "ads":{
+                "video":{
+                    "sound" : true,
+                    "backbutton" : true
+                },
+                "reward":{
+                    "sound" : false,
+                    "backbutton" : false,
+                    "incentivized" : true
+                }
+            }
+        }
+    },
+    "android" :
+    {
+        "AdColony":{
+            "id":"app185a7e71e1714831a49ec7",
+            "debug":true,
+            "ads":{
+                "video":{
+                    "zone": "vz06e8c32a037749699e7050",
+                    "v4vc": false
+                },
+                "v4vc":{
+                    "zone": "vz1fd5a8b2bf6841a0a4b826",
+                    "v4vc": true,
+                    "pre_popup" : true,
+                    "post_popup": true
+                }
+            }
+        },
+        "Chartboost":{
+            "id":"4f7b433509b6025804000002",
+            "signature":"dd2d41b69ac01b80f443f5b6cf06096d457f82bd",
+            "ads":{
+                "Default":{
+                    "type":"interstitial"
+                },
+                "Level Complete":{
+                    "type":"rewarded_video"
+                },
+                "MoreApp":{
+                    "type":"more_app"
+                }
+            }
+        },
+        "FlurryAnalytics":{
+            "APIKey":"W5ZVZHBPY3K4QSY3TG77",
+            "AppVersion":"V0.1",
+            "Debug":false,
+            "LogEvent":true,
+            "Level":2,
+            "SessionTimeout":10,
+            "CrashReport":true,
+            "LocationReport":true,
+            "DefLocationLat":104.06,
+            "DefLocationLon":30.67,
+            "Pulse":true,
+            "Origin":[
+                {
+                    "OriginName":"sdkbox",
+                    "OriginVersion":"v0.1",
+                    "OriginParams":{
+                        "Key1":"Val1",
+                        "Key2":"Val2",
+                        "Key3":"Val3"
+                    }
+                },
+                {
+                    "OriginName":"sdkbox",
+                    "OriginVersion":"v0.1"
+                }
+            ]
+        },
+        "GoogleAnalytics": {
+            "trackingCode": "UA-62417901-1"
+        },
+        "iap":{
+            "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7eIGu7dRcBRBSC05cYvxjBMd7cqq9w6++1er+cqO2tyWPtWB4vuTkliq4k/Fkylx5UMfptdOYOW8ENgQyVucs/NyuOAGmve4j5JFhLPcLa6LjO2HUSY6zk04DRR9Zw7YPET4WAezZTz8jYMGhPG08HYltVj8cmSpSFWd1nI0pGOJoLQIMkIkXplgnPQRbMpuOu70vnQQBS1RFcoFT7OjaV8U0cfJzMoS1TMkGqaJKks2T+qOBNTtkXzge92EnvYIkhpCfN98dj6aQmETNp5yj5Fa+jcbAVF8dy5xymJwioL89XQKfKkGR+P6ESMoBEPfIZYIlMU8EUwmC+UKGLujQIDAQAB",
+            "items":{
+                "remove_ads":{
+                    "id":"com.cocos2dx.non1"
+                },
+                "double_coin":{
+                    "id":"com.cocos2dx.non2"
+                },
+                "coin_package":{
+                    "id":"com.cocos2dx.plugintest2"
+                },
+                "coin_package2":{
+                    "id":"com.cocos2dx.plugintest3"
+                }
+            }
+        },
+        "kochava" :
+        {
+            "kochavaAppId" : "<YOUR APP ID>",
+            "enableLogging" : 1
+        },
+        "Tune":{
+            "id":"185422",
+            "key":"851f0fb884c63baf92214ef9cd339ed8",
+            "debug":false
+        },
+        "Vungle" :
+        {
+            "id":"5536c24a8e05738318000010",
+            "ads":{
+                "video":{
+                    "sound" : true,
+                    "backbutton" : true
+                },
+                "reward":{
+                    "sound" : false,
+                    "backbutton" : false,
+                    "incentivized" : true
+                }
+            }
+        }
+    }
+}
