@@ -627,14 +627,19 @@ MyPluginsMgr *MyPluginsMgr::getInstance()
 
 bool MyPluginsMgr::init()
 {
-//    initAdColony();
-//    initCharBoost();
-//    initFlurry();
-//    initGoogleAnalytics();
-//    initIAP();
-//    initKochava();
-//    initTune();
-//    initVungle();
+   initAdColony();
+   initCharBoost();
+   initFlurry();
+   initGoogleAnalytics();
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+   // FIXME: crash with android
+   initIAP();
+#endif
+
+   initKochava();
+   initTune();
+   initVungle();
     
     return true;
 }

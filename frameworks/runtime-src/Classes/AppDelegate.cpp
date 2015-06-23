@@ -1,13 +1,17 @@
 #include "AppDelegate.h"
 #include "SimpleAudioEngine.h"
 
+#include "MyPluginsMgr.h"
 #include "HelloWorldScene.h"
-#include "js_module_register.h"
 
+#if (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeJs)
+#include "js_module_register.h"
+#endif
+
+#if (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeLua)
 #include "lua_module_register.h"
 #include "CCLuaEngine.h"
-
-#include "MyPluginsMgr.h"
+#endif
 
 USING_NS_CC;
 using namespace CocosDenshion;

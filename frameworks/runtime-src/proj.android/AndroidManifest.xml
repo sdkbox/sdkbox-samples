@@ -29,7 +29,7 @@
         <!--
           Adcolony
         -->
-<!--         <activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+        <activity android:name="com.jirbo.adcolony.AdColonyOverlay"
         android:configChanges="keyboardHidden|orientation"
         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
 
@@ -39,45 +39,55 @@
 
         <activity android:name="com.jirbo.adcolony.AdColonyBrowser"
         android:configChanges="keyboardHidden|orientation"
-        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" /> -->
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
         <!--
           Chartboost
         -->
-<!--         <activity android:name="com.chartboost.sdk.CBImpressionActivity"
+        <activity android:name="com.chartboost.sdk.CBImpressionActivity"
           android:theme="@android:style/Theme.Translucent.NoTitleBar"
-          android:excludeFromRecents="true" /> -->
+          android:excludeFromRecents="true" />
 
         <!--
           Google Analytics
         -->
-        <!--
+        
         <meta-data android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
+                android:value="@integer/google_play_services_version" />         
         <meta-data
             android:name="com.google.android.gms.analytics.globalConfigResource"
             android:resource="@xml/global_tracker" />
+        
+        <!--
+          Tune
         -->
-
-        <!-- Kochava
-          <receiver android:name="com.kochava.android.tracker.ReferralCapture" android:exported="true">
-            <intent-filter>
+        <receiver android:name="com.mobileapptracker.Tracker">
+          <intent-filter>
               <action android:name="com.android.vending.INSTALL_REFERRER" />
-            </intent-filter>
-          </receiver>
-          <meta-data
-          android:name ="com.google.android.gms.version"
-          android:value ="@integer/google_play_services_version"/>
+          </intent-filter>
+        </receiver>
+
+        <!-- 
+          Kochava 
+        -->
+        <receiver android:name="com.kochava.android.tracker.ReferralCapture" android:exported="true">
+          <intent-filter>
+            <action android:name="com.android.vending.INSTALL_REFERRER" />
+          </intent-filter>
+        </receiver>
+        <!-- 
+        <meta-data
+        android:name ="com.google.android.gms.version"
+        android:value ="@integer/google_play_services_version"/> 
         -->
 
         <!--
           Vungle
         -->
-<!--         <activity
+        <activity
           android:name="com.vungle.publisher.FullScreenAdActivity"
           android:configChanges="keyboardHidden|orientation"
-          android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/> -->
+          android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
     </application>
 
     <supports-screens android:anyDensity="true"
@@ -90,11 +100,12 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> -->
-    <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
-<!--     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
- 	  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+ 	  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 </manifest>

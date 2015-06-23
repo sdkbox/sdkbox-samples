@@ -42,234 +42,232 @@ bool HelloWorld::init()
     auto *bg = Sprite::create("HelloWorld.png");
     bg->setPosition(winSize.width/2,winSize.height/2);
     addChild(bg);
-//    auto rootNode = CSLoader::createNode("MainScene.csb");
-//    addChild(rootNode);
 
     int y = winSize.height;
-//    // AdColony
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("AdColony :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("video", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAdColony1);
-//        });
-//        auto *item1 = MenuItemFont::create("v4vc", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAdColony2);
-//        });
-//
-//        
-//        auto *menu = CCMenu::create(name, item, item1, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0, 0));
-//        menu->setPosition(200, y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color1);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // PluginChartboost
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("Chartboost :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("default", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventChartboost1);
-//        });
-//
-//        auto *item1 = MenuItemFont::create("Level-Complete", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventChartboost2);
-//        });
-//
-//        
-//        auto *menu = CCMenu::create(name, item, item1, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color2);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // Flurry Analytics
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("Flurry :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("test", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventFA1);
-//        });
-//        
-//        
-//        auto *menu = CCMenu::create(name, item, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color1);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // Google Analytics
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("GA :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("test", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventGA1);
-//        });
-//        
-//        
-//        auto *menu = CCMenu::create(name, item, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color2);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // IAP test
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("IAP :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("purchase", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventIAP1);
-//        });
-//        
-//        auto *menu = CCMenu::create(name, item, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color1);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // Kochava
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("Kochava :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("test", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventKochava1);
-//        });
-//        
-//        
-//        auto *menu = CCMenu::create(name, item, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color2);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // Tune
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("Tune :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("test", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventTune1);
-//        });
-//        
-//        
-//        auto *menu = CCMenu::create(name, item, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color1);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
-//    
-//    // Vungle
-//    {
-//        y -= 60;
-//        auto *name = MenuItemFont::create("Vungle :", nullptr);
-//        name->setAnchorPoint(cocos2d::Point(0,0.5));
-//        
-//        auto *item = MenuItemFont::create("ad1", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventVungle1);
-//        });
-//
-//        auto *item1 = MenuItemFont::create("ad2", [](Ref*){
-//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventVungle2);
-//        });
-//        
-//        auto *menu = CCMenu::create(name, item, item1, nullptr);
-//        menu->setAnchorPoint(cocos2d::Point(0,0));
-//        menu->setPosition(200,y);
-//        
-//        int x = 0;
-//        int w = 50;
-//        for (auto *node : menu->getChildren())
-//        {
-//            node->setAnchorPoint(cocos2d::Point(0,0));
-//            node->setPosition(x, 0);
-//            node->setColor(color2);
-//            x += node->getContentSize().width + w;
-//        }
-//        addChild(menu);
-//    }
+   // AdColony
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("AdColony :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("video", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAdColony1);
+       });
+       auto *item1 = MenuItemFont::create("v4vc", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAdColony2);
+       });
+
+       
+       auto *menu = CCMenu::create(name, item, item1, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0, 0));
+       menu->setPosition(200, y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color1);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // PluginChartboost
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("Chartboost :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("default", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventChartboost1);
+       });
+
+       auto *item1 = MenuItemFont::create("Level-Complete", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventChartboost2);
+       });
+
+       
+       auto *menu = CCMenu::create(name, item, item1, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color2);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // Flurry Analytics
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("Flurry :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("test", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventFA1);
+       });
+       
+       
+       auto *menu = CCMenu::create(name, item, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color1);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // Google Analytics
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("GA :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("test", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventGA1);
+       });
+       
+       
+       auto *menu = CCMenu::create(name, item, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color2);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // IAP test
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("IAP :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("purchase", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventIAP1);
+       });
+       
+       auto *menu = CCMenu::create(name, item, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color1);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // Kochava
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("Kochava :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("test", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventKochava1);
+       });
+       
+       
+       auto *menu = CCMenu::create(name, item, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color2);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // Tune
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("Tune :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("test", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventTune1);
+       });
+       
+       
+       auto *menu = CCMenu::create(name, item, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color1);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
+   
+   // Vungle
+   {
+       y -= 60;
+       auto *name = MenuItemFont::create("Vungle :", nullptr);
+       name->setAnchorPoint(cocos2d::Point(0,0.5));
+       
+       auto *item = MenuItemFont::create("ad1", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventVungle1);
+       });
+
+       auto *item1 = MenuItemFont::create("ad2", [](Ref*){
+           Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventVungle2);
+       });
+       
+       auto *menu = CCMenu::create(name, item, item1, nullptr);
+       menu->setAnchorPoint(cocos2d::Point(0,0));
+       menu->setPosition(200,y);
+       
+       int x = 0;
+       int w = 50;
+       for (auto *node : menu->getChildren())
+       {
+           node->setAnchorPoint(cocos2d::Point(0,0));
+           node->setPosition(x, 0);
+           node->setColor(color2);
+           x += node->getContentSize().width + w;
+       }
+       addChild(menu);
+   }
     return true;
 }
 

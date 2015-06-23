@@ -121,7 +121,7 @@ int js_module_register()
 
     // iap
     sc->addRegisterCallback(register_all_PluginIAPJS);
-//    sc->addRegisterCallback(register_all_PluginIAPJS_helper);
+    sc->addRegisterCallback(register_all_PluginIAPJS_helper);
 
     // kochava
     sc->addRegisterCallback(register_all_PluginKochavaJS);
