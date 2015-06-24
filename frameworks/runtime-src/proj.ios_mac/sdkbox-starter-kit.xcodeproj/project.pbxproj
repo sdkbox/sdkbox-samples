@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132A415C850910405C9D8B6C /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8343929314773AE1443CD9 /* libcocos2d iOS.a */; };
+		1A82F5FB169AC92500C4B13A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */; };
+		1AD7E0A818C9DB93004817A6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF21418C9DB5900FB0E1C /* main.js */; };
+		1AE159EC18C9DF3600FCA372 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A081B18C9DF05005C6854 /* project.json */; };
+		5091731A17ECDF7A00D62437 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731417ECDF7A00D62437 /* Icon-29.png */; };
+		5091731B17ECDF7A00D62437 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731517ECDF7A00D62437 /* Icon-40.png */; };
+		5091731C17ECDF7A00D62437 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731617ECDF7A00D62437 /* Icon-50.png */; };
+		5091731D17ECDF7A00D62437 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731717ECDF7A00D62437 /* Icon-58.png */; };
+		5091731E17ECDF7A00D62437 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731817ECDF7A00D62437 /* Icon-80.png */; };
+		5091731F17ECDF7A00D62437 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731917ECDF7A00D62437 /* Icon-100.png */; };
+		509D4ABC17EBB2AB00697056 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AAC17EBB2AB00697056 /* AppController.mm */; };
+		509D4ABD17EBB2AB00697056 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAD17EBB2AB00697056 /* Default-568h@2x.png */; };
+		509D4ABE17EBB2AB00697056 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAE17EBB2AB00697056 /* Default.png */; };
+		509D4ABF17EBB2AB00697056 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAF17EBB2AB00697056 /* Default@2x.png */; };
+		509D4AC017EBB2AB00697056 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB017EBB2AB00697056 /* Icon-57.png */; };
+		509D4AC117EBB2AB00697056 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB117EBB2AB00697056 /* Icon-72.png */; };
+		509D4AC217EBB2AB00697056 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB217EBB2AB00697056 /* Icon-76.png */; };
+		509D4AC317EBB2AB00697056 /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB317EBB2AB00697056 /* Icon-114.png */; };
+		509D4AC417EBB2AB00697056 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB417EBB2AB00697056 /* Icon-120.png */; };
+		509D4AC517EBB2AB00697056 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB517EBB2AB00697056 /* Icon-144.png */; };
+		509D4AC617EBB2AB00697056 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB617EBB2AB00697056 /* Icon-152.png */; };
+		509D4AC817EBB2AB00697056 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AB817EBB2AB00697056 /* main.m */; };
+		509D4AC917EBB2AB00697056 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4ABB17EBB2AB00697056 /* RootViewController.mm */; };
+		5CA742C68BEF6831F9BBCB9A /* script in Resources */ = {isa = PBXBuildFile; fileRef = 3AF548079E4DCC8ABB162091 /* script */; };
+		9F20C9E61A5BD38A006FB50B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F20C9E11A5BBE85006FB50B /* Security.framework */; };
+		9FC1F5AE1B38FDA1004629F2 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5A71B38FDA1004629F2 /* HelloWorldScene.cpp */; };
+		9FC1F5AF1B38FDA1004629F2 /* MyPluginsMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5AB1B38FDA1004629F2 /* MyPluginsMgr.cpp */; };
+		9FC1F5BD1B38FF45004629F2 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B01B38FF45004629F2 /* AdColony.framework */; };
+		9FC1F5BE1B38FF45004629F2 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B11B38FF45004629F2 /* Chartboost.framework */; };
+		9FC1F5BF1B38FF45004629F2 /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B21B38FF45004629F2 /* MobileAppTracker.framework */; };
+		9FC1F5C01B38FF45004629F2 /* PluginAdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B31B38FF45004629F2 /* PluginAdColony.framework */; };
+		9FC1F5C11B38FF45004629F2 /* PluginChartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B41B38FF45004629F2 /* PluginChartboost.framework */; };
+		9FC1F5C21B38FF45004629F2 /* PluginFlurryAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B51B38FF45004629F2 /* PluginFlurryAnalytics.framework */; };
+		9FC1F5C31B38FF45004629F2 /* PluginGoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B61B38FF45004629F2 /* PluginGoogleAnalytics.framework */; };
+		9FC1F5C41B38FF45004629F2 /* PluginIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B71B38FF45004629F2 /* PluginIAP.framework */; };
+		9FC1F5C51B38FF45004629F2 /* PluginKochava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B81B38FF45004629F2 /* PluginKochava.framework */; };
+		9FC1F5C61B38FF45004629F2 /* PluginTune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B91B38FF45004629F2 /* PluginTune.framework */; };
+		9FC1F5C71B38FF45004629F2 /* PluginVungle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BA1B38FF45004629F2 /* PluginVungle.framework */; };
+		9FC1F5C81B38FF45004629F2 /* sdkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BB1B38FF45004629F2 /* sdkbox.framework */; };
+		9FC1F5C91B38FF45004629F2 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BC1B38FF45004629F2 /* VungleSDK.framework */; };
+		9FF53BD61B39001A008537E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD51B39001A008537E4 /* MobileCoreServices.framework */; };
+		9FF53BD81B39003C008537E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD71B39003C008537E4 /* CoreLocation.framework */; };
+		9FF53BDA1B390043008537E4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD91B390043008537E4 /* iAd.framework */; };
+		9FF53BDC1B39004A008537E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDB1B39004A008537E4 /* CoreData.framework */; };
+		9FF53BDE1B390052008537E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDD1B390052008537E4 /* libsqlite3.dylib */; };
+		9FF53BE01B390059008537E4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDF1B390059008537E4 /* WebKit.framework */; };
+		9FF53BE21B390069008537E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE11B390069008537E4 /* SystemConfiguration.framework */; };
+		9FF53BE41B390070008537E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE31B390070008537E4 /* StoreKit.framework */; };
+		9FF53BE61B390087008537E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE51B390087008537E4 /* Social.framework */; };
+		9FF53BE81B39008F008537E4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE71B39008F008537E4 /* MessageUI.framework */; };
+		9FF53BEA1B390095008537E4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE91B390095008537E4 /* MediaPlayer.framework */; };
+		9FF53BEC1B39009D008537E4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEB1B39009D008537E4 /* CoreMedia.framework */; };
+		9FF53BEE1B3900AB008537E4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BED1B3900AB008537E4 /* CoreTelephony.framework */; };
+		9FF53BF01B3900B2008537E4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEF1B3900B2008537E4 /* AdSupport.framework */; };
+		9FF53BF21B3900DC008537E4 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF11B3900DC008537E4 /* EventKitUI.framework */; };
+		9FF53BF41B3900E1008537E4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF31B3900E1008537E4 /* EventKit.framework */; };
+		9FF53BFE1B390E73008537E4 /* SimpleConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53BFA1B390E73008537E4 /* SimpleConfigParser.cpp */; };
+		9FF53C001B391434008537E4 /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BFF1B391434008537E4 /* libluacocos2d iOS.a */; };
+		9FF53C481B393819008537E4 /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C091B393819008537E4 /* .keepme */; };
+		9FF53C491B393819008537E4 /* PluginAdColonyJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0A1B393819008537E4 /* PluginAdColonyJS.cpp */; };
+		9FF53C4A1B393819008537E4 /* PluginAdColonyJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */; };
+		9FF53C4B1B393819008537E4 /* PluginChartboostJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */; };
+		9FF53C4C1B393819008537E4 /* PluginChartboostJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C101B393819008537E4 /* PluginChartboostJSHelper.cpp */; };
+		9FF53C4D1B393819008537E4 /* PluginFlurryAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */; };
+		9FF53C4E1B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C141B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp */; };
+		9FF53C4F1B393819008537E4 /* PluginGoogleAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C161B393819008537E4 /* PluginGoogleAnalyticsJS.cpp */; };
+		9FF53C501B393819008537E4 /* PluginIAPJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C181B393819008537E4 /* PluginIAPJS.cpp */; };
+		9FF53C511B393819008537E4 /* PluginIAPJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1A1B393819008537E4 /* PluginIAPJSHelper.cpp */; };
+		9FF53C521B393819008537E4 /* PluginKochavaJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1C1B393819008537E4 /* PluginKochavaJS.cpp */; };
+		9FF53C531B393819008537E4 /* PluginTuneJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1E1B393819008537E4 /* PluginTuneJS.cpp */; };
+		9FF53C541B393819008537E4 /* PluginTuneJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */; };
+		9FF53C551B393819008537E4 /* PluginVungleJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C221B393819008537E4 /* PluginVungleJS.cpp */; };
+		9FF53C561B393819008537E4 /* PluginVungleJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C241B393819008537E4 /* PluginVungleJSHelper.cpp */; };
+		9FF53C571B393819008537E4 /* SDKBoxJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C261B393819008537E4 /* SDKBoxJSHelper.cpp */; };
+		9FF53C581B393819008537E4 /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C291B393819008537E4 /* .keepme */; };
+		9FF53C591B393819008537E4 /* PluginAdColonyLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2A1B393819008537E4 /* PluginAdColonyLua.cpp */; };
+		9FF53C5A1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */; };
+		9FF53C5B1B393819008537E4 /* PluginChartboostLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2E1B393819008537E4 /* PluginChartboostLua.cpp */; };
+		9FF53C5C1B393819008537E4 /* PluginChartboostLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C301B393819008537E4 /* PluginChartboostLuaHelper.cpp */; };
+		9FF53C5D1B393819008537E4 /* PluginFlurryAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C321B393819008537E4 /* PluginFlurryAnalyticsLua.cpp */; };
+		9FF53C5E1B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C341B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp */; };
+		9FF53C5F1B393819008537E4 /* PluginGoogleAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C361B393819008537E4 /* PluginGoogleAnalyticsLua.cpp */; };
+		9FF53C601B393819008537E4 /* PluginIAPLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C381B393819008537E4 /* PluginIAPLua.cpp */; };
+		9FF53C611B393819008537E4 /* PluginIAPLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */; };
+		9FF53C621B393819008537E4 /* PluginKochavaLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3C1B393819008537E4 /* PluginKochavaLua.cpp */; };
+		9FF53C631B393819008537E4 /* PluginTuneLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3E1B393819008537E4 /* PluginTuneLua.cpp */; };
+		9FF53C641B393819008537E4 /* PluginTuneLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */; };
+		9FF53C651B393819008537E4 /* PluginVungleLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C421B393819008537E4 /* PluginVungleLua.cpp */; };
+		9FF53C661B393819008537E4 /* PluginVungleLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */; };
+		9FF53C671B393819008537E4 /* SDKBoxLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */; };
+		A92275421517C094001B78AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275411517C094001B78AA /* QuartzCore.framework */; };
+		A92275441517C094001B78AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275431517C094001B78AA /* OpenGLES.framework */; };
+		A92275461517C094001B78AA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275451517C094001B78AA /* OpenAL.framework */; };
+		A92275481517C094001B78AA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275471517C094001B78AA /* AudioToolbox.framework */; };
+		A922754A1517C094001B78AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275491517C094001B78AA /* AVFoundation.framework */; };
+		A922754C1517C094001B78AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754B1517C094001B78AA /* UIKit.framework */; };
+		A922754E1517C094001B78AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754D1517C094001B78AA /* Foundation.framework */; };
+		A92275501517C094001B78AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754F1517C094001B78AA /* CoreGraphics.framework */; };
+		BA4E718719EB6E7900932425 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E718619EB6E7900932425 /* MediaPlayer.framework */; };
+		C03780EB18BEE0E400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03780EA18BEE0E400FE4F13 /* src */; };
+		C05D1C171923467600B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C161923467600B808A4 /* config.json */; };
+		C0799CB918BAE62000E9C828 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C0799CB518BAE62000E9C828 /* res */; };
+		C3B145B892B9283CDA921263 /* libjscocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */; };
+		D454520C156E22BD00887EB5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D454520B156E22BD00887EB5 /* libz.dylib */; };
+		D4545227156E28EF00887EB5 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4545215156E28EF00887EB5 /* AppDelegate.cpp */; };
+		D6B061241803AB9F0077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B061231803AB9F0077942B /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A1A081B18C9DF05005C6854 /* project.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = project.json; path = ../../../project.json; sourceTree = "<group>"; };
+		1A6BF21418C9DB5900FB0E1C /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../../../main.js; sourceTree = "<group>"; };
+		1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1A96A4F2174A3432008653A9 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../cocos2d-x-3.6-lib/cocos2dx/platform/third_party/ios/libraries/libcurl.a"; sourceTree = "<group>"; };
+		3AF548079E4DCC8ABB162091 /* script */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = script; path = ../../../script; sourceTree = "<group>"; };
+		502380DB17EBB88200990C9B /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		5091731417ECDF7A00D62437 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-29.png"; path = "ios/Icon-29.png"; sourceTree = "<group>"; };
+		5091731517ECDF7A00D62437 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "ios/Icon-40.png"; sourceTree = "<group>"; };
+		5091731617ECDF7A00D62437 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-50.png"; path = "ios/Icon-50.png"; sourceTree = "<group>"; };
+		5091731717ECDF7A00D62437 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-58.png"; path = "ios/Icon-58.png"; sourceTree = "<group>"; };
+		5091731817ECDF7A00D62437 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-80.png"; path = "ios/Icon-80.png"; sourceTree = "<group>"; };
+		5091731917ECDF7A00D62437 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-100.png"; path = "ios/Icon-100.png"; sourceTree = "<group>"; };
+		509D4AAB17EBB2AB00697056 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = "<group>"; };
+		509D4AAC17EBB2AB00697056 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = "<group>"; };
+		509D4AAD17EBB2AB00697056 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ios/Default-568h@2x.png"; sourceTree = "<group>"; };
+		509D4AAE17EBB2AB00697056 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ios/Default.png; sourceTree = "<group>"; };
+		509D4AAF17EBB2AB00697056 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ios/Default@2x.png"; sourceTree = "<group>"; };
+		509D4AB017EBB2AB00697056 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-57.png"; path = "ios/Icon-57.png"; sourceTree = "<group>"; };
+		509D4AB117EBB2AB00697056 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "ios/Icon-72.png"; sourceTree = "<group>"; };
+		509D4AB217EBB2AB00697056 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "ios/Icon-76.png"; sourceTree = "<group>"; };
+		509D4AB317EBB2AB00697056 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-114.png"; path = "ios/Icon-114.png"; sourceTree = "<group>"; };
+		509D4AB417EBB2AB00697056 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "ios/Icon-120.png"; sourceTree = "<group>"; };
+		509D4AB517EBB2AB00697056 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-144.png"; path = "ios/Icon-144.png"; sourceTree = "<group>"; };
+		509D4AB617EBB2AB00697056 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "ios/Icon-152.png"; sourceTree = "<group>"; };
+		509D4AB717EBB2AB00697056 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ios/Info.plist; sourceTree = "<group>"; };
+		509D4AB817EBB2AB00697056 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = "<group>"; };
+		509D4AB917EBB2AB00697056 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ios/Prefix.pch; sourceTree = "<group>"; };
+		509D4ABA17EBB2AB00697056 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = "<group>"; };
+		509D4ABB17EBB2AB00697056 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = "<group>"; };
+		509D4AE617EBB81800697056 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		509D4AE817EBB82000697056 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		509D4AEA17EBB82600697056 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjscocos2d iOS.a"; path = "../../cocos2d-x-3.6-lib/prebuilt/ios/libjscocos2d iOS.a"; sourceTree = "<absolute>"; };
+		87D4C4441AB2187000F68C44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8D8343929314773AE1443CD9 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../../cocos2d-x-3.6-lib/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		9F20C9E11A5BBE85006FB50B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		9FC1F5A71B38FDA1004629F2 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
+		9FC1F5A81B38FDA1004629F2 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		9FC1F5AB1B38FDA1004629F2 /* MyPluginsMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyPluginsMgr.cpp; sourceTree = "<group>"; };
+		9FC1F5AC1B38FDA1004629F2 /* MyPluginsMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPluginsMgr.h; sourceTree = "<group>"; };
+		9FC1F5AD1B38FDA1004629F2 /* SdkboxStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkboxStarterKit.h; sourceTree = "<group>"; };
+		9FC1F5B01B38FF45004629F2 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		9FC1F5B11B38FF45004629F2 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		9FC1F5B21B38FF45004629F2 /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileAppTracker.framework; sourceTree = "<group>"; };
+		9FC1F5B31B38FF45004629F2 /* PluginAdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginAdColony.framework; sourceTree = "<group>"; };
+		9FC1F5B41B38FF45004629F2 /* PluginChartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginChartboost.framework; sourceTree = "<group>"; };
+		9FC1F5B51B38FF45004629F2 /* PluginFlurryAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginFlurryAnalytics.framework; sourceTree = "<group>"; };
+		9FC1F5B61B38FF45004629F2 /* PluginGoogleAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginGoogleAnalytics.framework; sourceTree = "<group>"; };
+		9FC1F5B71B38FF45004629F2 /* PluginIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginIAP.framework; sourceTree = "<group>"; };
+		9FC1F5B81B38FF45004629F2 /* PluginKochava.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginKochava.framework; sourceTree = "<group>"; };
+		9FC1F5B91B38FF45004629F2 /* PluginTune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginTune.framework; sourceTree = "<group>"; };
+		9FC1F5BA1B38FF45004629F2 /* PluginVungle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginVungle.framework; sourceTree = "<group>"; };
+		9FC1F5BB1B38FF45004629F2 /* sdkbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sdkbox.framework; sourceTree = "<group>"; };
+		9FC1F5BC1B38FF45004629F2 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		9FF53BD51B39001A008537E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BD71B39003C008537E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BD91B390043008537E4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/iAd.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BDB1B39004A008537E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BDD1B390052008537E4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		9FF53BDF1B390059008537E4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BE11B390069008537E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BE31B390070008537E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BE51B390087008537E4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BE71B39008F008537E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BE91B390095008537E4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BEB1B39009D008537E4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BED1B3900AB008537E4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BEF1B3900B2008537E4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BF11B3900DC008537E4 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/EventKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BF31B3900E1008537E4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		9FF53BFA1B390E73008537E4 /* SimpleConfigParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleConfigParser.cpp; sourceTree = "<group>"; };
+		9FF53BFB1B390E73008537E4 /* SimpleConfigParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConfigParser.h; sourceTree = "<group>"; };
+		9FF53BFF1B391434008537E4 /* libluacocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d iOS.a"; path = "../../cocos2d-x-3.6-lib/prebuilt/ios/libluacocos2d iOS.a"; sourceTree = "<group>"; };
+		9FF53C071B392726008537E4 /* lua_module_register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lua_module_register.h; sourceTree = "<group>"; };
+		9FF53C091B393819008537E4 /* .keepme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .keepme; sourceTree = "<group>"; };
+		9FF53C0A1B393819008537E4 /* PluginAdColonyJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginAdColonyJS.cpp; sourceTree = "<group>"; };
+		9FF53C0B1B393819008537E4 /* PluginAdColonyJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginAdColonyJS.hpp; sourceTree = "<group>"; };
+		9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginAdColonyJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C0D1B393819008537E4 /* PluginAdColonyJSHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginAdColonyJSHelper.hpp; sourceTree = "<group>"; };
+		9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginChartboostJS.cpp; sourceTree = "<group>"; };
+		9FF53C0F1B393819008537E4 /* PluginChartboostJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginChartboostJS.hpp; sourceTree = "<group>"; };
+		9FF53C101B393819008537E4 /* PluginChartboostJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginChartboostJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C111B393819008537E4 /* PluginChartboostJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginChartboostJSHelper.h; sourceTree = "<group>"; };
+		9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFlurryAnalyticsJS.cpp; sourceTree = "<group>"; };
+		9FF53C131B393819008537E4 /* PluginFlurryAnalyticsJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginFlurryAnalyticsJS.hpp; sourceTree = "<group>"; };
+		9FF53C141B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFlurryAnalyticsJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C151B393819008537E4 /* PluginFlurryAnalyticsJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFlurryAnalyticsJSHelper.h; sourceTree = "<group>"; };
+		9FF53C161B393819008537E4 /* PluginGoogleAnalyticsJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginGoogleAnalyticsJS.cpp; sourceTree = "<group>"; };
+		9FF53C171B393819008537E4 /* PluginGoogleAnalyticsJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginGoogleAnalyticsJS.hpp; sourceTree = "<group>"; };
+		9FF53C181B393819008537E4 /* PluginIAPJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginIAPJS.cpp; sourceTree = "<group>"; };
+		9FF53C191B393819008537E4 /* PluginIAPJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginIAPJS.hpp; sourceTree = "<group>"; };
+		9FF53C1A1B393819008537E4 /* PluginIAPJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginIAPJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C1B1B393819008537E4 /* PluginIAPJSHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginIAPJSHelper.hpp; sourceTree = "<group>"; };
+		9FF53C1C1B393819008537E4 /* PluginKochavaJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginKochavaJS.cpp; sourceTree = "<group>"; };
+		9FF53C1D1B393819008537E4 /* PluginKochavaJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginKochavaJS.hpp; sourceTree = "<group>"; };
+		9FF53C1E1B393819008537E4 /* PluginTuneJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginTuneJS.cpp; sourceTree = "<group>"; };
+		9FF53C1F1B393819008537E4 /* PluginTuneJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginTuneJS.hpp; sourceTree = "<group>"; };
+		9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginTuneJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C211B393819008537E4 /* PluginTuneJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginTuneJSHelper.h; sourceTree = "<group>"; };
+		9FF53C221B393819008537E4 /* PluginVungleJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginVungleJS.cpp; sourceTree = "<group>"; };
+		9FF53C231B393819008537E4 /* PluginVungleJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginVungleJS.hpp; sourceTree = "<group>"; };
+		9FF53C241B393819008537E4 /* PluginVungleJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginVungleJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C251B393819008537E4 /* PluginVungleJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginVungleJSHelper.h; sourceTree = "<group>"; };
+		9FF53C261B393819008537E4 /* SDKBoxJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDKBoxJSHelper.cpp; sourceTree = "<group>"; };
+		9FF53C271B393819008537E4 /* SDKBoxJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBoxJSHelper.h; sourceTree = "<group>"; };
+		9FF53C291B393819008537E4 /* .keepme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .keepme; sourceTree = "<group>"; };
+		9FF53C2A1B393819008537E4 /* PluginAdColonyLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginAdColonyLua.cpp; sourceTree = "<group>"; };
+		9FF53C2B1B393819008537E4 /* PluginAdColonyLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginAdColonyLua.hpp; sourceTree = "<group>"; };
+		9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginAdcolonyLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C2D1B393819008537E4 /* PluginAdcolonyLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginAdcolonyLuaHelper.h; sourceTree = "<group>"; };
+		9FF53C2E1B393819008537E4 /* PluginChartboostLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginChartboostLua.cpp; sourceTree = "<group>"; };
+		9FF53C2F1B393819008537E4 /* PluginChartboostLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginChartboostLua.hpp; sourceTree = "<group>"; };
+		9FF53C301B393819008537E4 /* PluginChartboostLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginChartboostLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C311B393819008537E4 /* PluginChartboostLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginChartboostLuaHelper.h; sourceTree = "<group>"; };
+		9FF53C321B393819008537E4 /* PluginFlurryAnalyticsLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFlurryAnalyticsLua.cpp; sourceTree = "<group>"; };
+		9FF53C331B393819008537E4 /* PluginFlurryAnalyticsLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginFlurryAnalyticsLua.hpp; sourceTree = "<group>"; };
+		9FF53C341B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFlurryAnalyticsLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C351B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFlurryAnalyticsLuaHelper.h; sourceTree = "<group>"; };
+		9FF53C361B393819008537E4 /* PluginGoogleAnalyticsLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginGoogleAnalyticsLua.cpp; sourceTree = "<group>"; };
+		9FF53C371B393819008537E4 /* PluginGoogleAnalyticsLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginGoogleAnalyticsLua.hpp; sourceTree = "<group>"; };
+		9FF53C381B393819008537E4 /* PluginIAPLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginIAPLua.cpp; sourceTree = "<group>"; };
+		9FF53C391B393819008537E4 /* PluginIAPLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginIAPLua.hpp; sourceTree = "<group>"; };
+		9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginIAPLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C3B1B393819008537E4 /* PluginIAPLuaHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginIAPLuaHelper.hpp; sourceTree = "<group>"; };
+		9FF53C3C1B393819008537E4 /* PluginKochavaLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginKochavaLua.cpp; sourceTree = "<group>"; };
+		9FF53C3D1B393819008537E4 /* PluginKochavaLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginKochavaLua.hpp; sourceTree = "<group>"; };
+		9FF53C3E1B393819008537E4 /* PluginTuneLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginTuneLua.cpp; sourceTree = "<group>"; };
+		9FF53C3F1B393819008537E4 /* PluginTuneLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginTuneLua.hpp; sourceTree = "<group>"; };
+		9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginTuneLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C411B393819008537E4 /* PluginTuneLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginTuneLuaHelper.h; sourceTree = "<group>"; };
+		9FF53C421B393819008537E4 /* PluginVungleLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginVungleLua.cpp; sourceTree = "<group>"; };
+		9FF53C431B393819008537E4 /* PluginVungleLua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginVungleLua.hpp; sourceTree = "<group>"; };
+		9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginVungleLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C451B393819008537E4 /* PluginVungleLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginVungleLuaHelper.h; sourceTree = "<group>"; };
+		9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDKBoxLuaHelper.cpp; sourceTree = "<group>"; };
+		9FF53C471B393819008537E4 /* SDKBoxLuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKBoxLuaHelper.h; sourceTree = "<group>"; };
+		9FFEB9A71A6AB7F70095C43A /* js_module_register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = js_module_register.h; sourceTree = "<group>"; };
+		A922753D1517C094001B78AA /* sdkbox-starter-kit iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92275411517C094001B78AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A92275431517C094001B78AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A92275451517C094001B78AA /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A92275471517C094001B78AA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A92275491517C094001B78AA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A922754B1517C094001B78AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A922754D1517C094001B78AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A922754F1517C094001B78AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA4E718619EB6E7900932425 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		C03780EA18BEE0E400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
+		C05D1C161923467600B808A4 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = ../../../config.json; sourceTree = "<group>"; };
+		C0799CB518BAE62000E9C828 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
+		D454520B156E22BD00887EB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D4545215156E28EF00887EB5 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		D4545216156E28EF00887EB5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6B061231803AB9F0077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A922753A1517C094001B78AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF53BF41B3900E1008537E4 /* EventKit.framework in Frameworks */,
+				9FF53BF21B3900DC008537E4 /* EventKitUI.framework in Frameworks */,
+				9FF53BF01B3900B2008537E4 /* AdSupport.framework in Frameworks */,
+				9FF53BEE1B3900AB008537E4 /* CoreTelephony.framework in Frameworks */,
+				9FF53BEC1B39009D008537E4 /* CoreMedia.framework in Frameworks */,
+				9FF53BEA1B390095008537E4 /* MediaPlayer.framework in Frameworks */,
+				9FF53BE81B39008F008537E4 /* MessageUI.framework in Frameworks */,
+				9FF53BE61B390087008537E4 /* Social.framework in Frameworks */,
+				9FF53BE41B390070008537E4 /* StoreKit.framework in Frameworks */,
+				9FF53BE21B390069008537E4 /* SystemConfiguration.framework in Frameworks */,
+				9FF53BE01B390059008537E4 /* WebKit.framework in Frameworks */,
+				9FF53BDE1B390052008537E4 /* libsqlite3.dylib in Frameworks */,
+				9FF53BDC1B39004A008537E4 /* CoreData.framework in Frameworks */,
+				9FF53BDA1B390043008537E4 /* iAd.framework in Frameworks */,
+				9FF53BD81B39003C008537E4 /* CoreLocation.framework in Frameworks */,
+				9FF53BD61B39001A008537E4 /* MobileCoreServices.framework in Frameworks */,
+				9FC1F5C41B38FF45004629F2 /* PluginIAP.framework in Frameworks */,
+				9FF53C001B391434008537E4 /* libluacocos2d iOS.a in Frameworks */,
+				9FC1F5C31B38FF45004629F2 /* PluginGoogleAnalytics.framework in Frameworks */,
+				9FC1F5BF1B38FF45004629F2 /* MobileAppTracker.framework in Frameworks */,
+				9F20C9E61A5BD38A006FB50B /* Security.framework in Frameworks */,
+				BA4E718719EB6E7900932425 /* MediaPlayer.framework in Frameworks */,
+				D6B061241803AB9F0077942B /* CoreMotion.framework in Frameworks */,
+				9FC1F5BE1B38FF45004629F2 /* Chartboost.framework in Frameworks */,
+				1A82F5FB169AC92500C4B13A /* libsqlite3.dylib in Frameworks */,
+				D454520C156E22BD00887EB5 /* libz.dylib in Frameworks */,
+				A92275421517C094001B78AA /* QuartzCore.framework in Frameworks */,
+				9FC1F5BD1B38FF45004629F2 /* AdColony.framework in Frameworks */,
+				A92275441517C094001B78AA /* OpenGLES.framework in Frameworks */,
+				A92275461517C094001B78AA /* OpenAL.framework in Frameworks */,
+				9FC1F5C51B38FF45004629F2 /* PluginKochava.framework in Frameworks */,
+				A92275481517C094001B78AA /* AudioToolbox.framework in Frameworks */,
+				9FC1F5C01B38FF45004629F2 /* PluginAdColony.framework in Frameworks */,
+				A922754A1517C094001B78AA /* AVFoundation.framework in Frameworks */,
+				9FC1F5C61B38FF45004629F2 /* PluginTune.framework in Frameworks */,
+				9FC1F5C91B38FF45004629F2 /* VungleSDK.framework in Frameworks */,
+				9FC1F5C71B38FF45004629F2 /* PluginVungle.framework in Frameworks */,
+				A922754C1517C094001B78AA /* UIKit.framework in Frameworks */,
+				A922754E1517C094001B78AA /* Foundation.framework in Frameworks */,
+				A92275501517C094001B78AA /* CoreGraphics.framework in Frameworks */,
+				132A415C850910405C9D8B6C /* libcocos2d iOS.a in Frameworks */,
+				9FC1F5C11B38FF45004629F2 /* PluginChartboost.framework in Frameworks */,
+				C3B145B892B9283CDA921263 /* libjscocos2d iOS.a in Frameworks */,
+				9FC1F5C21B38FF45004629F2 /* PluginFlurryAnalytics.framework in Frameworks */,
+				9FC1F5C81B38FF45004629F2 /* sdkbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15628F5B15F0F5C2000CF24B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C05D1C161923467600B808A4 /* config.json */,
+				1A1A081B18C9DF05005C6854 /* project.json */,
+				1A6BF21418C9DB5900FB0E1C /* main.js */,
+				C0799CB518BAE62000E9C828 /* res */,
+				C03780EA18BEE0E400FE4F13 /* src */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5091732E17ECDF8A00D62437 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5091731417ECDF7A00D62437 /* Icon-29.png */,
+				5091731517ECDF7A00D62437 /* Icon-40.png */,
+				5091731617ECDF7A00D62437 /* Icon-50.png */,
+				5091731717ECDF7A00D62437 /* Icon-58.png */,
+				5091731817ECDF7A00D62437 /* Icon-80.png */,
+				5091731917ECDF7A00D62437 /* Icon-100.png */,
+				509D4AB017EBB2AB00697056 /* Icon-57.png */,
+				509D4AB117EBB2AB00697056 /* Icon-72.png */,
+				509D4AB217EBB2AB00697056 /* Icon-76.png */,
+				509D4AB317EBB2AB00697056 /* Icon-114.png */,
+				509D4AB417EBB2AB00697056 /* Icon-120.png */,
+				509D4AB517EBB2AB00697056 /* Icon-144.png */,
+				509D4AB617EBB2AB00697056 /* Icon-152.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		9FF53BF51B390E73008537E4 /* ide-support */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53BFA1B390E73008537E4 /* SimpleConfigParser.cpp */,
+				9FF53BFB1B390E73008537E4 /* SimpleConfigParser.h */,
+			);
+			path = "ide-support";
+			sourceTree = "<group>";
+		};
+		9FF53C081B393819008537E4 /* jsbindings */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53C091B393819008537E4 /* .keepme */,
+				9FF53C0A1B393819008537E4 /* PluginAdColonyJS.cpp */,
+				9FF53C0B1B393819008537E4 /* PluginAdColonyJS.hpp */,
+				9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */,
+				9FF53C0D1B393819008537E4 /* PluginAdColonyJSHelper.hpp */,
+				9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */,
+				9FF53C0F1B393819008537E4 /* PluginChartboostJS.hpp */,
+				9FF53C101B393819008537E4 /* PluginChartboostJSHelper.cpp */,
+				9FF53C111B393819008537E4 /* PluginChartboostJSHelper.h */,
+				9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */,
+				9FF53C131B393819008537E4 /* PluginFlurryAnalyticsJS.hpp */,
+				9FF53C141B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp */,
+				9FF53C151B393819008537E4 /* PluginFlurryAnalyticsJSHelper.h */,
+				9FF53C161B393819008537E4 /* PluginGoogleAnalyticsJS.cpp */,
+				9FF53C171B393819008537E4 /* PluginGoogleAnalyticsJS.hpp */,
+				9FF53C181B393819008537E4 /* PluginIAPJS.cpp */,
+				9FF53C191B393819008537E4 /* PluginIAPJS.hpp */,
+				9FF53C1A1B393819008537E4 /* PluginIAPJSHelper.cpp */,
+				9FF53C1B1B393819008537E4 /* PluginIAPJSHelper.hpp */,
+				9FF53C1C1B393819008537E4 /* PluginKochavaJS.cpp */,
+				9FF53C1D1B393819008537E4 /* PluginKochavaJS.hpp */,
+				9FF53C1E1B393819008537E4 /* PluginTuneJS.cpp */,
+				9FF53C1F1B393819008537E4 /* PluginTuneJS.hpp */,
+				9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */,
+				9FF53C211B393819008537E4 /* PluginTuneJSHelper.h */,
+				9FF53C221B393819008537E4 /* PluginVungleJS.cpp */,
+				9FF53C231B393819008537E4 /* PluginVungleJS.hpp */,
+				9FF53C241B393819008537E4 /* PluginVungleJSHelper.cpp */,
+				9FF53C251B393819008537E4 /* PluginVungleJSHelper.h */,
+				9FF53C261B393819008537E4 /* SDKBoxJSHelper.cpp */,
+				9FF53C271B393819008537E4 /* SDKBoxJSHelper.h */,
+			);
+			path = jsbindings;
+			sourceTree = "<group>";
+		};
+		9FF53C281B393819008537E4 /* luabindings */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53C291B393819008537E4 /* .keepme */,
+				9FF53C2A1B393819008537E4 /* PluginAdColonyLua.cpp */,
+				9FF53C2B1B393819008537E4 /* PluginAdColonyLua.hpp */,
+				9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */,
+				9FF53C2D1B393819008537E4 /* PluginAdcolonyLuaHelper.h */,
+				9FF53C2E1B393819008537E4 /* PluginChartboostLua.cpp */,
+				9FF53C2F1B393819008537E4 /* PluginChartboostLua.hpp */,
+				9FF53C301B393819008537E4 /* PluginChartboostLuaHelper.cpp */,
+				9FF53C311B393819008537E4 /* PluginChartboostLuaHelper.h */,
+				9FF53C321B393819008537E4 /* PluginFlurryAnalyticsLua.cpp */,
+				9FF53C331B393819008537E4 /* PluginFlurryAnalyticsLua.hpp */,
+				9FF53C341B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp */,
+				9FF53C351B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.h */,
+				9FF53C361B393819008537E4 /* PluginGoogleAnalyticsLua.cpp */,
+				9FF53C371B393819008537E4 /* PluginGoogleAnalyticsLua.hpp */,
+				9FF53C381B393819008537E4 /* PluginIAPLua.cpp */,
+				9FF53C391B393819008537E4 /* PluginIAPLua.hpp */,
+				9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */,
+				9FF53C3B1B393819008537E4 /* PluginIAPLuaHelper.hpp */,
+				9FF53C3C1B393819008537E4 /* PluginKochavaLua.cpp */,
+				9FF53C3D1B393819008537E4 /* PluginKochavaLua.hpp */,
+				9FF53C3E1B393819008537E4 /* PluginTuneLua.cpp */,
+				9FF53C3F1B393819008537E4 /* PluginTuneLua.hpp */,
+				9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */,
+				9FF53C411B393819008537E4 /* PluginTuneLuaHelper.h */,
+				9FF53C421B393819008537E4 /* PluginVungleLua.cpp */,
+				9FF53C431B393819008537E4 /* PluginVungleLua.hpp */,
+				9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */,
+				9FF53C451B393819008537E4 /* PluginVungleLuaHelper.h */,
+				9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */,
+				9FF53C471B393819008537E4 /* SDKBoxLuaHelper.h */,
+			);
+			path = luabindings;
+			sourceTree = "<group>";
+		};
+		A92275321517C094001B78AA = {
+			isa = PBXGroup;
+			children = (
+				C06D18B718C02D4A003D1A65 /* JS Common */,
+				D4545214156E28EF00887EB5 /* Classes */,
+				A92275401517C094001B78AA /* Frameworks */,
+				D45446CC156DE73F00887EB5 /* ios */,
+				A922753E1517C094001B78AA /* Products */,
+				15628F5B15F0F5C2000CF24B /* Resources */,
+				DA4A4AEDA1548E89CEC2F38D /* ios-libs */,
+			);
+			sourceTree = "<group>";
+		};
+		A922753E1517C094001B78AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A922753D1517C094001B78AA /* sdkbox-starter-kit iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92275401517C094001B78AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53BF31B3900E1008537E4 /* EventKit.framework */,
+				9FF53BF11B3900DC008537E4 /* EventKitUI.framework */,
+				9FF53BEF1B3900B2008537E4 /* AdSupport.framework */,
+				9FF53BED1B3900AB008537E4 /* CoreTelephony.framework */,
+				9FF53BEB1B39009D008537E4 /* CoreMedia.framework */,
+				9FF53BE91B390095008537E4 /* MediaPlayer.framework */,
+				9FF53BE71B39008F008537E4 /* MessageUI.framework */,
+				9FF53BE51B390087008537E4 /* Social.framework */,
+				9FF53BE31B390070008537E4 /* StoreKit.framework */,
+				9FF53BE11B390069008537E4 /* SystemConfiguration.framework */,
+				9FF53BDF1B390059008537E4 /* WebKit.framework */,
+				9FF53BDD1B390052008537E4 /* libsqlite3.dylib */,
+				9FF53BDB1B39004A008537E4 /* CoreData.framework */,
+				9FF53BD91B390043008537E4 /* iAd.framework */,
+				9FF53BD71B39003C008537E4 /* CoreLocation.framework */,
+				9FF53BD51B39001A008537E4 /* MobileCoreServices.framework */,
+				9FC1F5B01B38FF45004629F2 /* AdColony.framework */,
+				9FC1F5B11B38FF45004629F2 /* Chartboost.framework */,
+				9FC1F5B21B38FF45004629F2 /* MobileAppTracker.framework */,
+				9FC1F5B31B38FF45004629F2 /* PluginAdColony.framework */,
+				9FC1F5B41B38FF45004629F2 /* PluginChartboost.framework */,
+				9FC1F5B51B38FF45004629F2 /* PluginFlurryAnalytics.framework */,
+				9FC1F5B61B38FF45004629F2 /* PluginGoogleAnalytics.framework */,
+				9FC1F5B71B38FF45004629F2 /* PluginIAP.framework */,
+				9FC1F5B81B38FF45004629F2 /* PluginKochava.framework */,
+				9FC1F5B91B38FF45004629F2 /* PluginTune.framework */,
+				9FC1F5BA1B38FF45004629F2 /* PluginVungle.framework */,
+				9FC1F5BB1B38FF45004629F2 /* sdkbox.framework */,
+				9FC1F5BC1B38FF45004629F2 /* VungleSDK.framework */,
+				87D4C4441AB2187000F68C44 /* Security.framework */,
+				9F20C9E11A5BBE85006FB50B /* Security.framework */,
+				D6B061231803AB9F0077942B /* CoreMotion.framework */,
+				502380DB17EBB88200990C9B /* libcurl.dylib */,
+				509D4AEA17EBB82600697056 /* IOKit.framework */,
+				509D4AE817EBB82000697056 /* AppKit.framework */,
+				509D4AE617EBB81800697056 /* OpenGL.framework */,
+				1A96A4F2174A3432008653A9 /* libcurl.a */,
+				1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */,
+				D454520B156E22BD00887EB5 /* libz.dylib */,
+				A92275411517C094001B78AA /* QuartzCore.framework */,
+				A92275431517C094001B78AA /* OpenGLES.framework */,
+				A92275451517C094001B78AA /* OpenAL.framework */,
+				A92275471517C094001B78AA /* AudioToolbox.framework */,
+				A92275491517C094001B78AA /* AVFoundation.framework */,
+				A922754B1517C094001B78AA /* UIKit.framework */,
+				A922754D1517C094001B78AA /* Foundation.framework */,
+				A922754F1517C094001B78AA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C06D18B718C02D4A003D1A65 /* JS Common */ = {
+			isa = PBXGroup;
+			children = (
+				3AF548079E4DCC8ABB162091 /* script */,
+			);
+			name = "JS Common";
+			sourceTree = "<group>";
+		};
+		D45446CC156DE73F00887EB5 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				509D4AAB17EBB2AB00697056 /* AppController.h */,
+				509D4AAC17EBB2AB00697056 /* AppController.mm */,
+				509D4AAD17EBB2AB00697056 /* Default-568h@2x.png */,
+				509D4AAE17EBB2AB00697056 /* Default.png */,
+				509D4AAF17EBB2AB00697056 /* Default@2x.png */,
+				5091732E17ECDF8A00D62437 /* Icons */,
+				509D4AB717EBB2AB00697056 /* Info.plist */,
+				509D4AB817EBB2AB00697056 /* main.m */,
+				509D4AB917EBB2AB00697056 /* Prefix.pch */,
+				509D4ABA17EBB2AB00697056 /* RootViewController.h */,
+				509D4ABB17EBB2AB00697056 /* RootViewController.mm */,
+			);
+			name = ios;
+			sourceTree = "<group>";
+		};
+		D4545214156E28EF00887EB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53C081B393819008537E4 /* jsbindings */,
+				9FF53C281B393819008537E4 /* luabindings */,
+				9FF53BF51B390E73008537E4 /* ide-support */,
+				9FFEB9A71A6AB7F70095C43A /* js_module_register.h */,
+				9FF53C071B392726008537E4 /* lua_module_register.h */,
+				D4545215156E28EF00887EB5 /* AppDelegate.cpp */,
+				D4545216156E28EF00887EB5 /* AppDelegate.h */,
+				9FC1F5A71B38FDA1004629F2 /* HelloWorldScene.cpp */,
+				9FC1F5A81B38FDA1004629F2 /* HelloWorldScene.h */,
+				9FC1F5AB1B38FDA1004629F2 /* MyPluginsMgr.cpp */,
+				9FC1F5AC1B38FDA1004629F2 /* MyPluginsMgr.h */,
+				9FC1F5AD1B38FDA1004629F2 /* SdkboxStarterKit.h */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		DA4A4AEDA1548E89CEC2F38D /* ios-libs */ = {
+			isa = PBXGroup;
+			children = (
+				9FF53BFF1B391434008537E4 /* libluacocos2d iOS.a */,
+				8D8343929314773AE1443CD9 /* libcocos2d iOS.a */,
+				69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */,
+			);
+			name = "ios-libs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A922753C1517C094001B78AA /* sdkbox-starter-kit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92277001517C097001B78AA /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS" */;
+			buildPhases = (
+				A92275391517C094001B78AA /* Sources */,
+				A922753A1517C094001B78AA /* Frameworks */,
+				A922753B1517C094001B78AA /* Resources */,
+				3EC03834196541CD00D72B70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sdkbox-starter-kit iOS";
+			productName = "sdkbox-starter-kit";
+			productReference = A922753D1517C094001B78AA /* sdkbox-starter-kit iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A92275341517C094001B78AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					A922753C1517C094001B78AA = {
+						DevelopmentTeam = MDDB52YB8L;
+					};
+				};
+			};
+			buildConfigurationList = A92275371517C094001B78AA /* Build configuration list for PBXProject "sdkbox-starter-kit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A92275321517C094001B78AA;
+			productRefGroup = A922753E1517C094001B78AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A922753C1517C094001B78AA /* sdkbox-starter-kit iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A922753B1517C094001B78AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF53C481B393819008537E4 /* .keepme in Resources */,
+				1AE159EC18C9DF3600FCA372 /* project.json in Resources */,
+				1AD7E0A818C9DB93004817A6 /* main.js in Resources */,
+				509D4ABE17EBB2AB00697056 /* Default.png in Resources */,
+				C05D1C171923467600B808A4 /* config.json in Resources */,
+				5091731E17ECDF7A00D62437 /* Icon-80.png in Resources */,
+				5091731F17ECDF7A00D62437 /* Icon-100.png in Resources */,
+				509D4AC117EBB2AB00697056 /* Icon-72.png in Resources */,
+				509D4AC017EBB2AB00697056 /* Icon-57.png in Resources */,
+				5091731A17ECDF7A00D62437 /* Icon-29.png in Resources */,
+				C03780EB18BEE0E400FE4F13 /* src in Resources */,
+				509D4AC617EBB2AB00697056 /* Icon-152.png in Resources */,
+				9FF53C581B393819008537E4 /* .keepme in Resources */,
+				C0799CB918BAE62000E9C828 /* res in Resources */,
+				509D4AC517EBB2AB00697056 /* Icon-144.png in Resources */,
+				509D4AC317EBB2AB00697056 /* Icon-114.png in Resources */,
+				509D4ABD17EBB2AB00697056 /* Default-568h@2x.png in Resources */,
+				509D4ABF17EBB2AB00697056 /* Default@2x.png in Resources */,
+				509D4AC217EBB2AB00697056 /* Icon-76.png in Resources */,
+				5091731B17ECDF7A00D62437 /* Icon-40.png in Resources */,
+				5091731C17ECDF7A00D62437 /* Icon-50.png in Resources */,
+				509D4AC417EBB2AB00697056 /* Icon-120.png in Resources */,
+				5091731D17ECDF7A00D62437 /* Icon-58.png in Resources */,
+				5CA742C68BEF6831F9BBCB9A /* script in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EC03834196541CD00D72B70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find ${SRCROOT}/../../../src/ -name \"*\" -exec touch -cm {} \\;\nfind ${SRCROOT}/../../../res/ -name \"*\" -exec touch -cm {} \\;";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A92275391517C094001B78AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF53C5D1B393819008537E4 /* PluginFlurryAnalyticsLua.cpp in Sources */,
+				9FF53C5C1B393819008537E4 /* PluginChartboostLuaHelper.cpp in Sources */,
+				509D4AC917EBB2AB00697056 /* RootViewController.mm in Sources */,
+				9FF53C561B393819008537E4 /* PluginVungleJSHelper.cpp in Sources */,
+				D4545227156E28EF00887EB5 /* AppDelegate.cpp in Sources */,
+				9FF53C4B1B393819008537E4 /* PluginChartboostJS.cpp in Sources */,
+				9FF53C4A1B393819008537E4 /* PluginAdColonyJSHelper.cpp in Sources */,
+				9FF53C611B393819008537E4 /* PluginIAPLuaHelper.cpp in Sources */,
+				9FF53C671B393819008537E4 /* SDKBoxLuaHelper.cpp in Sources */,
+				9FF53C4D1B393819008537E4 /* PluginFlurryAnalyticsJS.cpp in Sources */,
+				9FF53C5A1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp in Sources */,
+				9FF53C541B393819008537E4 /* PluginTuneJSHelper.cpp in Sources */,
+				9FF53C491B393819008537E4 /* PluginAdColonyJS.cpp in Sources */,
+				9FF53C4C1B393819008537E4 /* PluginChartboostJSHelper.cpp in Sources */,
+				9FF53C571B393819008537E4 /* SDKBoxJSHelper.cpp in Sources */,
+				9FF53C5B1B393819008537E4 /* PluginChartboostLua.cpp in Sources */,
+				9FF53C601B393819008537E4 /* PluginIAPLua.cpp in Sources */,
+				9FC1F5AE1B38FDA1004629F2 /* HelloWorldScene.cpp in Sources */,
+				9FF53C591B393819008537E4 /* PluginAdColonyLua.cpp in Sources */,
+				9FF53C5E1B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */,
+				9FF53C621B393819008537E4 /* PluginKochavaLua.cpp in Sources */,
+				509D4AC817EBB2AB00697056 /* main.m in Sources */,
+				9FF53C531B393819008537E4 /* PluginTuneJS.cpp in Sources */,
+				9FF53BFE1B390E73008537E4 /* SimpleConfigParser.cpp in Sources */,
+				509D4ABC17EBB2AB00697056 /* AppController.mm in Sources */,
+				9FF53C501B393819008537E4 /* PluginIAPJS.cpp in Sources */,
+				9FF53C511B393819008537E4 /* PluginIAPJSHelper.cpp in Sources */,
+				9FF53C5F1B393819008537E4 /* PluginGoogleAnalyticsLua.cpp in Sources */,
+				9FF53C521B393819008537E4 /* PluginKochavaJS.cpp in Sources */,
+				9FF53C661B393819008537E4 /* PluginVungleLuaHelper.cpp in Sources */,
+				9FF53C551B393819008537E4 /* PluginVungleJS.cpp in Sources */,
+				9FF53C641B393819008537E4 /* PluginTuneLuaHelper.cpp in Sources */,
+				9FF53C651B393819008537E4 /* PluginVungleLua.cpp in Sources */,
+				9FF53C4F1B393819008537E4 /* PluginGoogleAnalyticsJS.cpp in Sources */,
+				9FC1F5AF1B38FDA1004629F2 /* MyPluginsMgr.cpp in Sources */,
+				9FF53C631B393819008537E4 /* PluginTuneLua.cpp in Sources */,
+				9FF53C4E1B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A92276FE1517C097001B78AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					COCOS2D_JAVASCRIPT,
+					CC_ENABLE_CHIPMUNK_INTEGRATION,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../cocos2d-x-3.6-lib ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/base ../../cocos2d-x-3.6-lib/cocos/physics ../../cocos2d-x-3.6-lib/cocos/math/kazmath ../../cocos2d-x-3.6-lib/cocos/2d ../../cocos2d-x-3.6-lib/cocos/gui ../../cocos2d-x-3.6-lib/cocos/network ../../cocos2d-x-3.6-lib/cocos/audio/include ../../cocos2d-x-3.6-lib/cocos/editor-support ../../cocos2d-x-3.6-lib/extensions ../../cocos2d-x-3.6-lib/external ../../cocos2d-x-3.6-lib/external/chipmunk/include/chipmunk ../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/manual";
+			};
+			name = Debug;
+		};
+		A92276FF1517C097001B78AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					COCOS2D_JAVASCRIPT,
+					CC_ENABLE_CHIPMUNK_INTEGRATION,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../cocos2d-x-3.6-lib ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/base ../../cocos2d-x-3.6-lib/cocos/physics ../../cocos2d-x-3.6-lib/cocos/math/kazmath ../../cocos2d-x-3.6-lib/cocos/2d ../../cocos2d-x-3.6-lib/cocos/gui ../../cocos2d-x-3.6-lib/cocos/network ../../cocos2d-x-3.6-lib/cocos/audio/include ../../cocos2d-x-3.6-lib/cocos/editor-support ../../cocos2d-x-3.6-lib/extensions ../../cocos2d-x-3.6-lib/external ../../cocos2d-x-3.6-lib/external/chipmunk/include/chipmunk ../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/manual";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A92277011517C097001B78AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		A92277021517C097001B78AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A92275371517C094001B78AA /* Build configuration list for PBXProject "sdkbox-starter-kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92276FE1517C097001B78AA /* Debug */,
+				A92276FF1517C097001B78AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92277001517C097001B78AA /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92277011517C097001B78AA /* Debug */,
+				A92277021517C097001B78AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A92275341517C094001B78AA /* Project object */;
+}
