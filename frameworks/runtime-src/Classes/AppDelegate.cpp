@@ -48,10 +48,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     //
     director->setDisplayStats(true);
 
+
+    
+#if (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeCpp)
     // init plugins
     MyPluginsMgr::getInstance()->init();
     
-#if (SDKBOX_STARTER_KIT_TYPE == kSdkboxStarterKitTypeCpp)
     FileUtils::getInstance()->addSearchPath("res");
     director->runWithScene(HelloWorld::createScene());
     

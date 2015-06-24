@@ -644,12 +644,7 @@ bool MyPluginsMgr::init()
     return true;
 }
 
-bool MyPluginsMgr::runAll()
-{
-    return true;
-}
-
 void MyPluginsMgr::applicationWillEnterForeground()
 {
-//    PluginTune::measureSession();
+    PluginTune::measureSession();
 }

@@ -8,3 +8,5 @@ local.properties
 frameworks/runtime-src/proj.android/libs/armeabi/gdb.setup
 frameworks/runtime-src/proj.android/libs/armeabi/gdbserver
 frameworks/runtime-src/proj.android/libs/armeabi/libcocos2djs.so
+frameworks/runtime-src/proj.ios_mac/build
+runtime

@@ -39,8 +39,6 @@ public:
     static MyPluginsMgr *getInstance();
 
     bool init();
-
-    bool runAll();
     
     void applicationWillEnterForeground();
 

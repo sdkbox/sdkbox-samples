@@ -12,6 +12,7 @@
 
     "jsList" : [
         "src/resource.js",
+        "src/mypluginsmgr.js",
         "src/app.js"
     ]
 }
