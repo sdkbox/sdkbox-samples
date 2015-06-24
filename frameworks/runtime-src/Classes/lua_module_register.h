@@ -60,7 +60,7 @@ static int lua_module_register(lua_State* L)
 
     // chartboost
     register_all_PluginChartboostLua(L);
-    register_PluginChartboostlLua_helper(L);
+    register_PluginChartboostLua_helper(L);
 
     // flurry analytics
     register_all_PluginFlurryAnalyticsLua(L);

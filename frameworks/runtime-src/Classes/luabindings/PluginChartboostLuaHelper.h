@@ -10,6 +10,6 @@ extern "C" {
 }
 #endif
 
-TOLUA_API int register_PluginChartboostlLua_helper(lua_State* L);
+TOLUA_API int register_PluginChartboostLua_helper(lua_State* L);
 
 #endif

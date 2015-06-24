@@ -70,7 +70,7 @@ namespace sdkbox {
          *   ios:       setAppVersion(NString version)
          *
          */
-        static void setAppVersion(std::string& version);
+        static void setAppVersion(const std::string& version);
 
 
         /*!
@@ -286,7 +286,7 @@ namespace sdkbox {
          * ios:     addOrigin: (NSString *) originName withVersion: (NSString *) originVersion
          *
          */
-        static void addOrigin(std::string& originName, std::string& originVersion);
+        static void addOrigin(const std::string& originName, const std::string& originVersion);
 
 
         /*!
@@ -312,12 +312,12 @@ namespace sdkbox {
          * ios:     addOrigin: (NSString *) originName withVersion: (NSString *) originVersion withParameters: (NSDictionary *) parameters
          *
          */
-        static void addOrigin(std::string& originName, std::string& originVersion, std::map<std::string, std::string>& parameters);
+        static void addOrigin(const std::string& originName, const std::string& originVersion, std::map<std::string, std::string>& parameters);
 
         /*!
          * @brief just for lua, js binding, have the same function with addOrigin(string, string, map)
          */
-        static void addOrigin(std::string& originName, std::string& originVersion, std::string& parameters);
+        static void addOrigin(const std::string& originName, const std::string& originVersion, const std::string& parameters);
 
         /*!
          *  @brief Records a custom event specified by @c eventName.
@@ -352,7 +352,7 @@ namespace sdkbox {
          * ios:     logEvent:(NSString *)eventName
          *
          */
-        static int logEvent(std::string& eventName);
+        static int logEvent(const std::string& eventName);
 
         /*!
          *  @brief Records a custom parameterized event specified by @c eventName with @c parameters.
@@ -391,13 +391,13 @@ namespace sdkbox {
          * ios:     logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
          *
          */
-        static int logEvent(std::string& eventName, std::map<std::string, std::string>& parameters);
+        static int logEvent(const std::string& eventName, std::map<std::string, std::string>& parameters);
 
 
         /*!
          * @brief just for lua, js binding, have same function with logEvent(string, map)
          */
-        static int logEvent(std::string& eventName, std::string& parameters);
+        static int logEvent(const std::string& eventName, const std::string& parameters);
 
 
         /*!
@@ -430,7 +430,7 @@ namespace sdkbox {
          * ios:     logEvent:(NSString *)eventName timed:(BOOL)timed;
          *
          */
-        static int logEvent(std::string& eventName, bool timed);
+        static int logEvent(const std::string& eventName, bool timed);
 
 
         /*!
@@ -461,12 +461,12 @@ namespace sdkbox {
          * ios:     logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters timed:(BOOL)timed;
          *
          */
-        static int logEvent(std::string& eventName, std::map<std::string, std::string>& parameters, bool timed);
+        static int logEvent(const std::string& eventName, std::map<std::string, std::string>& parameters, bool timed);
 
         /*!
          * @brief just for lua, js binding, have the same function with logEvent(string, map, bool)
          */
-        static int logEvent(std::string& eventName, std::string& parameters, bool timed);
+        static int logEvent(const std::string& eventName, const std::string& parameters, bool timed);
 
 
         /*!
@@ -476,7 +476,7 @@ namespace sdkbox {
          * android: endTimedEvent (String eventId)
          *
          */
-        static void endTimedEvent(std::string& eventId);
+        static void endTimedEvent(const std::string& eventId);
 
         /*!
          *  @brief Ends a timed event specified by @c eventName and optionally updates parameters with @c parameters.
@@ -504,13 +504,13 @@ namespace sdkbox {
          * ios:     endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;
          *
          */
-        static void endTimedEvent(std::string& eventName, std::map<std::string, std::string>& parameters);
+        static void endTimedEvent(const std::string& eventName, std::map<std::string, std::string>& parameters);
 
         /*!
          * @brief just for lua, js binding, have same function with endTimeEvent(string, map)
          *
          */
-        static void endTimedEvent(std::string& eventName, std::string& parameters);
+        static void endTimedEvent(const std::string& eventName, const std::string& parameters);
 
         /*!
          *  @brief Records an app exception. Commonly used to catch unhandled exceptions.
@@ -531,7 +531,7 @@ namespace sdkbox {
          * ios:     logError:(NSString *)errorID message:(NSString *)message error:nullptr;
          *
          */
-        static void logError(std::string& errorID, std::string& message, std::string& info);
+        static void logError(const std::string& errorID, const std::string& message, const std::string& info);
         
 
         /*!
@@ -564,7 +564,7 @@ namespace sdkbox {
          * ios:     setUserID:(NSString *)userID
          *
          */
-        static void setUserID(std::string& userID);
+        static void setUserID(const std::string& userID);
 
 
         /*!
@@ -607,7 +607,7 @@ namespace sdkbox {
          * ios:     setGender:(NSString *)gender;
          *
          */
-        static void setGender(std::string& gender);	// user's gender m or f
+        static void setGender(const std::string& gender);	// user's gender m or f
 
 
         /*!

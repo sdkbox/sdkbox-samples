@@ -60,6 +60,8 @@ private:
             bFirstItem = false;
         }
         strStream << "}";
+
+        return strStream.str();
 	}
 
 private:
@@ -284,8 +286,8 @@ int lua_PluginFlurryAnalyticsLua_PluginFlurryAnalytics_setListener(lua_State* to
         }
 #endif
         LUA_FUNCTION handler = (  toluafix_ref_function(tolua_S,2,0));
-        FlurryAnalyticsListenerLua* lis = static_cast<FlurryAnalyticsListenerLua*> (sdkbox::PluginFlurryAnalytics::getListener());
-        if (nullptr == lis) {
+        FlurryAnalyticsListenerLua* lis = NULL;
+        if (NULL == lis) {
         	lis = new FlurryAnalyticsListenerLua();
         }
         lis->setHandler(handler);
@@ -303,7 +305,7 @@ tolua_lerror:
 }
 
 int extern_PluginFlurryAnalytics(lua_State* L) {
-	if (nullptr == L) {
+	if (NULL == L) {
 		return 0;
 	}
 
