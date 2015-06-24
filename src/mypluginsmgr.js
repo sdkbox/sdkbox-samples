@@ -114,7 +114,7 @@ var MyPluginsMgr = {
     },  
     onChartboostDefault:function(sender) {  
         console.log("Chartboost: show default");  
-        sdkbox.PluginChartboost.show("default");
+        sdkbox.PluginChartboost.show("Default");
     },
     onChartboostLC:function(sender) {
         console.log("Chartboost: show LC"); 

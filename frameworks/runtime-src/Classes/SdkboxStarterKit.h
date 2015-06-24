@@ -12,7 +12,7 @@
 #define kSdkboxStarterKitTypeJs  3
 
 #ifndef SDKBOX_STARTER_KIT_TYPE
-#define SDKBOX_STARTER_KIT_TYPE kSdkboxStarterKitTypeJs
+#define SDKBOX_STARTER_KIT_TYPE kSdkboxStarterKitTypeCpp
 #endif  // SDKBOX_STARTER_KIT_TYPE
 
 #endif
