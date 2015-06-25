@@ -65,7 +65,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocos2dx.sdkbox-starter-kit</string>
+	<string>org.cocos2dx.PluginTest</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

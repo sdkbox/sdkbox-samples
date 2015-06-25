@@ -381,11 +381,8 @@ void MyPluginsMgr::initIAP()
     //
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventIAP1, [](EventCustom *) {
-        Product test;
-        test.name = "remove_ads";
-        
-        CCLOG("Start IAP %s", test.name.c_str());
-        IAP::purchase(test.name);
+        CCLOG("Making purchase");
+        IAP::purchase("remove_ads");
     });
 }
 

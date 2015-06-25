@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.cocos2dx.sdkboxstarterkit"
+      package="org.cocos2dx.PluginTest"
       android:versionCode="1"
       android:versionName="1.0"
       android:installLocation="auto">
@@ -51,13 +51,13 @@
         <!--
           Google Analytics
         -->
-        
+
         <meta-data android:name="com.google.android.gms.version"
-                android:value="@integer/google_play_services_version" />         
+                android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.gms.analytics.globalConfigResource"
             android:resource="@xml/global_tracker" />
-        
+
         <!--
           Tune
         -->
@@ -67,18 +67,18 @@
           </intent-filter>
         </receiver>
 
-        <!-- 
-          Kochava 
+        <!--
+          Kochava
         -->
         <receiver android:name="com.kochava.android.tracker.ReferralCapture" android:exported="true">
           <intent-filter>
             <action android:name="com.android.vending.INSTALL_REFERRER" />
           </intent-filter>
         </receiver>
-        <!-- 
+        <!--
         <meta-data
         android:name ="com.google.android.gms.version"
-        android:value ="@integer/google_play_services_version"/> 
+        android:value ="@integer/google_play_services_version"/>
         -->
 
         <!--
