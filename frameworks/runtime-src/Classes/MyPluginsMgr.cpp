@@ -65,7 +65,7 @@ void MyPluginsMgr::initAdColony()
     PluginAdColony::setListener(new ADListener);
     PluginAdColony::getStatus("video");
     PluginAdColony::setCustomID("test");
-    
+
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventAdColony1, [](EventCustom *) { PluginAdColony::show("video"); });
     eventDispatcher->addCustomEventListener(kMenuEventAdColony2, [](EventCustom *) { PluginAdColony::show("v4vc"); });
@@ -118,7 +118,7 @@ public:
     {
         CCLOG("Chartboost ad: %s Failed to record click: %d", name.c_str(), e);
     }
-    
+
     //Miscellaneous callbacks
     void onChartboostConfirmation()
     {
@@ -134,7 +134,7 @@ void MyPluginsMgr::initCharBoost()
 {
     sdkbox::PluginChartboost::init();
     sdkbox::PluginChartboost::setListener(new CBListener);
-    
+
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventChartboost1, [](EventCustom *) {
         sdkbox::PluginChartboost::show(sdkbox::CB_Location_Default);
@@ -153,83 +153,83 @@ void MyPluginsMgr::initCharBoost()
 #include "PluginFlurryAnalytics/PluginFlurryAnalytics.h"
 static bool flurryAnalyticsSendData() {
     std::string ret;
-    
+
     bool retBool = sdkbox::PluginFlurryAnalytics::activeSessionExists();
     if (!retBool) {
         CCLOG("session not exist return");
         return false;
     }
-    
+
     ret = sdkbox::PluginFlurryAnalytics::getSessionID();
     CCLOG("Flurry analytics session : %s", ret.c_str());
-    
+
     std::string origin = "this is origin name";
     std::string originVersion = "origin version";
     sdkbox::PluginFlurryAnalytics::addOrigin(origin, originVersion);
-    
+
     origin = "other origin";
     originVersion = "other origin version";
     std::map<std::string, std::string> params;
     params.insert(std::make_pair("key1", "value1"));
     params.insert(std::make_pair("key2", "value2"));
     sdkbox::PluginFlurryAnalytics::addOrigin(origin, originVersion, params);
-    
+
     ret = "test event1";
     sdkbox::PluginFlurryAnalytics::logEvent(ret);
-    
+
     ret = "test event2";
     params.clear();
     params.insert(std::make_pair("eKey1", "eVal1"));
     params.insert(std::make_pair("eKey2", "eVal2"));
     sdkbox::PluginFlurryAnalytics::logEvent(ret, params);
-    
+
     ret = "test event3";
     sdkbox::PluginFlurryAnalytics::logEvent(ret, true);
     sdkbox::PluginFlurryAnalytics::endTimedEvent(ret);
-    
+
     ret = "test event4";
     params.clear();
     params.insert(std::make_pair("eKey3", "eVal3"));
     params.insert(std::make_pair("eKey4", "eVal4"));
     sdkbox::PluginFlurryAnalytics::logEvent(ret, params, true);
     sdkbox::PluginFlurryAnalytics::endTimedEvent(ret, params);
-    
+
     ret = "error test";
     std::string msg = "log errror msg";
     std::string ifno = "log error info";
     sdkbox::PluginFlurryAnalytics::logError(ret, msg, ifno);
-    
+
     sdkbox::PluginFlurryAnalytics::logPageView();
-    
+
     ret = "this is user id";
     sdkbox::PluginFlurryAnalytics::setUserID(ret);
     sdkbox::PluginFlurryAnalytics::setAge(11);
     ret = "m"; // m:male  f:female  u:unkonw
     sdkbox::PluginFlurryAnalytics::setGender(ret);
-    
+
     sdkbox::PluginFlurryAnalytics::pauseBackgroundSession();
-    
+
     sdkbox::PluginFlurryAnalytics::setReportLocation(true);
-    
+
     sdkbox::PluginFlurryAnalytics::clearLocation();
     //chendu, sichuan, china
     sdkbox::PluginFlurryAnalytics::setLatitude(104.06, 30.67, 0, 0);
-    
+
     sdkbox::PluginFlurryAnalytics::setSessionReportsOnCloseEnabled(true);
     sdkbox::PluginFlurryAnalytics::setSessionReportsOnPauseEnabled(true);
     sdkbox::PluginFlurryAnalytics::setBackgroundSessionEnabled(true);
-    
+
     sdkbox::PluginFlurryAnalytics::setEventLoggingEnabled(true);
     sdkbox::PluginFlurryAnalytics::setPulseEnabled(true);
-    
+
     sdkbox::PluginFlurryAnalytics::endSession();
-    
+
     CCLOG("Flurry analytics send data finish");
-    
+
     return  true;
 }
 class FAListener : public sdkbox::FlurryAnalyticsListener {
-    
+
 public:
     void flurrySessionDidCreateWithInfo(std::map<std::string, std::string>& info)
     {
@@ -249,23 +249,23 @@ void MyPluginsMgr::initFlurry()
         CCLOG(">>> FAIL! init flurry analytics fail<<<");
         return ;
     }
-    
+
     //must call befor start session
     std::string ret = sdkbox::PluginFlurryAnalytics::getFlurryAgentVersion();
     CCLOG("FlurryVersion: %s", ret.c_str());
     sdkbox::PluginFlurryAnalytics::setShowErrorInLogEnabled(true);
-    
+
     CCLOG("invoke set listener");
     sdkbox::FlurryAnalyticsListener *listener = new FAListener();
     sdkbox::PluginFlurryAnalytics::setListener(listener);
-    
+
     //start session
     sdkbox::PluginFlurryAnalytics::startSession();
-    
+
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventFA1, [](EventCustom *) {
         CCLOG("[Flurry Analytics] sending data");
-        
+
         flurryAnalyticsSendData();
     });
 }
@@ -277,11 +277,11 @@ void MyPluginsMgr::initFlurry()
 void MyPluginsMgr::initGoogleAnalytics()
 {
     PluginGoogleAnalytics::init();
-    
+
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventGA1, [](EventCustom *) {
         CCLOG("[GoogleAnalytics] sending data");
-        
+
         PluginGoogleAnalytics::logTiming("Startup", 0, "timing name", "timing label");
         PluginGoogleAnalytics::logEvent("EventCategory 1", "EventAction 1", "EventLabel 1", 10);
         PluginGoogleAnalytics::logScreen("Screen1");
@@ -306,11 +306,11 @@ public:
     {
         Product test;
         test.name = "remove_ads";
-        
+
         _products.push_back(test);
         updateIAP(_products);
     }
-    
+
     // a selector callback
     void onShowAds(cocos2d::Ref* sender)
     {
@@ -328,47 +328,47 @@ public:
     {
         auto btn = static_cast<Node*>(sender);
         Product* p = (Product*)btn->getUserData();
-        
+
         CCLOG("Start IAP %s", p->name.c_str());
         IAP::purchase(p->name);
     }
-    
+
 private:
-    
+
     void updateIAP(const std::vector<sdkbox::Product>& products)
     {
-        
+
     }
-    
+
     virtual void onSuccess(sdkbox::Product const& p) override
     {
     }
-    
+
     virtual void onFailure(sdkbox::Product const& p, const std::string &msg) override
     {
-        
+
     }
-    
+
     virtual void onCanceled(sdkbox::Product const& p) override
     {
-        
+
     }
-    
+
     virtual void onRestored(sdkbox::Product const& p) override
     {
-        
+
     }
-    
+
     virtual void onProductRequestSuccess(std::vector<sdkbox::Product> const &products) override
     {
-        
+
     }
-    
+
     virtual void onProductRequestFailure(const std::string &msg) override
     {
-        
+
     }
-    
+
     std::vector<sdkbox::Product> _products;
 };
 
@@ -377,7 +377,7 @@ void MyPluginsMgr::initIAP()
     IAP::init();
     IAP::setDebug(true);
     IAP::setListener(new IAPListenerDemo);
-    
+
     //
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventIAP1, [](EventCustom *) {
@@ -394,16 +394,16 @@ void MyPluginsMgr::initIAP()
 void MyPluginsMgr::initKochava()
 {
     sdkbox::PluginKochava::init();
-    
+
     sdkbox::PluginKochava::trackEvent("KochavaCustomEvent", "HelloWorld");
-    
+
     auto callback = [](const std::map<std::string, std::string>* attribution)
     {
         if (attribution)
         {
             typedef std::map<std::string, std::string> map_type;
             const map_type& m = *attribution;
-            
+
             for (map_type::const_iterator it = m.begin(); it != m.end(); ++it)
             {
                 const map_type::value_type& kv = *it;
@@ -411,9 +411,9 @@ void MyPluginsMgr::initKochava()
             }
         }
     };
-    
+
     sdkbox::PluginKochava::setAttributionCallback(callback);
-    
+
     //
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventKochava1, [](EventCustom *) {
@@ -454,7 +454,7 @@ static void testTuneMeasureEvent()
     {
         PluginTune::measureEventName("purchase");
         PluginTune::measureEventId(1122334455);
-        
+
         TuneEvent event;
         event.eventName = "purchase2";
         event.refId     = "RJ1357";
@@ -464,13 +464,13 @@ static void testTuneMeasureEvent()
         event.quantity = 3;
         PluginTune::measureEvent(event);
     }
-    
+
     {
         TuneEventItem item1;
         item1.item = "ball1";
         item1.unitPrice = 3.99;
         item1.quantity = 2;
-        
+
         TuneEventItem item2;
         item2.item = "ball2";
         item2.unitPrice = 9.99;
@@ -478,14 +478,14 @@ static void testTuneMeasureEvent()
         item2.revenue = 9.99;
         item2.attribute1 = "red";
         item2.attribute2 = "inflatable";
-        
-        
+
+
         PluginTune::setUserId("US13579");
         PluginTune::setFacebookUserId("321321321321");
         PluginTune::setGoogleUserId("11223344556677");
         PluginTune::setTwitterUserId("1357924680");
         PluginTune::setLatitude(9.142276, -79.724052, 15);
-        
+
         TuneEvent event;
         event.eventName = "purchase";
         event.eventItems.push_back(item1);
@@ -493,11 +493,11 @@ static void testTuneMeasureEvent()
         event.refId = "ref13571";
         event.revenue = 13.97;
         event.currencyCode = "USD";
-        
+
         PluginTune::measureEvent(event);
-        
+
     }
-    
+
     // https://developers.mobileapptracking.com/settings-for-pre-loaded-apps/
     {
         TunePreloadData pd;
@@ -522,7 +522,7 @@ static void testTuneMeasureEvent()
         pd.advertiserSubKeyword = "ad_sub_keyword";
         pd.advertiserSubPublisher = "ad_sub_publisher";
         pd.advertiserSubSite = "ad_sub_site";
-        
+
         PluginTune::setPreloadData(pd);
         PluginTune::measureSession();
     }
@@ -534,7 +534,7 @@ void MyPluginsMgr::initTune()
 //    PluginTune::setPackageName("your.package.name");
     PluginTune::setListener(new TuneListenerDemo);
     PluginTune::measureSession();
-    
+
 //    PluginTune::setAllowDuplicateRequests(true);
     PluginTune::checkForDeferredDeeplinkWithTimeout(60);
     PluginTune::automateIapEventMeasurement(true);
@@ -550,8 +550,8 @@ void MyPluginsMgr::initTune()
     PluginTune::setLatitude(9.142276, -79.724052, 15);
     PluginTune::setAppAdTracking(true);
     PluginTune::measureEventName("login");
-    
-    
+
+
     //
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventTune1, [](EventCustom *) {
@@ -595,7 +595,7 @@ void MyPluginsMgr::initVungle()
     sdkbox::PluginVungle::init();
     sdkbox::PluginVungle::setDebug(true);
     sdkbox::PluginVungle::setListener(new VungleListenerDemo);
-    
+
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     eventDispatcher->addCustomEventListener(kMenuEventVungle1, [](EventCustom *) {
         CCLOG("show video");
@@ -629,15 +629,12 @@ bool MyPluginsMgr::init()
    initFlurry();
    initGoogleAnalytics();
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-   // FIXME: crash with android
    initIAP();
-#endif
 
    initKochava();
    initTune();
    initVungle();
-    
+
     return true;
 }
 
