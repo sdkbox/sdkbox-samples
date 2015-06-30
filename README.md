@@ -1,7 +1,7 @@
 # Welcome to sdkbox sampels
 
 run `git submodule update --init` first
- 
+
 ## how to run cpp
 
 ```
@@ -20,6 +20,10 @@ in `frameworks/runtime-src/Classes/SdkboxStarterKit.h`
 
 - `cocos run -p ios` or `cocos run -p android`
 
+> iOS:
+> open frameworks/runtime-src/proj.ios_mac/sdkbox-starter-kit.xcodeproj/, select `sdkbox-starter-kit iOS js` target
+> compile and run
+
 ## how to run lua
 
 ```
@@ -28,6 +32,10 @@ in `frameworks/runtime-src/Classes/SdkboxStarterKit.h`
 in `frameworks/runtime-src/Classes/SdkboxStarterKit.h`
 
 - `cocos run -p ios` or `cocos run -p android`
+
+> iOS:
+> open frameworks/runtime-src/proj.ios_mac/sdkbox-starter-kit.xcodeproj/, select `sdkbox-starter-kit iOS lua` target
+> compile and run
 
 ## where are the source code for cpp
 

@@ -8,6 +8,218 @@
 
 /* Begin PBXBuildFile section */
 		132A415C850910405C9D8B6C /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8343929314773AE1443CD9 /* libcocos2d iOS.a */; };
+		195587C91B3EEDE600C9E27A /* PluginFlurryAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C321B393819008537E4 /* PluginFlurryAnalyticsLua.cpp */; };
+		195587CA1B3EEDE600C9E27A /* PluginChartboostLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C301B393819008537E4 /* PluginChartboostLuaHelper.cpp */; };
+		195587CB1B3EEDE600C9E27A /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4ABB17EBB2AB00697056 /* RootViewController.mm */; };
+		195587CC1B3EEDE600C9E27A /* PluginVungleJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C241B393819008537E4 /* PluginVungleJSHelper.cpp */; };
+		195587CD1B3EEDE600C9E27A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4545215156E28EF00887EB5 /* AppDelegate.cpp */; };
+		195587CE1B3EEDE600C9E27A /* PluginChartboostJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */; };
+		195587CF1B3EEDE600C9E27A /* PluginAdColonyJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */; };
+		195587D01B3EEDE600C9E27A /* PluginIAPLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */; };
+		195587D11B3EEDE600C9E27A /* SDKBoxLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */; };
+		195587D21B3EEDE600C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */; };
+		195587D31B3EEDE600C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */; };
+		195587D41B3EEDE600C9E27A /* PluginTuneJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */; };
+		195587D51B3EEDE600C9E27A /* PluginAdColonyJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0A1B393819008537E4 /* PluginAdColonyJS.cpp */; };
+		195587D61B3EEDE600C9E27A /* PluginChartboostJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C101B393819008537E4 /* PluginChartboostJSHelper.cpp */; };
+		195587D71B3EEDE600C9E27A /* SDKBoxJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C261B393819008537E4 /* SDKBoxJSHelper.cpp */; };
+		195587D81B3EEDE600C9E27A /* PluginChartboostLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2E1B393819008537E4 /* PluginChartboostLua.cpp */; };
+		195587D91B3EEDE600C9E27A /* PluginIAPLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C381B393819008537E4 /* PluginIAPLua.cpp */; };
+		195587DA1B3EEDE600C9E27A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5A71B38FDA1004629F2 /* HelloWorldScene.cpp */; };
+		195587DB1B3EEDE600C9E27A /* PluginAdColonyLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2A1B393819008537E4 /* PluginAdColonyLua.cpp */; };
+		195587DC1B3EEDE600C9E27A /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C341B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp */; };
+		195587DD1B3EEDE600C9E27A /* PluginKochavaLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3C1B393819008537E4 /* PluginKochavaLua.cpp */; };
+		195587DE1B3EEDE600C9E27A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AB817EBB2AB00697056 /* main.m */; };
+		195587DF1B3EEDE600C9E27A /* PluginTuneJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1E1B393819008537E4 /* PluginTuneJS.cpp */; };
+		195587E01B3EEDE600C9E27A /* SimpleConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53BFA1B390E73008537E4 /* SimpleConfigParser.cpp */; };
+		195587E11B3EEDE600C9E27A /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AAC17EBB2AB00697056 /* AppController.mm */; };
+		195587E21B3EEDE600C9E27A /* PluginIAPJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C181B393819008537E4 /* PluginIAPJS.cpp */; };
+		195587E31B3EEDE600C9E27A /* PluginIAPJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1A1B393819008537E4 /* PluginIAPJSHelper.cpp */; };
+		195587E41B3EEDE600C9E27A /* PluginGoogleAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C361B393819008537E4 /* PluginGoogleAnalyticsLua.cpp */; };
+		195587E51B3EEDE600C9E27A /* PluginKochavaJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1C1B393819008537E4 /* PluginKochavaJS.cpp */; };
+		195587E61B3EEDE600C9E27A /* PluginVungleLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */; };
+		195587E71B3EEDE600C9E27A /* PluginVungleJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C221B393819008537E4 /* PluginVungleJS.cpp */; };
+		195587E81B3EEDE600C9E27A /* PluginTuneLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */; };
+		195587E91B3EEDE600C9E27A /* PluginVungleLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C421B393819008537E4 /* PluginVungleLua.cpp */; };
+		195587EA1B3EEDE600C9E27A /* PluginGoogleAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C161B393819008537E4 /* PluginGoogleAnalyticsJS.cpp */; };
+		195587EB1B3EEDE600C9E27A /* MyPluginsMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5AB1B38FDA1004629F2 /* MyPluginsMgr.cpp */; };
+		195587EC1B3EEDE600C9E27A /* PluginTuneLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3E1B393819008537E4 /* PluginTuneLua.cpp */; };
+		195587ED1B3EEDE600C9E27A /* PluginFlurryAnalyticsJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C141B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp */; };
+		195587EF1B3EEDE600C9E27A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF31B3900E1008537E4 /* EventKit.framework */; };
+		195587F01B3EEDE600C9E27A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF11B3900DC008537E4 /* EventKitUI.framework */; };
+		195587F11B3EEDE600C9E27A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEF1B3900B2008537E4 /* AdSupport.framework */; };
+		195587F21B3EEDE600C9E27A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BED1B3900AB008537E4 /* CoreTelephony.framework */; };
+		195587F31B3EEDE600C9E27A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEB1B39009D008537E4 /* CoreMedia.framework */; };
+		195587F41B3EEDE600C9E27A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE91B390095008537E4 /* MediaPlayer.framework */; };
+		195587F51B3EEDE600C9E27A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE71B39008F008537E4 /* MessageUI.framework */; };
+		195587F61B3EEDE600C9E27A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE51B390087008537E4 /* Social.framework */; };
+		195587F71B3EEDE600C9E27A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE31B390070008537E4 /* StoreKit.framework */; };
+		195587F81B3EEDE600C9E27A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE11B390069008537E4 /* SystemConfiguration.framework */; };
+		195587F91B3EEDE600C9E27A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDF1B390059008537E4 /* WebKit.framework */; };
+		195587FA1B3EEDE600C9E27A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDD1B390052008537E4 /* libsqlite3.dylib */; };
+		195587FB1B3EEDE600C9E27A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDB1B39004A008537E4 /* CoreData.framework */; };
+		195587FC1B3EEDE600C9E27A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD91B390043008537E4 /* iAd.framework */; };
+		195587FD1B3EEDE600C9E27A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD71B39003C008537E4 /* CoreLocation.framework */; };
+		195587FE1B3EEDE600C9E27A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD51B39001A008537E4 /* MobileCoreServices.framework */; };
+		195587FF1B3EEDE600C9E27A /* PluginIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B71B38FF45004629F2 /* PluginIAP.framework */; };
+		195588001B3EEDE600C9E27A /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BFF1B391434008537E4 /* libluacocos2d iOS.a */; };
+		195588011B3EEDE600C9E27A /* PluginGoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B61B38FF45004629F2 /* PluginGoogleAnalytics.framework */; };
+		195588021B3EEDE600C9E27A /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B21B38FF45004629F2 /* MobileAppTracker.framework */; };
+		195588031B3EEDE600C9E27A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F20C9E11A5BBE85006FB50B /* Security.framework */; };
+		195588041B3EEDE600C9E27A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E718619EB6E7900932425 /* MediaPlayer.framework */; };
+		195588051B3EEDE600C9E27A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B061231803AB9F0077942B /* CoreMotion.framework */; };
+		195588061B3EEDE600C9E27A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B11B38FF45004629F2 /* Chartboost.framework */; };
+		195588071B3EEDE600C9E27A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */; };
+		195588081B3EEDE600C9E27A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D454520B156E22BD00887EB5 /* libz.dylib */; };
+		195588091B3EEDE600C9E27A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275411517C094001B78AA /* QuartzCore.framework */; };
+		1955880A1B3EEDE600C9E27A /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B01B38FF45004629F2 /* AdColony.framework */; };
+		1955880B1B3EEDE600C9E27A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275431517C094001B78AA /* OpenGLES.framework */; };
+		1955880C1B3EEDE600C9E27A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275451517C094001B78AA /* OpenAL.framework */; };
+		1955880D1B3EEDE600C9E27A /* PluginKochava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B81B38FF45004629F2 /* PluginKochava.framework */; };
+		1955880E1B3EEDE600C9E27A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275471517C094001B78AA /* AudioToolbox.framework */; };
+		1955880F1B3EEDE600C9E27A /* PluginAdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B31B38FF45004629F2 /* PluginAdColony.framework */; };
+		195588101B3EEDE600C9E27A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275491517C094001B78AA /* AVFoundation.framework */; };
+		195588111B3EEDE600C9E27A /* PluginTune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B91B38FF45004629F2 /* PluginTune.framework */; };
+		195588121B3EEDE600C9E27A /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BC1B38FF45004629F2 /* VungleSDK.framework */; };
+		195588131B3EEDE600C9E27A /* PluginVungle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BA1B38FF45004629F2 /* PluginVungle.framework */; };
+		195588141B3EEDE600C9E27A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754B1517C094001B78AA /* UIKit.framework */; };
+		195588151B3EEDE600C9E27A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754D1517C094001B78AA /* Foundation.framework */; };
+		195588161B3EEDE600C9E27A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754F1517C094001B78AA /* CoreGraphics.framework */; };
+		195588171B3EEDE600C9E27A /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8343929314773AE1443CD9 /* libcocos2d iOS.a */; };
+		195588181B3EEDE600C9E27A /* PluginChartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B41B38FF45004629F2 /* PluginChartboost.framework */; };
+		195588191B3EEDE600C9E27A /* libjscocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */; };
+		1955881A1B3EEDE600C9E27A /* PluginFlurryAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B51B38FF45004629F2 /* PluginFlurryAnalytics.framework */; };
+		1955881B1B3EEDE600C9E27A /* sdkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BB1B38FF45004629F2 /* sdkbox.framework */; };
+		1955881D1B3EEDE600C9E27A /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C091B393819008537E4 /* .keepme */; };
+		1955881E1B3EEDE600C9E27A /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A081B18C9DF05005C6854 /* project.json */; };
+		1955881F1B3EEDE600C9E27A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF21418C9DB5900FB0E1C /* main.js */; };
+		195588201B3EEDE600C9E27A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAE17EBB2AB00697056 /* Default.png */; };
+		195588211B3EEDE600C9E27A /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C161923467600B808A4 /* config.json */; };
+		195588221B3EEDE600C9E27A /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731817ECDF7A00D62437 /* Icon-80.png */; };
+		195588231B3EEDE600C9E27A /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731917ECDF7A00D62437 /* Icon-100.png */; };
+		195588241B3EEDE600C9E27A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB117EBB2AB00697056 /* Icon-72.png */; };
+		195588251B3EEDE600C9E27A /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB017EBB2AB00697056 /* Icon-57.png */; };
+		195588261B3EEDE600C9E27A /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731417ECDF7A00D62437 /* Icon-29.png */; };
+		195588271B3EEDE600C9E27A /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03780EA18BEE0E400FE4F13 /* src */; };
+		195588281B3EEDE600C9E27A /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB617EBB2AB00697056 /* Icon-152.png */; };
+		195588291B3EEDE600C9E27A /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C291B393819008537E4 /* .keepme */; };
+		1955882A1B3EEDE600C9E27A /* res in Resources */ = {isa = PBXBuildFile; fileRef = C0799CB518BAE62000E9C828 /* res */; };
+		1955882B1B3EEDE600C9E27A /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB517EBB2AB00697056 /* Icon-144.png */; };
+		1955882C1B3EEDE600C9E27A /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB317EBB2AB00697056 /* Icon-114.png */; };
+		1955882D1B3EEDE600C9E27A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAD17EBB2AB00697056 /* Default-568h@2x.png */; };
+		1955882E1B3EEDE600C9E27A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAF17EBB2AB00697056 /* Default@2x.png */; };
+		1955882F1B3EEDE600C9E27A /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB217EBB2AB00697056 /* Icon-76.png */; };
+		195588301B3EEDE600C9E27A /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731517ECDF7A00D62437 /* Icon-40.png */; };
+		195588311B3EEDE600C9E27A /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731617ECDF7A00D62437 /* Icon-50.png */; };
+		195588321B3EEDE600C9E27A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB417EBB2AB00697056 /* Icon-120.png */; };
+		195588331B3EEDE600C9E27A /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731717ECDF7A00D62437 /* Icon-58.png */; };
+		195588341B3EEDE600C9E27A /* script in Resources */ = {isa = PBXBuildFile; fileRef = 3AF548079E4DCC8ABB162091 /* script */; };
+		1955883D1B3EEDFE00C9E27A /* PluginFlurryAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C321B393819008537E4 /* PluginFlurryAnalyticsLua.cpp */; };
+		1955883E1B3EEDFE00C9E27A /* PluginChartboostLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C301B393819008537E4 /* PluginChartboostLuaHelper.cpp */; };
+		1955883F1B3EEDFE00C9E27A /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4ABB17EBB2AB00697056 /* RootViewController.mm */; };
+		195588401B3EEDFE00C9E27A /* PluginVungleJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C241B393819008537E4 /* PluginVungleJSHelper.cpp */; };
+		195588411B3EEDFE00C9E27A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4545215156E28EF00887EB5 /* AppDelegate.cpp */; };
+		195588421B3EEDFE00C9E27A /* PluginChartboostJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */; };
+		195588431B3EEDFE00C9E27A /* PluginAdColonyJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */; };
+		195588441B3EEDFE00C9E27A /* PluginIAPLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */; };
+		195588451B3EEDFE00C9E27A /* SDKBoxLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */; };
+		195588461B3EEDFE00C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */; };
+		195588471B3EEDFE00C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */; };
+		195588481B3EEDFE00C9E27A /* PluginTuneJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */; };
+		195588491B3EEDFE00C9E27A /* PluginAdColonyJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0A1B393819008537E4 /* PluginAdColonyJS.cpp */; };
+		1955884A1B3EEDFE00C9E27A /* PluginChartboostJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C101B393819008537E4 /* PluginChartboostJSHelper.cpp */; };
+		1955884B1B3EEDFE00C9E27A /* SDKBoxJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C261B393819008537E4 /* SDKBoxJSHelper.cpp */; };
+		1955884C1B3EEDFE00C9E27A /* PluginChartboostLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2E1B393819008537E4 /* PluginChartboostLua.cpp */; };
+		1955884D1B3EEDFE00C9E27A /* PluginIAPLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C381B393819008537E4 /* PluginIAPLua.cpp */; };
+		1955884E1B3EEDFE00C9E27A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5A71B38FDA1004629F2 /* HelloWorldScene.cpp */; };
+		1955884F1B3EEDFE00C9E27A /* PluginAdColonyLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2A1B393819008537E4 /* PluginAdColonyLua.cpp */; };
+		195588501B3EEDFE00C9E27A /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C341B393819008537E4 /* PluginFlurryAnalyticsLuaHelper.cpp */; };
+		195588511B3EEDFE00C9E27A /* PluginKochavaLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3C1B393819008537E4 /* PluginKochavaLua.cpp */; };
+		195588521B3EEDFE00C9E27A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AB817EBB2AB00697056 /* main.m */; };
+		195588531B3EEDFE00C9E27A /* PluginTuneJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1E1B393819008537E4 /* PluginTuneJS.cpp */; };
+		195588541B3EEDFE00C9E27A /* SimpleConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53BFA1B390E73008537E4 /* SimpleConfigParser.cpp */; };
+		195588551B3EEDFE00C9E27A /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 509D4AAC17EBB2AB00697056 /* AppController.mm */; };
+		195588561B3EEDFE00C9E27A /* PluginIAPJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C181B393819008537E4 /* PluginIAPJS.cpp */; };
+		195588571B3EEDFE00C9E27A /* PluginIAPJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1A1B393819008537E4 /* PluginIAPJSHelper.cpp */; };
+		195588581B3EEDFE00C9E27A /* PluginGoogleAnalyticsLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C361B393819008537E4 /* PluginGoogleAnalyticsLua.cpp */; };
+		195588591B3EEDFE00C9E27A /* PluginKochavaJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C1C1B393819008537E4 /* PluginKochavaJS.cpp */; };
+		1955885A1B3EEDFE00C9E27A /* PluginVungleLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */; };
+		1955885B1B3EEDFE00C9E27A /* PluginVungleJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C221B393819008537E4 /* PluginVungleJS.cpp */; };
+		1955885C1B3EEDFE00C9E27A /* PluginTuneLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */; };
+		1955885D1B3EEDFE00C9E27A /* PluginVungleLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C421B393819008537E4 /* PluginVungleLua.cpp */; };
+		1955885E1B3EEDFE00C9E27A /* PluginGoogleAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C161B393819008537E4 /* PluginGoogleAnalyticsJS.cpp */; };
+		1955885F1B3EEDFE00C9E27A /* MyPluginsMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1F5AB1B38FDA1004629F2 /* MyPluginsMgr.cpp */; };
+		195588601B3EEDFE00C9E27A /* PluginTuneLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3E1B393819008537E4 /* PluginTuneLua.cpp */; };
+		195588611B3EEDFE00C9E27A /* PluginFlurryAnalyticsJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C141B393819008537E4 /* PluginFlurryAnalyticsJSHelper.cpp */; };
+		195588631B3EEDFE00C9E27A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF31B3900E1008537E4 /* EventKit.framework */; };
+		195588641B3EEDFE00C9E27A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BF11B3900DC008537E4 /* EventKitUI.framework */; };
+		195588651B3EEDFE00C9E27A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEF1B3900B2008537E4 /* AdSupport.framework */; };
+		195588661B3EEDFE00C9E27A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BED1B3900AB008537E4 /* CoreTelephony.framework */; };
+		195588671B3EEDFE00C9E27A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BEB1B39009D008537E4 /* CoreMedia.framework */; };
+		195588681B3EEDFE00C9E27A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE91B390095008537E4 /* MediaPlayer.framework */; };
+		195588691B3EEDFE00C9E27A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE71B39008F008537E4 /* MessageUI.framework */; };
+		1955886A1B3EEDFE00C9E27A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE51B390087008537E4 /* Social.framework */; };
+		1955886B1B3EEDFE00C9E27A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE31B390070008537E4 /* StoreKit.framework */; };
+		1955886C1B3EEDFE00C9E27A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BE11B390069008537E4 /* SystemConfiguration.framework */; };
+		1955886D1B3EEDFE00C9E27A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDF1B390059008537E4 /* WebKit.framework */; };
+		1955886E1B3EEDFE00C9E27A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDD1B390052008537E4 /* libsqlite3.dylib */; };
+		1955886F1B3EEDFE00C9E27A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BDB1B39004A008537E4 /* CoreData.framework */; };
+		195588701B3EEDFE00C9E27A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD91B390043008537E4 /* iAd.framework */; };
+		195588711B3EEDFE00C9E27A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD71B39003C008537E4 /* CoreLocation.framework */; };
+		195588721B3EEDFE00C9E27A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BD51B39001A008537E4 /* MobileCoreServices.framework */; };
+		195588731B3EEDFE00C9E27A /* PluginIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B71B38FF45004629F2 /* PluginIAP.framework */; };
+		195588741B3EEDFE00C9E27A /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF53BFF1B391434008537E4 /* libluacocos2d iOS.a */; };
+		195588751B3EEDFE00C9E27A /* PluginGoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B61B38FF45004629F2 /* PluginGoogleAnalytics.framework */; };
+		195588761B3EEDFE00C9E27A /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B21B38FF45004629F2 /* MobileAppTracker.framework */; };
+		195588771B3EEDFE00C9E27A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F20C9E11A5BBE85006FB50B /* Security.framework */; };
+		195588781B3EEDFE00C9E27A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E718619EB6E7900932425 /* MediaPlayer.framework */; };
+		195588791B3EEDFE00C9E27A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B061231803AB9F0077942B /* CoreMotion.framework */; };
+		1955887A1B3EEDFE00C9E27A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B11B38FF45004629F2 /* Chartboost.framework */; };
+		1955887B1B3EEDFE00C9E27A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */; };
+		1955887C1B3EEDFE00C9E27A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D454520B156E22BD00887EB5 /* libz.dylib */; };
+		1955887D1B3EEDFE00C9E27A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275411517C094001B78AA /* QuartzCore.framework */; };
+		1955887E1B3EEDFE00C9E27A /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B01B38FF45004629F2 /* AdColony.framework */; };
+		1955887F1B3EEDFE00C9E27A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275431517C094001B78AA /* OpenGLES.framework */; };
+		195588801B3EEDFE00C9E27A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275451517C094001B78AA /* OpenAL.framework */; };
+		195588811B3EEDFE00C9E27A /* PluginKochava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B81B38FF45004629F2 /* PluginKochava.framework */; };
+		195588821B3EEDFE00C9E27A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275471517C094001B78AA /* AudioToolbox.framework */; };
+		195588831B3EEDFE00C9E27A /* PluginAdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B31B38FF45004629F2 /* PluginAdColony.framework */; };
+		195588841B3EEDFE00C9E27A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275491517C094001B78AA /* AVFoundation.framework */; };
+		195588851B3EEDFE00C9E27A /* PluginTune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B91B38FF45004629F2 /* PluginTune.framework */; };
+		195588861B3EEDFE00C9E27A /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BC1B38FF45004629F2 /* VungleSDK.framework */; };
+		195588871B3EEDFE00C9E27A /* PluginVungle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BA1B38FF45004629F2 /* PluginVungle.framework */; };
+		195588881B3EEDFE00C9E27A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754B1517C094001B78AA /* UIKit.framework */; };
+		195588891B3EEDFE00C9E27A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754D1517C094001B78AA /* Foundation.framework */; };
+		1955888A1B3EEDFE00C9E27A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A922754F1517C094001B78AA /* CoreGraphics.framework */; };
+		1955888B1B3EEDFE00C9E27A /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8343929314773AE1443CD9 /* libcocos2d iOS.a */; };
+		1955888C1B3EEDFE00C9E27A /* PluginChartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B41B38FF45004629F2 /* PluginChartboost.framework */; };
+		1955888D1B3EEDFE00C9E27A /* libjscocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */; };
+		1955888E1B3EEDFE00C9E27A /* PluginFlurryAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5B51B38FF45004629F2 /* PluginFlurryAnalytics.framework */; };
+		1955888F1B3EEDFE00C9E27A /* sdkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1F5BB1B38FF45004629F2 /* sdkbox.framework */; };
+		195588911B3EEDFE00C9E27A /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C091B393819008537E4 /* .keepme */; };
+		195588921B3EEDFE00C9E27A /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A081B18C9DF05005C6854 /* project.json */; };
+		195588931B3EEDFE00C9E27A /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF21418C9DB5900FB0E1C /* main.js */; };
+		195588941B3EEDFE00C9E27A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAE17EBB2AB00697056 /* Default.png */; };
+		195588951B3EEDFE00C9E27A /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C161923467600B808A4 /* config.json */; };
+		195588961B3EEDFE00C9E27A /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731817ECDF7A00D62437 /* Icon-80.png */; };
+		195588971B3EEDFE00C9E27A /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731917ECDF7A00D62437 /* Icon-100.png */; };
+		195588981B3EEDFE00C9E27A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB117EBB2AB00697056 /* Icon-72.png */; };
+		195588991B3EEDFE00C9E27A /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB017EBB2AB00697056 /* Icon-57.png */; };
+		1955889A1B3EEDFE00C9E27A /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731417ECDF7A00D62437 /* Icon-29.png */; };
+		1955889B1B3EEDFE00C9E27A /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03780EA18BEE0E400FE4F13 /* src */; };
+		1955889C1B3EEDFE00C9E27A /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB617EBB2AB00697056 /* Icon-152.png */; };
+		1955889D1B3EEDFE00C9E27A /* .keepme in Resources */ = {isa = PBXBuildFile; fileRef = 9FF53C291B393819008537E4 /* .keepme */; };
+		1955889E1B3EEDFE00C9E27A /* res in Resources */ = {isa = PBXBuildFile; fileRef = C0799CB518BAE62000E9C828 /* res */; };
+		1955889F1B3EEDFE00C9E27A /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB517EBB2AB00697056 /* Icon-144.png */; };
+		195588A01B3EEDFE00C9E27A /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB317EBB2AB00697056 /* Icon-114.png */; };
+		195588A11B3EEDFE00C9E27A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAD17EBB2AB00697056 /* Default-568h@2x.png */; };
+		195588A21B3EEDFE00C9E27A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AAF17EBB2AB00697056 /* Default@2x.png */; };
+		195588A31B3EEDFE00C9E27A /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB217EBB2AB00697056 /* Icon-76.png */; };
+		195588A41B3EEDFE00C9E27A /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731517ECDF7A00D62437 /* Icon-40.png */; };
+		195588A51B3EEDFE00C9E27A /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731617ECDF7A00D62437 /* Icon-50.png */; };
+		195588A61B3EEDFE00C9E27A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 509D4AB417EBB2AB00697056 /* Icon-120.png */; };
+		195588A71B3EEDFE00C9E27A /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 5091731717ECDF7A00D62437 /* Icon-58.png */; };
+		195588A81B3EEDFE00C9E27A /* script in Resources */ = {isa = PBXBuildFile; fileRef = 3AF548079E4DCC8ABB162091 /* script */; };
 		1A82F5FB169AC92500C4B13A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */; };
 		1AD7E0A818C9DB93004817A6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF21418C9DB5900FB0E1C /* main.js */; };
 		1AE159EC18C9DF3600FCA372 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A081B18C9DF05005C6854 /* project.json */; };
@@ -116,6 +328,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS Lua copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A081B18C9DF05005C6854 /* project.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = project.json; path = ../../../project.json; sourceTree = "<group>"; };
 		1A6BF21418C9DB5900FB0E1C /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../../../main.js; sourceTree = "<group>"; };
 		1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -273,6 +487,110 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		195587EE1B3EEDE600C9E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195587EF1B3EEDE600C9E27A /* EventKit.framework in Frameworks */,
+				195587F01B3EEDE600C9E27A /* EventKitUI.framework in Frameworks */,
+				195587F11B3EEDE600C9E27A /* AdSupport.framework in Frameworks */,
+				195587F21B3EEDE600C9E27A /* CoreTelephony.framework in Frameworks */,
+				195587F31B3EEDE600C9E27A /* CoreMedia.framework in Frameworks */,
+				195587F41B3EEDE600C9E27A /* MediaPlayer.framework in Frameworks */,
+				195587F51B3EEDE600C9E27A /* MessageUI.framework in Frameworks */,
+				195587F61B3EEDE600C9E27A /* Social.framework in Frameworks */,
+				195587F71B3EEDE600C9E27A /* StoreKit.framework in Frameworks */,
+				195587F81B3EEDE600C9E27A /* SystemConfiguration.framework in Frameworks */,
+				195587F91B3EEDE600C9E27A /* WebKit.framework in Frameworks */,
+				195587FA1B3EEDE600C9E27A /* libsqlite3.dylib in Frameworks */,
+				195587FB1B3EEDE600C9E27A /* CoreData.framework in Frameworks */,
+				195587FC1B3EEDE600C9E27A /* iAd.framework in Frameworks */,
+				195587FD1B3EEDE600C9E27A /* CoreLocation.framework in Frameworks */,
+				195587FE1B3EEDE600C9E27A /* MobileCoreServices.framework in Frameworks */,
+				195587FF1B3EEDE600C9E27A /* PluginIAP.framework in Frameworks */,
+				195588001B3EEDE600C9E27A /* libluacocos2d iOS.a in Frameworks */,
+				195588011B3EEDE600C9E27A /* PluginGoogleAnalytics.framework in Frameworks */,
+				195588021B3EEDE600C9E27A /* MobileAppTracker.framework in Frameworks */,
+				195588031B3EEDE600C9E27A /* Security.framework in Frameworks */,
+				195588041B3EEDE600C9E27A /* MediaPlayer.framework in Frameworks */,
+				195588051B3EEDE600C9E27A /* CoreMotion.framework in Frameworks */,
+				195588061B3EEDE600C9E27A /* Chartboost.framework in Frameworks */,
+				195588071B3EEDE600C9E27A /* libsqlite3.dylib in Frameworks */,
+				195588081B3EEDE600C9E27A /* libz.dylib in Frameworks */,
+				195588091B3EEDE600C9E27A /* QuartzCore.framework in Frameworks */,
+				1955880A1B3EEDE600C9E27A /* AdColony.framework in Frameworks */,
+				1955880B1B3EEDE600C9E27A /* OpenGLES.framework in Frameworks */,
+				1955880C1B3EEDE600C9E27A /* OpenAL.framework in Frameworks */,
+				1955880D1B3EEDE600C9E27A /* PluginKochava.framework in Frameworks */,
+				1955880E1B3EEDE600C9E27A /* AudioToolbox.framework in Frameworks */,
+				1955880F1B3EEDE600C9E27A /* PluginAdColony.framework in Frameworks */,
+				195588101B3EEDE600C9E27A /* AVFoundation.framework in Frameworks */,
+				195588111B3EEDE600C9E27A /* PluginTune.framework in Frameworks */,
+				195588121B3EEDE600C9E27A /* VungleSDK.framework in Frameworks */,
+				195588131B3EEDE600C9E27A /* PluginVungle.framework in Frameworks */,
+				195588141B3EEDE600C9E27A /* UIKit.framework in Frameworks */,
+				195588151B3EEDE600C9E27A /* Foundation.framework in Frameworks */,
+				195588161B3EEDE600C9E27A /* CoreGraphics.framework in Frameworks */,
+				195588171B3EEDE600C9E27A /* libcocos2d iOS.a in Frameworks */,
+				195588181B3EEDE600C9E27A /* PluginChartboost.framework in Frameworks */,
+				195588191B3EEDE600C9E27A /* libjscocos2d iOS.a in Frameworks */,
+				1955881A1B3EEDE600C9E27A /* PluginFlurryAnalytics.framework in Frameworks */,
+				1955881B1B3EEDE600C9E27A /* sdkbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195588621B3EEDFE00C9E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195588631B3EEDFE00C9E27A /* EventKit.framework in Frameworks */,
+				195588641B3EEDFE00C9E27A /* EventKitUI.framework in Frameworks */,
+				195588651B3EEDFE00C9E27A /* AdSupport.framework in Frameworks */,
+				195588661B3EEDFE00C9E27A /* CoreTelephony.framework in Frameworks */,
+				195588671B3EEDFE00C9E27A /* CoreMedia.framework in Frameworks */,
+				195588681B3EEDFE00C9E27A /* MediaPlayer.framework in Frameworks */,
+				195588691B3EEDFE00C9E27A /* MessageUI.framework in Frameworks */,
+				1955886A1B3EEDFE00C9E27A /* Social.framework in Frameworks */,
+				1955886B1B3EEDFE00C9E27A /* StoreKit.framework in Frameworks */,
+				1955886C1B3EEDFE00C9E27A /* SystemConfiguration.framework in Frameworks */,
+				1955886D1B3EEDFE00C9E27A /* WebKit.framework in Frameworks */,
+				1955886E1B3EEDFE00C9E27A /* libsqlite3.dylib in Frameworks */,
+				1955886F1B3EEDFE00C9E27A /* CoreData.framework in Frameworks */,
+				195588701B3EEDFE00C9E27A /* iAd.framework in Frameworks */,
+				195588711B3EEDFE00C9E27A /* CoreLocation.framework in Frameworks */,
+				195588721B3EEDFE00C9E27A /* MobileCoreServices.framework in Frameworks */,
+				195588731B3EEDFE00C9E27A /* PluginIAP.framework in Frameworks */,
+				195588741B3EEDFE00C9E27A /* libluacocos2d iOS.a in Frameworks */,
+				195588751B3EEDFE00C9E27A /* PluginGoogleAnalytics.framework in Frameworks */,
+				195588761B3EEDFE00C9E27A /* MobileAppTracker.framework in Frameworks */,
+				195588771B3EEDFE00C9E27A /* Security.framework in Frameworks */,
+				195588781B3EEDFE00C9E27A /* MediaPlayer.framework in Frameworks */,
+				195588791B3EEDFE00C9E27A /* CoreMotion.framework in Frameworks */,
+				1955887A1B3EEDFE00C9E27A /* Chartboost.framework in Frameworks */,
+				1955887B1B3EEDFE00C9E27A /* libsqlite3.dylib in Frameworks */,
+				1955887C1B3EEDFE00C9E27A /* libz.dylib in Frameworks */,
+				1955887D1B3EEDFE00C9E27A /* QuartzCore.framework in Frameworks */,
+				1955887E1B3EEDFE00C9E27A /* AdColony.framework in Frameworks */,
+				1955887F1B3EEDFE00C9E27A /* OpenGLES.framework in Frameworks */,
+				195588801B3EEDFE00C9E27A /* OpenAL.framework in Frameworks */,
+				195588811B3EEDFE00C9E27A /* PluginKochava.framework in Frameworks */,
+				195588821B3EEDFE00C9E27A /* AudioToolbox.framework in Frameworks */,
+				195588831B3EEDFE00C9E27A /* PluginAdColony.framework in Frameworks */,
+				195588841B3EEDFE00C9E27A /* AVFoundation.framework in Frameworks */,
+				195588851B3EEDFE00C9E27A /* PluginTune.framework in Frameworks */,
+				195588861B3EEDFE00C9E27A /* VungleSDK.framework in Frameworks */,
+				195588871B3EEDFE00C9E27A /* PluginVungle.framework in Frameworks */,
+				195588881B3EEDFE00C9E27A /* UIKit.framework in Frameworks */,
+				195588891B3EEDFE00C9E27A /* Foundation.framework in Frameworks */,
+				1955888A1B3EEDFE00C9E27A /* CoreGraphics.framework in Frameworks */,
+				1955888B1B3EEDFE00C9E27A /* libcocos2d iOS.a in Frameworks */,
+				1955888C1B3EEDFE00C9E27A /* PluginChartboost.framework in Frameworks */,
+				1955888D1B3EEDFE00C9E27A /* libjscocos2d iOS.a in Frameworks */,
+				1955888E1B3EEDFE00C9E27A /* PluginFlurryAnalytics.framework in Frameworks */,
+				1955888F1B3EEDFE00C9E27A /* sdkbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A922753A1517C094001B78AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,6 +780,8 @@
 			isa = PBXGroup;
 			children = (
 				A922753D1517C094001B78AA /* sdkbox-starter-kit iOS.app */,
+				195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */,
+				195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -579,6 +899,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		195587C71B3EEDE600C9E27A /* sdkbox-starter-kit iOS lua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195588361B3EEDE600C9E27A /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS lua" */;
+			buildPhases = (
+				195587C81B3EEDE600C9E27A /* Sources */,
+				195587EE1B3EEDE600C9E27A /* Frameworks */,
+				1955881C1B3EEDE600C9E27A /* Resources */,
+				195588351B3EEDE600C9E27A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sdkbox-starter-kit iOS lua";
+			productName = "sdkbox-starter-kit";
+			productReference = 195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1955883B1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Js */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195588AA1B3EEDFE00C9E27A /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS Js" */;
+			buildPhases = (
+				1955883C1B3EEDFE00C9E27A /* Sources */,
+				195588621B3EEDFE00C9E27A /* Frameworks */,
+				195588901B3EEDFE00C9E27A /* Resources */,
+				195588A91B3EEDFE00C9E27A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sdkbox-starter-kit iOS Js";
+			productName = "sdkbox-starter-kit";
+			productReference = 195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A922753C1517C094001B78AA /* sdkbox-starter-kit iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A92277001517C097001B78AA /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS" */;
@@ -625,11 +981,75 @@
 			projectRoot = "";
 			targets = (
 				A922753C1517C094001B78AA /* sdkbox-starter-kit iOS */,
+				195587C71B3EEDE600C9E27A /* sdkbox-starter-kit iOS lua */,
+				1955883B1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Js */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1955881C1B3EEDE600C9E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1955881D1B3EEDE600C9E27A /* .keepme in Resources */,
+				1955881E1B3EEDE600C9E27A /* project.json in Resources */,
+				1955881F1B3EEDE600C9E27A /* main.js in Resources */,
+				195588201B3EEDE600C9E27A /* Default.png in Resources */,
+				195588211B3EEDE600C9E27A /* config.json in Resources */,
+				195588221B3EEDE600C9E27A /* Icon-80.png in Resources */,
+				195588231B3EEDE600C9E27A /* Icon-100.png in Resources */,
+				195588241B3EEDE600C9E27A /* Icon-72.png in Resources */,
+				195588251B3EEDE600C9E27A /* Icon-57.png in Resources */,
+				195588261B3EEDE600C9E27A /* Icon-29.png in Resources */,
+				195588271B3EEDE600C9E27A /* src in Resources */,
+				195588281B3EEDE600C9E27A /* Icon-152.png in Resources */,
+				195588291B3EEDE600C9E27A /* .keepme in Resources */,
+				1955882A1B3EEDE600C9E27A /* res in Resources */,
+				1955882B1B3EEDE600C9E27A /* Icon-144.png in Resources */,
+				1955882C1B3EEDE600C9E27A /* Icon-114.png in Resources */,
+				1955882D1B3EEDE600C9E27A /* Default-568h@2x.png in Resources */,
+				1955882E1B3EEDE600C9E27A /* Default@2x.png in Resources */,
+				1955882F1B3EEDE600C9E27A /* Icon-76.png in Resources */,
+				195588301B3EEDE600C9E27A /* Icon-40.png in Resources */,
+				195588311B3EEDE600C9E27A /* Icon-50.png in Resources */,
+				195588321B3EEDE600C9E27A /* Icon-120.png in Resources */,
+				195588331B3EEDE600C9E27A /* Icon-58.png in Resources */,
+				195588341B3EEDE600C9E27A /* script in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195588901B3EEDFE00C9E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195588911B3EEDFE00C9E27A /* .keepme in Resources */,
+				195588921B3EEDFE00C9E27A /* project.json in Resources */,
+				195588931B3EEDFE00C9E27A /* main.js in Resources */,
+				195588941B3EEDFE00C9E27A /* Default.png in Resources */,
+				195588951B3EEDFE00C9E27A /* config.json in Resources */,
+				195588961B3EEDFE00C9E27A /* Icon-80.png in Resources */,
+				195588971B3EEDFE00C9E27A /* Icon-100.png in Resources */,
+				195588981B3EEDFE00C9E27A /* Icon-72.png in Resources */,
+				195588991B3EEDFE00C9E27A /* Icon-57.png in Resources */,
+				1955889A1B3EEDFE00C9E27A /* Icon-29.png in Resources */,
+				1955889B1B3EEDFE00C9E27A /* src in Resources */,
+				1955889C1B3EEDFE00C9E27A /* Icon-152.png in Resources */,
+				1955889D1B3EEDFE00C9E27A /* .keepme in Resources */,
+				1955889E1B3EEDFE00C9E27A /* res in Resources */,
+				1955889F1B3EEDFE00C9E27A /* Icon-144.png in Resources */,
+				195588A01B3EEDFE00C9E27A /* Icon-114.png in Resources */,
+				195588A11B3EEDFE00C9E27A /* Default-568h@2x.png in Resources */,
+				195588A21B3EEDFE00C9E27A /* Default@2x.png in Resources */,
+				195588A31B3EEDFE00C9E27A /* Icon-76.png in Resources */,
+				195588A41B3EEDFE00C9E27A /* Icon-40.png in Resources */,
+				195588A51B3EEDFE00C9E27A /* Icon-50.png in Resources */,
+				195588A61B3EEDFE00C9E27A /* Icon-120.png in Resources */,
+				195588A71B3EEDFE00C9E27A /* Icon-58.png in Resources */,
+				195588A81B3EEDFE00C9E27A /* script in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A922753B1517C094001B78AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,6 +1084,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		195588351B3EEDE600C9E27A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find ${SRCROOT}/../../../src/ -name \"*\" -exec touch -cm {} \\;\nfind ${SRCROOT}/../../../res/ -name \"*\" -exec touch -cm {} \\;";
+		};
+		195588A91B3EEDFE00C9E27A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find ${SRCROOT}/../../../src/ -name \"*\" -exec touch -cm {} \\;\nfind ${SRCROOT}/../../../res/ -name \"*\" -exec touch -cm {} \\;";
+		};
 		3EC03834196541CD00D72B70 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -680,6 +1126,94 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		195587C81B3EEDE600C9E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195587C91B3EEDE600C9E27A /* PluginFlurryAnalyticsLua.cpp in Sources */,
+				195587CA1B3EEDE600C9E27A /* PluginChartboostLuaHelper.cpp in Sources */,
+				195587CB1B3EEDE600C9E27A /* RootViewController.mm in Sources */,
+				195587CC1B3EEDE600C9E27A /* PluginVungleJSHelper.cpp in Sources */,
+				195587CD1B3EEDE600C9E27A /* AppDelegate.cpp in Sources */,
+				195587CE1B3EEDE600C9E27A /* PluginChartboostJS.cpp in Sources */,
+				195587CF1B3EEDE600C9E27A /* PluginAdColonyJSHelper.cpp in Sources */,
+				195587D01B3EEDE600C9E27A /* PluginIAPLuaHelper.cpp in Sources */,
+				195587D11B3EEDE600C9E27A /* SDKBoxLuaHelper.cpp in Sources */,
+				195587D21B3EEDE600C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */,
+				195587D31B3EEDE600C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */,
+				195587D41B3EEDE600C9E27A /* PluginTuneJSHelper.cpp in Sources */,
+				195587D51B3EEDE600C9E27A /* PluginAdColonyJS.cpp in Sources */,
+				195587D61B3EEDE600C9E27A /* PluginChartboostJSHelper.cpp in Sources */,
+				195587D71B3EEDE600C9E27A /* SDKBoxJSHelper.cpp in Sources */,
+				195587D81B3EEDE600C9E27A /* PluginChartboostLua.cpp in Sources */,
+				195587D91B3EEDE600C9E27A /* PluginIAPLua.cpp in Sources */,
+				195587DA1B3EEDE600C9E27A /* HelloWorldScene.cpp in Sources */,
+				195587DB1B3EEDE600C9E27A /* PluginAdColonyLua.cpp in Sources */,
+				195587DC1B3EEDE600C9E27A /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */,
+				195587DD1B3EEDE600C9E27A /* PluginKochavaLua.cpp in Sources */,
+				195587DE1B3EEDE600C9E27A /* main.m in Sources */,
+				195587DF1B3EEDE600C9E27A /* PluginTuneJS.cpp in Sources */,
+				195587E01B3EEDE600C9E27A /* SimpleConfigParser.cpp in Sources */,
+				195587E11B3EEDE600C9E27A /* AppController.mm in Sources */,
+				195587E21B3EEDE600C9E27A /* PluginIAPJS.cpp in Sources */,
+				195587E31B3EEDE600C9E27A /* PluginIAPJSHelper.cpp in Sources */,
+				195587E41B3EEDE600C9E27A /* PluginGoogleAnalyticsLua.cpp in Sources */,
+				195587E51B3EEDE600C9E27A /* PluginKochavaJS.cpp in Sources */,
+				195587E61B3EEDE600C9E27A /* PluginVungleLuaHelper.cpp in Sources */,
+				195587E71B3EEDE600C9E27A /* PluginVungleJS.cpp in Sources */,
+				195587E81B3EEDE600C9E27A /* PluginTuneLuaHelper.cpp in Sources */,
+				195587E91B3EEDE600C9E27A /* PluginVungleLua.cpp in Sources */,
+				195587EA1B3EEDE600C9E27A /* PluginGoogleAnalyticsJS.cpp in Sources */,
+				195587EB1B3EEDE600C9E27A /* MyPluginsMgr.cpp in Sources */,
+				195587EC1B3EEDE600C9E27A /* PluginTuneLua.cpp in Sources */,
+				195587ED1B3EEDE600C9E27A /* PluginFlurryAnalyticsJSHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1955883C1B3EEDFE00C9E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1955883D1B3EEDFE00C9E27A /* PluginFlurryAnalyticsLua.cpp in Sources */,
+				1955883E1B3EEDFE00C9E27A /* PluginChartboostLuaHelper.cpp in Sources */,
+				1955883F1B3EEDFE00C9E27A /* RootViewController.mm in Sources */,
+				195588401B3EEDFE00C9E27A /* PluginVungleJSHelper.cpp in Sources */,
+				195588411B3EEDFE00C9E27A /* AppDelegate.cpp in Sources */,
+				195588421B3EEDFE00C9E27A /* PluginChartboostJS.cpp in Sources */,
+				195588431B3EEDFE00C9E27A /* PluginAdColonyJSHelper.cpp in Sources */,
+				195588441B3EEDFE00C9E27A /* PluginIAPLuaHelper.cpp in Sources */,
+				195588451B3EEDFE00C9E27A /* SDKBoxLuaHelper.cpp in Sources */,
+				195588461B3EEDFE00C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */,
+				195588471B3EEDFE00C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */,
+				195588481B3EEDFE00C9E27A /* PluginTuneJSHelper.cpp in Sources */,
+				195588491B3EEDFE00C9E27A /* PluginAdColonyJS.cpp in Sources */,
+				1955884A1B3EEDFE00C9E27A /* PluginChartboostJSHelper.cpp in Sources */,
+				1955884B1B3EEDFE00C9E27A /* SDKBoxJSHelper.cpp in Sources */,
+				1955884C1B3EEDFE00C9E27A /* PluginChartboostLua.cpp in Sources */,
+				1955884D1B3EEDFE00C9E27A /* PluginIAPLua.cpp in Sources */,
+				1955884E1B3EEDFE00C9E27A /* HelloWorldScene.cpp in Sources */,
+				1955884F1B3EEDFE00C9E27A /* PluginAdColonyLua.cpp in Sources */,
+				195588501B3EEDFE00C9E27A /* PluginFlurryAnalyticsLuaHelper.cpp in Sources */,
+				195588511B3EEDFE00C9E27A /* PluginKochavaLua.cpp in Sources */,
+				195588521B3EEDFE00C9E27A /* main.m in Sources */,
+				195588531B3EEDFE00C9E27A /* PluginTuneJS.cpp in Sources */,
+				195588541B3EEDFE00C9E27A /* SimpleConfigParser.cpp in Sources */,
+				195588551B3EEDFE00C9E27A /* AppController.mm in Sources */,
+				195588561B3EEDFE00C9E27A /* PluginIAPJS.cpp in Sources */,
+				195588571B3EEDFE00C9E27A /* PluginIAPJSHelper.cpp in Sources */,
+				195588581B3EEDFE00C9E27A /* PluginGoogleAnalyticsLua.cpp in Sources */,
+				195588591B3EEDFE00C9E27A /* PluginKochavaJS.cpp in Sources */,
+				1955885A1B3EEDFE00C9E27A /* PluginVungleLuaHelper.cpp in Sources */,
+				1955885B1B3EEDFE00C9E27A /* PluginVungleJS.cpp in Sources */,
+				1955885C1B3EEDFE00C9E27A /* PluginTuneLuaHelper.cpp in Sources */,
+				1955885D1B3EEDFE00C9E27A /* PluginVungleLua.cpp in Sources */,
+				1955885E1B3EEDFE00C9E27A /* PluginGoogleAnalyticsJS.cpp in Sources */,
+				1955885F1B3EEDFE00C9E27A /* MyPluginsMgr.cpp in Sources */,
+				195588601B3EEDFE00C9E27A /* PluginTuneLua.cpp in Sources */,
+				195588611B3EEDFE00C9E27A /* PluginFlurryAnalyticsJSHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A92275391517C094001B78AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -727,6 +1261,198 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		195588371B3EEDE600C9E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+					"SDKBOX_STARTER_KIT_TYPE=2",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		195588381B3EEDE600C9E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+					"SDKBOX_STARTER_KIT_TYPE=2",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		195588AB1B3EEDFE00C9E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+					"SDKBOX_STARTER_KIT_TYPE=3",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		195588AC1B3EEDFE00C9E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"$(inherited)",
+					"SDKBOX_STARTER_KIT_TYPE=3",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../cocos2d-x-3.6-lib/prebuilt/ios",
+					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-force_load",
+					AdColony.framework/AdColony,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
 		A92276FE1517C097001B78AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -806,6 +1532,14 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -844,6 +1578,14 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -854,6 +1596,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		195588361B3EEDE600C9E27A /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS lua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195588371B3EEDE600C9E27A /* Debug */,
+				195588381B3EEDE600C9E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		195588AA1B3EEDFE00C9E27A /* Build configuration list for PBXNativeTarget "sdkbox-starter-kit iOS Js" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195588AB1B3EEDFE00C9E27A /* Debug */,
+				195588AC1B3EEDFE00C9E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A92275371517C094001B78AA /* Build configuration list for PBXProject "sdkbox-starter-kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
