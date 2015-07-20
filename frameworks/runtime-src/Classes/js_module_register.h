@@ -57,6 +57,14 @@
 #include "jsbindings/PluginVungleJS.hpp"
 #include "jsbindings/PluginVungleJSHelper.h"
 
+//// facebook
+//#include "jsbindings/PluginFacebookJS.hpp"
+//#include "jsbindings/PluginFacebookJSHelper.h"
+//
+//// agecheq
+//#include "jsbindings/PluginAgeCheqJS.hpp"
+//#include "jsbindings/PluginAgeCheqJSHelper.hpp"
+
 USING_NS_CC;
 int js_module_register()
 {
@@ -132,8 +140,15 @@ int js_module_register()
 
     // vungle
     sc->addRegisterCallback(register_all_PluginVungleJS);
-    sc->addRegisterCallback(register_PluginVungelJs_helper);
+    sc->addRegisterCallback(register_PluginVungleJs_helper);
 
+//    // facebook
+//    sc->addRegisterCallback(register_all_PluginFacebookJS);
+//    sc->addRegisterCallback(register_PluginFacebookJs_helper);
+//    
+//    // agecheq
+//    sc->addRegisterCallback(register_all_PluginAgeCheqJS);
+//    sc->addRegisterCallback(register_all_PluginAgeCheqJS_helper);
     return 1;
 }
 

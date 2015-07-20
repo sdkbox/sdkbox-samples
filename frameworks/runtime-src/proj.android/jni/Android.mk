@@ -29,7 +29,7 @@ LOCAL_SRC_FILES += \
 ../../Classes/luabindings/PluginTuneLuaHelper.cpp \
 ../../Classes/luabindings/PluginVungleLua.cpp \
 ../../Classes/luabindings/PluginVungleLuaHelper.cpp \
-../../Classes/luabindings/SDKBoxLuaHelper.cpp 
+../../Classes/luabindings/SDKBoxLuaHelper.cpp
 
 LOCAL_SRC_FILES += \
 ../../Classes/jsbindings/PluginAdColonyJS.cpp \

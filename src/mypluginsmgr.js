@@ -98,11 +98,28 @@ var MyPluginsMgr = {
         // Vungle
         sdkbox.PluginVungle.init();
         sdkbox.PluginVungle.setListener({
-            onVungleCacheAvailable : function() { console.log("onVungleCacheAvailable") },
-            onVungleStarted : function() { console.log("onVungleStarted") },
-            onVungleFinished : function() { console.log("onVungleFinished") },
-            onVungleAdViewed : function(isComplete) { console.log("onVungleAdViewed" + isComplete) }
+            onVungleCacheAvailable: function() { console.log("onVungleCacheAvailable") },
+            onVungleStarted: function() { console.log("onVungleStarted") },
+            onVungleFinished: function() { console.log("onVungleFinished") },
+            onVungleAdViewed: function(isComplete) { console.log("onVungleAdViewed" + isComplete) }
         });
+
+        // // Facebook
+        // sdkbox.PluginFacebook.init();
+        // sdkbox.PluginFacebook.setListener({
+        //     onLogin: function(hasLogon, data) { console.log("onFacebookLogin: " + hasLogon + data); },
+        //     onAPI: function(tag, data) { console.log("onAPI: " + tag + " " + data); },
+        //     onSharedSuccess: function(data) { console.log("onSharedSuccess: " + data); },
+        //     onSharedFailed: function(data) { console.log("onSharedFailed: " + data); },
+        //     onSharedCancel: function() { console.log("onSharedCancel"); }
+        // });
+
+        // // AgeCheq
+        // sdkbox.PluginAgeCheq.init();
+        // sdkbox.PluginAgeCheq.setListener({
+        //     checkResponse: function(a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { console.log("onCheckResponse: " + a0+a1+a2+a3+a4+a5+a6+a7+a8+a9+a10); },
+        //     associateDataResponse: function(a, b) { console.log("onAssociateDataResponse: " + a + " " + b); }
+        // });
     },
     onAdColonyAd1:function(sender) {
         console.log("AdColony: show video");
@@ -168,5 +185,42 @@ var MyPluginsMgr = {
     onVungleReward:function(sender) {
         console.log("Vungle: show reward");
         sdkbox.PluginVungle.show("reward");
+    },
+    onFacebookLogin:function(sender) {
+        console.log("Facebook: login");
+        sdkbox.PluginFacebook.login();
+    },
+    onFacebookCheckStatus:function(sender) {
+        console.log("Facebook: check status");
+        console.log("Facebook: permission list: "+ sdkbox.PluginFacebook.getPermissionList());
+        console.log("Facebook: token: "+ sdkbox.PluginFacebook.getAccessToken());
+        console.log("Facebook: user id: "+ sdkbox.PluginFacebook.getUserID());
+        console.log("Facebook: FBSDK version: "+ sdkbox.PluginFacebook.getSDKVersion());
+    },
+    onFacebookShareLink:function(sender) {
+        console.log("Facebook: share link");
+        var data = {}
+        data.link = "http://www.cocos2d-x.org";
+        data.title = "cocos2d-x";
+        data.text = "The Best Game Engine";
+        data.imageUrl = "http://cocos2d-x.org/images/logo.png";
+        sdkbox.PluginFacebook.share(data);
+    },
+    onFacebookDialogLink:function(sender) {
+        console.log("Facebook: share link");
+        var data = {}
+        data.link = "http://www.cocos2d-x.org";
+        data.title = "cocos2d-x";
+        data.text = "The Best Game Engine";
+        data.imageUrl = "http://cocos2d-x.org/images/logo.png";
+        sdkbox.PluginFacebook.dialog(data);
+    },
+    onFacebookLogout:function(sender) {
+        console.log("Facebook logout");
+        sdkbox.PluginFacebook.logout();
+    },
+    onAgeCheqCheck:function(sender) {
+        console.log("onAgeCheqCheck");
+        sdkbox.PluginAgeCheq.check("1426");
     }
 };

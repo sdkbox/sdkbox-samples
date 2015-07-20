@@ -91,6 +91,25 @@ function MainScene:onCreate()
         :addTo(node)
         :alignItemsHorizontallyWithPadding(20)
 
+    -- -- Facebookend
+    -- y = y - 50
+    -- cc.Menu:create(cc.MenuItemFont:create("Facebook: "),
+    --                cc.MenuItemFont:create("login"):onClicked(mgr.onFacebookLogin),
+    --                cc.MenuItemFont:create("status"):onClicked(mgr.onFacebookCheckStatus),
+    --                cc.MenuItemFont:create("shareLink"):onClicked(mgr.onFacebookShareLink)
+    --                )
+    --     :move(display.cx, y)
+    --     :addTo(node)
+    --     :alignItemsHorizontallyWithPadding(20)
+
+    -- -- AgeCheq
+    -- y = y - 50
+    -- cc.Menu:create(cc.MenuItemFont:create("AgeCheq: "),
+    --                cc.MenuItemFont:create("check"):onClicked(mgr.onAgeCheqCheck)
+    --                )
+    --     :move(display.cx, y)
+    --     :addTo(node)
+    --     :alignItemsHorizontallyWithPadding(20)
 end
 
 return MainScene

@@ -607,6 +607,102 @@ void MyPluginsMgr::initVungle()
     });
 }
 
+#if 0
+/**
+ * Facebook
+ */
+#include "PluginFacebook/PluginFacebook.h"
+class MyFacebookListener : public FacebookListener
+{
+public:
+    MyFacebookListener(){}
+    
+    void onLogin(bool isLogin, const std::string& error)
+    {
+        CCLOG("isLogin: %d, error: %s", isLogin, error.c_str());
+        std::string title = "login ";
+        title.append((isLogin ? "success" : "failed"));
+        MessageBox(error.c_str(), title.c_str());
+    }
+    void onAPI(const std::string& tag, const std::string& jsonData)
+    {
+        CCLOG("onAPI: tag -> %s, json -> %s", tag.c_str(), jsonData.c_str());
+    }
+    void onSharedSuccess(const std::string& message)
+    {
+        CCLOG("onSharedSuccess:%s", message.c_str());
+        
+        MessageBox(message.c_str(), "share success");
+    }
+    void onSharedFailed(const std::string& message)
+    {
+        CCLOG("onSharedFailed:%s", message.c_str());
+        
+        MessageBox(message.c_str(), "share failed");
+    }
+    void onSharedCancel()
+    {
+        CCLOG("onSharedCancel");
+        
+        MessageBox("", "share cancel");
+    }
+};
+void MyPluginsMgr::initFacebook()
+{
+    sdkbox::PluginFacebook::init();
+    sdkbox::PluginFacebook::setListener(new MyFacebookListener);
+}
+
+/**
+ AgeCheq
+ */
+
+#include "PluginAgeCheq/PluginAgeCheq.h"
+class ACListener : public sdkbox::AgeCheqListener {
+public:
+    void checkResponse(const std::string& rtn,
+                       const std::string& rtnmsg,
+                       int apiversion,
+                       int checktype,
+                       bool appauthorized,
+                       bool appblocked,
+                       int parentverified,
+                       bool under13,
+                       bool under18,
+                       bool underdevage,
+                       int trials);
+    
+    void associateDataResponse(const std::string& rtn,
+                               const std::string& rtnmsg);
+    
+};
+
+void ACListener::checkResponse(const std::string &rtn, const std::string &rtnmsg, int apiversion, int checktype, bool appauthorized, bool appblocked, int parentverified, bool under13, bool under18, bool underdevage, int trials) {
+    CCLOG("AgeCheq listener checkResponse rtn:%s, rtnmsg:%s, apiversion:%d, checktype:%d, appauthorized:%d, appblocked:%d, parentverifed:%d, under13:%d, under18:%d, underdevage:%d, trials:%d", rtn.c_str(), rtnmsg.c_str(), apiversion, checktype, appauthorized, appblocked, parentverified, under13, under18, underdevage, trials);
+}
+
+void ACListener::associateDataResponse(const std::string &rtn, const std::string &rtnmsg) {
+    CCLOG("AgeCheq listener associateDataResponse rtn:%s, rtnmsg:%s", rtn.c_str(), rtnmsg.c_str());
+}
+
+void MyPluginsMgr::initAgeCheq()
+{
+    sdkbox::PluginAgeCheq::init();
+    sdkbox::PluginAgeCheq::setListener(new ACListener());
+    
+    auto eventDispatcher = Director::getInstance()->getEventDispatcher();
+    eventDispatcher->addCustomEventListener(kMenuEventAgeCheg1, [](EventCustom *) {
+        CCLOG("check 1426");
+        sdkbox::PluginAgeCheq::check("1426");
+    });
+    eventDispatcher->addCustomEventListener(kMenuEventAgeCheg2, [](EventCustom *) {
+        CCLOG("associateData 1426, ikfill");
+        sdkbox::PluginAgeCheq::associateData("1426", "ikfill");
+    });
+}
+#endif
+
+
 ///////////////////////////////////
 MyPluginsMgr::MyPluginsMgr()
 {
@@ -624,17 +720,18 @@ MyPluginsMgr *MyPluginsMgr::getInstance()
 
 bool MyPluginsMgr::init()
 {
-   initAdColony();
-   initCharBoost();
-   initFlurry();
-   initGoogleAnalytics();
+    initAdColony();
+    initCharBoost();
+    initFlurry();
+    initGoogleAnalytics();
 
-   initIAP();
+    initIAP();
 
-   initKochava();
-   initTune();
-   initVungle();
-
+    initKochava();
+    initTune();
+    initVungle();
+//    initFacebook();
+//    initAgeCheq();
     return true;
 }
 

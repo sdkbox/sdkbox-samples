@@ -39,9 +39,9 @@ bool HelloWorld::init()
     CCMenuItemFont::setFontSize(32);
     CCMenuItemFont::setFontName("arial");
 
-    auto *bg = Sprite::create("HelloWorld.png");
-    bg->setPosition(winSize.width/2,winSize.height/2);
-    addChild(bg);
+//    auto *bg = Sprite::create("HelloWorld.png");
+//    bg->setPosition(winSize.width/2,winSize.height/2);
+//    addChild(bg);
 
     int y = winSize.height;
    // AdColony
@@ -268,6 +268,58 @@ bool HelloWorld::init()
        }
        addChild(menu);
    }
+    
+//    // Facebook
+//    {
+//        y -= 60;
+//        auto *name = MenuItemFont::create("Facebook :", nullptr);
+//        name->setAnchorPoint(cocos2d::Point(0,0.5));
+//
+//        auto menu = Menu::create(name, nullptr);
+//        menu->setAnchorPoint(cocos2d::Point(0,0));
+//        menu->setPosition(200,y);
+//        
+//        int x = 0;
+//        int w = 50;
+//        for (auto *node : menu->getChildren())
+//        {
+//            node->setAnchorPoint(cocos2d::Point(0,0));
+//            node->setPosition(x, 0);
+//            node->setColor(color2);
+//            x += node->getContentSize().width + w;
+//        }
+//        addChild(menu);
+//    }
+//    
+//    // AgeCheq
+//    {
+//        y -= 60;
+//        auto *name = MenuItemFont::create("AgeCheq :", nullptr);
+//        name->setAnchorPoint(cocos2d::Point(0,0.5));
+//        
+//        auto *item = MenuItemFont::create("check", [](Ref*){
+//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAgeCheg1);
+//        });
+//        
+//        auto *item2 = MenuItemFont::create("associateData", [](Ref*){
+//            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(kMenuEventAgeCheg2);
+//        });
+//        
+//        auto menu = Menu::create(name, item, item2, nullptr);
+//        menu->setAnchorPoint(cocos2d::Point(0,0));
+//        menu->setPosition(200,y);
+//        
+//        int x = 0;
+//        int w = 50;
+//        for (auto *node : menu->getChildren())
+//        {
+//            node->setAnchorPoint(cocos2d::Point(0,0));
+//            node->setPosition(x, 0);
+//            node->setColor(color2);
+//            x += node->getContentSize().width + w;
+//        }
+//        addChild(menu);
+//    }
     return true;
 }
 
