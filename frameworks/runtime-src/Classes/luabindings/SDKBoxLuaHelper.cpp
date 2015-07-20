@@ -487,7 +487,7 @@ bool luaval_to_ccluavaluemap(lua_State* L, int lo, LuaValueDict* ret, const char
     if (!tolua_istable(L, lo, 0, &tolua_err))
     {
 #if COCOS2D_DEBUG >=1
-//        luaval_to_native_err(L,"#ferror:",&tolua_err);
+        // luaval_to_native_err(L,"#ferror:",&tolua_err);
 #endif
         ok = false;
     }
@@ -575,7 +575,7 @@ bool luaval_to_ccluavaluevector(lua_State* L, int lo, LuaValueArray* ret, const 
     if (!tolua_istable(L, lo, 0, &tolua_err))
     {
 #if COCOS2D_DEBUG >=1
-//        luaval_to_native_err(L,"#ferror:",&tolua_err, funcName);
+        // luaval_to_native_err(L,"#ferror:",&tolua_err);
 #endif
         ok = false;
     }

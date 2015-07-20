@@ -45,6 +45,17 @@ class Updater(object):
         self.sample_dir = os.path.join(self.csc_dir, "sample")
         self.sync_config = True
 
+    def copy_csc_core(self):
+        join = os.path.join
+        root = join(self.csc_dir, "build/v3/csc")
+
+        # android
+        copy_dir(join(root, "android/jni/sdkbox"), join(self.starer_kit_dir, "frameworks/runtime-src/proj.android/jni/"))
+        copy_dir(join(root, "android/libs/"), join(self.starer_kit_dir, "frameworks/runtime-src/proj.android/libs/"))
+        # ios
+        rm_dir(join(self.starer_kit_dir, "frameworks/runtime-src/proj.ios_mac/", "sdkbox.framework"))
+        copy_dir(join(root, "ios/"), join(self.starer_kit_dir, "frameworks/runtime-src/proj.ios_mac/"))
+
     def copy_plugin(self):
         root = self.build_v3_dir
         join = os.path.join
@@ -82,6 +93,7 @@ class Updater(object):
         open(join(self.starer_kit_dir, "res", "sdkbox_config.json"),'w').write(ret_str)
 
     def run(self):
+        self.copy_csc_core();
         self.copy_plugin()
         self.sync_plugin_config()
 

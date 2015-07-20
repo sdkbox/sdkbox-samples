@@ -34,7 +34,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import org.cocos2dx.plugin.PluginWrapper;
+import com.sdkbox.plugin.SDKBox;
 import android.content.Intent;
 
 
@@ -47,7 +47,7 @@ public class AppActivity extends Cocos2dxActivity{
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        PluginWrapper.init(this);
+        SDKBox.init(this);
 
     }
 
@@ -64,30 +64,30 @@ public class AppActivity extends Cocos2dxActivity{
     @Override
     protected void onStart() {
         super.onStart();
-        PluginWrapper.onStart();
+        SDKBox.onStart();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        PluginWrapper.onStop();
+        SDKBox.onStop();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        PluginWrapper.onResume();
+        SDKBox.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        PluginWrapper.onPause();
+        SDKBox.onPause();
     }
 
     @Override
     public void onBackPressed() {
-        if(PluginWrapper.onBackPressed())
+        if(SDKBox.onBackPressed())
         {
             return;
         }
