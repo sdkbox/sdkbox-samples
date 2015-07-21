@@ -10,6 +10,6 @@ extern "C" {
 }
 #endif
 
-TOLUA_API int register_PluginVungelLua_helper(lua_State* L);
+TOLUA_API int register_PluginVungleLua_helper(lua_State* L);
 
 #endif

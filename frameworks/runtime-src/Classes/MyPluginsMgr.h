@@ -33,6 +33,10 @@ static const std::string kMenuEventTune1 = "tune1";
 static const std::string kMenuEventVungle1 = "vungle1";
 static const std::string kMenuEventVungle2 = "vungle2";
 
+static const std::string kMenuEventAgeCheg1 = "agecheg1";
+static const std::string kMenuEventAgeCheg2 = "agecheg2";
+
+
 class MyPluginsMgr
 {
 public:
@@ -53,6 +57,8 @@ private:
     void initKochava();
     void initTune();
     void initVungle();
+//    void initFacebook();
+//    void initAgeCheq();
 };
 
 #endif /* defined(__template__MyPluginsMgr__) */

@@ -12,8 +12,8 @@ var HelloWorldLayer = cc.Layer.extend({
         // ask the window size
         var size = cc.winSize;
 
-        var mainscene = ccs.load(res.MainScene_json);
-        this.addChild(mainscene.node);
+        // var mainscene = ccs.load(res.MainScene_json);
+        // this.addChild(mainscene.node);
 
         // plugins
         var mgr = Object.create(MyPluginsMgr);
@@ -26,6 +26,7 @@ var HelloWorldLayer = cc.Layer.extend({
 
         var size = cc.director.getWinSize();
         var y = size.height - 50
+
         // AdColony
         {
             var item = new cc.MenuItemFont("AdColony: ");
@@ -126,6 +127,34 @@ var HelloWorldLayer = cc.Layer.extend({
             menu.alignItemsHorizontallyWithPadding(20);
             this.addChild(menu)
         }
+
+        // // Facebook
+        // {
+        //     y -= 50
+        //     var item = new cc.MenuItemFont("Facebook: ");
+        //     var item1 = new cc.MenuItemFont("login", mgr.onFacebookLogin, mgr);
+        //     var item2 = new cc.MenuItemFont("logout", mgr.onFacebookLogout, mgr);
+        //     var item3 = new cc.MenuItemFont("check status", mgr.onFacebookCheckStatus, mgr);
+        //     var item4 = new cc.MenuItemFont("shareLink", mgr.onFacebookShareLink, mgr);
+        //     var item5 = new cc.MenuItemFont("dialogLink", mgr.onFacebookDialogLink, mgr);
+
+        //     var menu = new cc.Menu(item, item1, item2, item3, item4, item5);
+        //     menu.setPosition(size.width/2, y);
+        //     menu.alignItemsHorizontallyWithPadding(20);
+        //     this.addChild(menu)
+        // }
+
+        // // AgeCheq
+        // {
+        //     y -= 50
+        //     var item = new cc.MenuItemFont("AgeCheq: ");
+        //     var item1 = new cc.MenuItemFont("check", mgr.onAgeCheqCheck, mgr);
+
+        //     var menu = new cc.Menu(item, item1);
+        //     menu.setPosition(size.width/2, y);
+        //     menu.alignItemsHorizontallyWithPadding(20);
+        //     this.addChild(menu)
+        // }
 
         return true;
     }

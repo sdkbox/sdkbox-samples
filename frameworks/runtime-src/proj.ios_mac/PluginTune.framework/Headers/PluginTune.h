@@ -302,14 +302,25 @@ namespace sdkbox
             GenderFemale     = 1                 // Gender type FEMALE. Equals 1.
         };
 
+        /*!
+         * set a listener to listen for event changes.
+         */
         static void setListener(TuneListener* listener);
+
+        /*!
+         * Get the listener
+         */
         static TuneListener* getListener();
+
+        /*!
+         * remove the listener, and can't listen to events anymore
+         */
         static void removeListener();
 
         ~PluginTune();
-        /*! \brief init
-         *  init the instance.
-         *
+
+        /*!
+         * init the instance.
          */
         static void init();
 
@@ -365,6 +376,7 @@ namespace sdkbox
          * Set whether this is an existing user or a new one. This is generally used to
          * distinguish users who were using previous versions of the app, prior to
          * integration of the MAT SDK. The default is to assume a new user.
+         *
          * See http://support.mobileapptracking.com/entries/22621001-Handling-Installs-prior-to-SDK-implementation
          *
          * @param existingUser - Is this a pre-existing user of the app? Default: false
@@ -390,6 +402,7 @@ namespace sdkbox
 
         /*!
          * Sets the currency code.
+         *
          * Default: USD
          *
          * @param currencyCode The string name for the currency code.
@@ -545,8 +558,8 @@ namespace sdkbox
          *
          * @param preloadData Preload app attribution data
          */
-        static void setPreloadDataForScript(const std::string &jsonString);
         static void setPreloadData(const TunePreloadData &preloadData);
+        static void setPreloadDataForScript(const std::string &jsonString);
 
         /*!
          * Get the MAT ID for this installation (mat_id).
@@ -564,6 +577,7 @@ namespace sdkbox
 
         /*!
          * Get whether the user is revenue-generating.
+         *
          * @return YES if the user has produced revenue, NO if not
          */
         static bool isPayingUser();
@@ -595,8 +609,8 @@ namespace sdkbox
          *
          * @param event The MATEvent.
          */
-        static void measureEventForScript(const std::string &jsonString);
         static void measureEvent(const TuneEvent &event);
+        static void measureEventForScript(const std::string &jsonString);
 
         /*!
          * Sets whether or not to use cookie based tracking.

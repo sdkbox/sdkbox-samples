@@ -2,6 +2,7 @@
 #include "PluginKochava/PluginKochava.h"
 #include "tolua_fix.h"
 #include "SDKBoxLuaHelper.h"
+#include "sdkbox/sdkbox.h"
 
 
 
@@ -333,6 +334,8 @@ TOLUA_API int register_all_PluginKochavaLua(lua_State* tolua_S)
 	lua_register_PluginKochavaLua_PluginKochava(tolua_S);
 
 	tolua_endmodule(tolua_S);
+
+	sdkbox::Sdkbox::setProjectType("lua");
 	return 1;
 }
 

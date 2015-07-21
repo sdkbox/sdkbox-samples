@@ -19,7 +19,23 @@ namespace sdkbox
         
         // @brief initialize all services
         static void init();
+        
+        // @brief set project type lua,js or cpp, cpp is default
+        static void setProjectType(const char* type);
+
+        // @brief get sdkbox version string
+        static const char* getVersionStr();
+        
+        // @brief get sdkbox version int
+        static int getVersion();
+
     };
+    
+    namespace device
+    {
+        const char* getAdvertisingIdentifier();
+        bool isAdvertisingTrackingEnabled();
+    }
 }
 
 #endif//_CC_SDKBOX_H_

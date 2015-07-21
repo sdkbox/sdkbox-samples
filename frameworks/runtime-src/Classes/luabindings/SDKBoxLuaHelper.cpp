@@ -280,7 +280,7 @@ bool luaval_to_std_vector_string(lua_State* L, int lo, std::vector<std::string>*
             }
             else
             {
-//                CCASSERT(false, "string type is needed");
+                //                CCASSERT(false, "string type is needed");
             }
 
             lua_pop(L, 1);
@@ -318,7 +318,7 @@ bool luaval_to_std_vector_int(lua_State* L, int lo, std::vector<int>* ret, const
             }
             else
             {
-//                CCASSERT(false, "int type is needed");
+                //                CCASSERT(false, "int type is needed");
             }
 
             lua_pop(L, 1);
@@ -357,7 +357,7 @@ bool luaval_to_std_vector_float(lua_State* L, int lo, std::vector<float>* ret, c
             }
             else
             {
-//                CCASSERT(false, "float type is needed");
+                //                CCASSERT(false, "float type is needed");
             }
 
             lua_pop(L, 1);
@@ -397,7 +397,7 @@ bool luaval_to_std_vector_ushort(lua_State* L, int lo, std::vector<unsigned shor
             }
             else
             {
-//                CCASSERT(false, "unsigned short type is needed");
+                //                CCASSERT(false, "unsigned short type is needed");
             }
 
             lua_pop(L, 1);
@@ -476,3 +476,173 @@ void ccvector_ushort_to_luaval(lua_State* L, const std::vector<unsigned short>& 
 }
 
 #endif
+
+bool luaval_to_ccluavaluemap(lua_State* L, int lo, LuaValueDict* ret, const char* funcName)
+{
+    if ( nullptr == L || nullptr == ret)
+        return false;
+
+    tolua_Error tolua_err;
+    bool ok = true;
+    if (!tolua_istable(L, lo, 0, &tolua_err))
+    {
+#if COCOS2D_DEBUG >=1
+        // luaval_to_native_err(L,"#ferror:",&tolua_err);
+#endif
+        ok = false;
+    }
+
+    if (ok)
+    {
+        std::string stringKey = "";
+        std::string stringValue = "";
+        bool boolVal = false;
+        LuaValueDict& dict = *ret;
+        lua_pushnil(L);                                             /* first key L: lotable ..... nil */
+        while ( 0 != lua_next(L, lo ) )                             /* L: lotable ..... key value */
+        {
+            if (!lua_isstring(L, -2))
+            {
+                lua_pop(L, 1);                                      /* removes 'value'; keep 'key' for next iteration*/
+                continue;
+            }
+
+            if(luaval_to_std_string(L, -2, &stringKey))
+            {
+
+                if(lua_istable(L, -1))
+                {
+                    lua_pushnumber(L,1);
+                    lua_gettable(L,-2);
+
+                    if (lua_isnil(L, -1) )                          /** if table[1] = nil,we don't think it is a pure array */
+                    {
+                        lua_pop(L,1);
+                        LuaValueDict dictVal;
+                        if (luaval_to_ccluavaluemap(L, lua_gettop(L), &dictVal))
+                        {
+                            dict[stringKey] = LuaValue::dictValue(dictVal);
+                        }
+                    }
+                    else
+                    {
+                        lua_pop(L,1);
+                        LuaValueArray arrVal;
+                        if (luaval_to_ccluavaluevector(L, lua_gettop(L), &arrVal))
+                        {
+                            dict[stringKey] = LuaValue::arrayValue(arrVal);
+                        }
+                    }
+                }
+                else if(lua_type(L, -1) == LUA_TSTRING)
+                {
+                    if(luaval_to_std_string(L, -1, &stringValue))
+                    {
+                        dict[stringKey] = LuaValue::stringValue(stringValue);
+                    }
+                }
+                else if(lua_type(L, -1) == LUA_TBOOLEAN)
+                {
+                    if (luaval_to_boolean(L, -1, &boolVal))
+                    {
+                        dict[stringKey] = LuaValue::booleanValue(boolVal);
+                    }
+                }
+                else if(lua_type(L, -1) == LUA_TNUMBER)
+                {
+                    dict[stringKey] = LuaValue::floatValue(tolua_tonumber(L, -1, 0));
+                }
+                else
+                {
+                    //                    CCASSERT(false, "not supported type");
+                }
+            }
+
+            lua_pop(L, 1);                                          /* L: lotable ..... key */
+        }
+    }
+
+    return ok;
+}
+
+bool luaval_to_ccluavaluevector(lua_State* L, int lo, LuaValueArray* ret, const char* funcName)
+{
+    if (nullptr == L || nullptr == ret)
+        return false;
+
+    tolua_Error tolua_err;
+    bool ok = true;
+    if (!tolua_istable(L, lo, 0, &tolua_err))
+    {
+#if COCOS2D_DEBUG >=1
+        // luaval_to_native_err(L,"#ferror:",&tolua_err);
+#endif
+        ok = false;
+    }
+
+    if (ok)
+    {
+        size_t len = lua_objlen(L, lo);
+        for (size_t i = 0; i < len; i++)
+        {
+            lua_pushnumber(L,i + 1);
+            lua_gettable(L,lo);
+            if (lua_isnil(L,-1))
+            {
+                lua_pop(L, 1);
+                continue;
+            }
+
+            if(lua_istable(L, -1))
+            {
+                lua_pushnumber(L,1);
+                lua_gettable(L,-2);
+                if (lua_isnil(L, -1) )
+                {
+                    lua_pop(L,1);
+                    LuaValueDict dictVal;
+                    if (luaval_to_ccluavaluemap(L, lua_gettop(L), &dictVal))
+                    {
+                        ret->push_back(LuaValue::dictValue(dictVal));
+                    }
+                }
+                else
+                {
+                    lua_pop(L,1);
+                    LuaValueArray arrVal;
+                    if(luaval_to_ccluavaluevector(L, lua_gettop(L), &arrVal))
+                    {
+                        ret->push_back(LuaValue::arrayValue(arrVal));
+                    }
+                }
+            }
+            else if(lua_type(L, -1) == LUA_TSTRING)
+            {
+                std::string stringValue = "";
+                if(luaval_to_std_string(L, -1, &stringValue) )
+                {
+                    ret->push_back(LuaValue::stringValue(stringValue));
+                }
+            }
+            else if(lua_type(L, -1) == LUA_TBOOLEAN)
+            {
+                bool boolVal = false;
+                if (luaval_to_boolean(L, -1, &boolVal))
+                {
+                    ret->push_back(LuaValue::booleanValue(boolVal));
+                }
+            }
+            else if(lua_type(L, -1) == LUA_TNUMBER)
+            {
+                ret->push_back(LuaValue::floatValue(tolua_tonumber(L, -1, 0)));
+            }
+            else
+            {
+                //                CCASSERT(false, "not supported type");
+            }
+            lua_pop(L, 1);
+        }
+    }
+
+    return ok;
+}

@@ -2,6 +2,7 @@
 #include "PluginTune/PluginTune.h"
 #include "tolua_fix.h"
 #include "SDKBoxLuaHelper.h"
+#include "sdkbox/sdkbox.h"
 
 
 
@@ -1464,6 +1465,8 @@ TOLUA_API int register_all_PluginTuneLua(lua_State* tolua_S)
 	lua_register_PluginTuneLua_PluginTune(tolua_S);
 
 	tolua_endmodule(tolua_S);
+
+	sdkbox::Sdkbox::setProjectType("lua");
 	return 1;
 }
 

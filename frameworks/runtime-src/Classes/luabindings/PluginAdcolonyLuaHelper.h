@@ -10,6 +10,6 @@ extern "C" {
 }
 #endif
 
-TOLUA_API int register_PluginAdcolonyLua_helper(lua_State* L);
+TOLUA_API int register_PluginAdColonyLua_helper(lua_State* L);
 
 #endif

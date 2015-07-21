@@ -41,6 +41,14 @@
 #include "luabindings/PluginVungleLua.hpp"
 #include "luabindings/PluginVungleLuaHelper.h"
 
+//// facebook
+//#include "luabindings/PluginFacebookLua.hpp"
+//#include "luabindings/PluginFacebookLuaHelper.h"
+//
+//// agecheq
+//#include "luabindings/PluginAgeCheqLua.hpp"
+//#include "luabindings/PluginAgeCheqLuaHelper.h"
+
 static int lua_module_register(lua_State* L)
 {
     //Dont' change the module register order unless you know what your are doing
@@ -56,7 +64,7 @@ static int lua_module_register(lua_State* L)
 
     // adcolony
     register_all_PluginAdColonyLua(L);
-    register_PluginAdcolonyLua_helper(L);
+    register_PluginAdColonyLua_helper(L);
 
     // chartboost
     register_all_PluginChartboostLua(L);
@@ -82,8 +90,16 @@ static int lua_module_register(lua_State* L)
 
     // vungle
     register_all_PluginVungleLua(L);
-    register_PluginVungelLua_helper(L);
-
+    register_PluginVungleLua_helper(L);
+//
+//    // facebook
+//    register_all_PluginFacebookLua(L);
+//    register_PluginFacebookLua_helper(L);
+//    
+//    // agecheq
+//    register_all_PluginAgeCheqLua(L);
+//    register_PluginAgeCheqLua_helper(L);
+    
     return 1;
 }
 
