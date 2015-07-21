@@ -134,14 +134,14 @@ JSBool js_PluginVungleJS_PluginVungle_setListener(JSContext *cx, unsigned argc, 
 
 
 #if MOZJS_MAJOR_VERSION >= 31
-void register_PluginVungelJs_helper(JSContext* cx, JS::HandleObject global) {
+void register_PluginVungleJs_helper(JSContext* cx, JS::HandleObject global) {
     JS::RootedObject pluginObj(cx);
     sdkbox::getJsObjOrCreat(cx, global, "sdkbox.PluginVungle", &pluginObj);
     
     JS_DefineFunction(cx, pluginObj, "setListener", js_PluginVungleJS_PluginVungle_setListener, 1, JSPROP_READONLY | JSPROP_PERMANENT);
 }
 #else
-void register_PluginVungelJs_helper(JSContext* cx, JSObject* global) {
+void register_PluginVungleJs_helper(JSContext* cx, JSObject* global) {
     jsval pluginVal;
     JSObject* pluginObj;
     pluginVal = sdkbox::getJsObjOrCreat(cx, global, "sdkbox.PluginVungle", &pluginObj);

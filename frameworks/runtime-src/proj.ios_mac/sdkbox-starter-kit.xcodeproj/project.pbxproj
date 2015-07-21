@@ -122,7 +122,6 @@
 		195588421B3EEDFE00C9E27A /* PluginChartboostJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0E1B393819008537E4 /* PluginChartboostJS.cpp */; };
 		195588431B3EEDFE00C9E27A /* PluginAdColonyJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C0C1B393819008537E4 /* PluginAdColonyJSHelper.cpp */; };
 		195588441B3EEDFE00C9E27A /* PluginIAPLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C3A1B393819008537E4 /* PluginIAPLuaHelper.cpp */; };
-		195588451B3EEDFE00C9E27A /* SDKBoxLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */; };
 		195588461B3EEDFE00C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C121B393819008537E4 /* PluginFlurryAnalyticsJS.cpp */; };
 		195588471B3EEDFE00C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C2C1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp */; };
 		195588481B3EEDFE00C9E27A /* PluginTuneJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C201B393819008537E4 /* PluginTuneJSHelper.cpp */; };
@@ -308,7 +307,6 @@
 		9FF53C641B393819008537E4 /* PluginTuneLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C401B393819008537E4 /* PluginTuneLuaHelper.cpp */; };
 		9FF53C651B393819008537E4 /* PluginVungleLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C421B393819008537E4 /* PluginVungleLua.cpp */; };
 		9FF53C661B393819008537E4 /* PluginVungleLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C441B393819008537E4 /* PluginVungleLuaHelper.cpp */; };
-		9FF53C671B393819008537E4 /* SDKBoxLuaHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF53C461B393819008537E4 /* SDKBoxLuaHelper.cpp */; };
 		A92275421517C094001B78AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275411517C094001B78AA /* QuartzCore.framework */; };
 		A92275441517C094001B78AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275431517C094001B78AA /* OpenGLES.framework */; };
 		A92275461517C094001B78AA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275451517C094001B78AA /* OpenAL.framework */; };
@@ -328,8 +326,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS Lua copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS lua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS lua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS js.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox-starter-kit iOS js.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A081B18C9DF05005C6854 /* project.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = project.json; path = ../../../project.json; sourceTree = "<group>"; };
 		1A6BF21418C9DB5900FB0E1C /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../../../main.js; sourceTree = "<group>"; };
 		1A82F5FA169AC92500C4B13A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -780,8 +778,8 @@
 			isa = PBXGroup;
 			children = (
 				A922753D1517C094001B78AA /* sdkbox-starter-kit iOS.app */,
-				195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */,
-				195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */,
+				195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS lua.app */,
+				195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS js.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -914,7 +912,7 @@
 			);
 			name = "sdkbox-starter-kit iOS lua";
 			productName = "sdkbox-starter-kit";
-			productReference = 195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS copy.app */;
+			productReference = 195588391B3EEDE600C9E27A /* sdkbox-starter-kit iOS lua.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1955883B1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Js */ = {
@@ -932,7 +930,7 @@
 			);
 			name = "sdkbox-starter-kit iOS Js";
 			productName = "sdkbox-starter-kit";
-			productReference = 195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS Lua copy.app */;
+			productReference = 195588AD1B3EEDFE00C9E27A /* sdkbox-starter-kit iOS js.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A922753C1517C094001B78AA /* sdkbox-starter-kit iOS */ = {
@@ -1182,7 +1180,6 @@
 				195588421B3EEDFE00C9E27A /* PluginChartboostJS.cpp in Sources */,
 				195588431B3EEDFE00C9E27A /* PluginAdColonyJSHelper.cpp in Sources */,
 				195588441B3EEDFE00C9E27A /* PluginIAPLuaHelper.cpp in Sources */,
-				195588451B3EEDFE00C9E27A /* SDKBoxLuaHelper.cpp in Sources */,
 				195588461B3EEDFE00C9E27A /* PluginFlurryAnalyticsJS.cpp in Sources */,
 				195588471B3EEDFE00C9E27A /* PluginAdcolonyLuaHelper.cpp in Sources */,
 				195588481B3EEDFE00C9E27A /* PluginTuneJSHelper.cpp in Sources */,
@@ -1226,7 +1223,6 @@
 				9FF53C4B1B393819008537E4 /* PluginChartboostJS.cpp in Sources */,
 				9FF53C4A1B393819008537E4 /* PluginAdColonyJSHelper.cpp in Sources */,
 				9FF53C611B393819008537E4 /* PluginIAPLuaHelper.cpp in Sources */,
-				9FF53C671B393819008537E4 /* SDKBoxLuaHelper.cpp in Sources */,
 				9FF53C4D1B393819008537E4 /* PluginFlurryAnalyticsJS.cpp in Sources */,
 				9FF53C5A1B393819008537E4 /* PluginAdcolonyLuaHelper.cpp in Sources */,
 				9FF53C541B393819008537E4 /* PluginTuneJSHelper.cpp in Sources */,
@@ -1282,7 +1278,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
@@ -1303,7 +1299,7 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
-				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
+				PRODUCT_NAME = "sdkbox-starter-kit iOS lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -1332,7 +1328,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
@@ -1353,7 +1349,7 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
-				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
+				PRODUCT_NAME = "sdkbox-starter-kit iOS lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -1382,7 +1378,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
@@ -1403,7 +1399,7 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
-				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
+				PRODUCT_NAME = "sdkbox-starter-kit iOS js";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -1432,7 +1428,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
@@ -1453,7 +1449,7 @@
 					"-force_load",
 					AdColony.framework/AdColony,
 				);
-				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
+				PRODUCT_NAME = "sdkbox-starter-kit iOS js";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../cocos2d-x-3.6-lib/cocos ../../cocos2d-x-3.6-lib/cocos/platform/ios ../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../cocos2d-x-3.6-lib/external/curl/include/ios ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/auto ../../cocos2d-x-3.6-lib/cocos/scripting/lua-bindings/manual ../../cocos2d-x-3.6-lib/external/lua/tolua ../../cocos2d-x-3.6-lib/external/lua/luajit/include";
@@ -1529,7 +1525,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",
@@ -1577,7 +1573,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Classes";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"../../cocos2d-x-3.6-lib/prebuilt/ios",
 					"/Users/jryin/workspace/chukong/private/sdkbox-starter-kit/frameworks/cocos2d-x-3.6-lib/prebuilt/ios",

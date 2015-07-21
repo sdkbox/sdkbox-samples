@@ -40,9 +40,21 @@ namespace sdkbox
     class AdColonyListener
     {
     public:
+        /*!
+         * called when AdColony is finished loading.
+         */
         virtual void onAdColonyChange(const AdColonyAdInfo& info, bool available) = 0;
+        /*!
+         * reward was received.
+         */
         virtual void onAdColonyReward(const AdColonyAdInfo& info, const std::string& currencyName, int amount, bool success) = 0;
+        /*!
+         * showing an ad has started.
+         */
         virtual void onAdColonyStarted(const AdColonyAdInfo& info) = 0;
+        /*!
+         * showing an ad has finished.
+         */
         virtual void onAdColonyFinished(const AdColonyAdInfo& info) = 0;
     };
 
@@ -51,7 +63,7 @@ namespace sdkbox
     public:
 
         /**
-         *  initialize the plugin instance.
+         * initialize the plugin instance.
          */
         static void init();
 
@@ -77,6 +89,7 @@ namespace sdkbox
 
         /**
          * Returns the zone status for the specified zone.
+         *
          * @deprecated please use getStatus(name) instead
          */
         static int zoneStatusForZone(const std::string& zoneID);
@@ -88,6 +101,7 @@ namespace sdkbox
 
         /**
          * Assigns your own custom identifier to the current app user.
+         *
          * Once you've provided an identifier, AdColony will persist it across app
          * restarts (stored on disk only) until you update it. If using this method,
          * call it before `+ configureWithAppID:zoneIDs:delegate:logging:` so that the
@@ -100,6 +114,7 @@ namespace sdkbox
 
         /**
          * Returns the device's current custom identifier.
+         *
          * @return The custom identifier string most recently set using `+ setCustomID:`.
          * @see setCustomID:
          */
@@ -107,6 +122,7 @@ namespace sdkbox
 
         /**
          * Returns an AdColony-defined device identifier.
+         *
          * This identifier should remain constant across the lifetime of an iOS device.
          * The identifier is a SHA-1 hash of the lowercase colon-separated MAC address of the device's WiFi interface.
          * We do not recommend using this
@@ -117,6 +133,7 @@ namespace sdkbox
 
         /**
          * Returns the device's advertising identifier.
+         *
          * This value can change if the user restores their device or resets ad tracking.
          * @return The string representation of the device's advertising identifier, introduced in iOS 6. Returns `nil` on iOS 5 or below.
          * @note this function only available on ios
@@ -125,25 +142,29 @@ namespace sdkbox
 
         /**
          * Returns the device's vendor identifier.
+         *
          * @return As of version 2.3 of our iOS SDK, AdColony no longer collects the vendor identifier and this method will return `nil`. This method is provided for backwards compatibility.
          * @note this function only available on ios
          */
         static std::string getVendorIdentifier();
 
         /**
-         * Returns the number of ads that the user must play to earn the designated reward
+         * Returns the number of ads that the user must play to earn the designated reward.
+         *
          * @note this function only available on ios
          */
         static int getVideosPerReward(const std::string& currencyName);
 
         /**
-         * Returns the number of ads that the user has seen towards their next reward
+         * Returns the number of ads that the user has seen towards their next reward.
+         *
          * @note this function only available on ios
          */
         static int getVideoCreditBalance(const std::string& currencyName);
 
         /**
          * Cancels any full-screen ad that is currently playing and returns control to the app.
+         *
          * No earnings or V4VC rewards will occur if an ad is canceled programmatically by the app.
          * This should only be used by apps that must immediately respond to non-standard incoming events,
          * like a VoIP phone call. This should not be used for standard app interruptions such as
@@ -153,6 +174,7 @@ namespace sdkbox
 
         /**
         * Whether a full-screen AdColony ad is currently being played.
+        *
         * @return A boolean indicating if AdColony is currently playing an ad.
         * @note this function only available on ios
         */
@@ -160,6 +182,7 @@ namespace sdkbox
 
         /**
         * This method permanently turns off all AdColony ads for this app on the current device.
+        *
         * After this method is called, no ads will be played unless the app is deleted and reinstalled.
         * This method could be used in the implementation of an In-App Purchase to disable ads;
         * make sure to allow In-App Purchases to be restored by the user in the case of deleting and reinstalling the app.
@@ -169,6 +192,7 @@ namespace sdkbox
 
         /**
         * Provide AdColony with per-user non personally-identifiable information for ad targeting purposes.
+        *
         * Providing non personally-identifiable information using this API will improve targeting and unlock
         * improved earnings for your app. [This support article](http://support.adcolony.com/customer/portal/articles/700183-sdk-user-metadata-pass-through) contains usage guidelines.
         * @param metadataType One of the predefined user metadata keys.
@@ -179,6 +203,7 @@ namespace sdkbox
 
         /**
         * Provide AdColony with real-time feedback about what a user is interested in.
+        *
         * Providing non personally-identifiable information using this API will improve targeting and unlock
         * improved earnings for your app. [This support article](http://support.adcolony.com/customer/portal/articles/700183-sdk-user-metadata-pass-through) contains usage guidelines.
         * You can call this as often as you want with various topics that the user has engaged in
@@ -192,6 +217,7 @@ namespace sdkbox
         /**
         * Call this method to report IAPs within your application. Note that this API can be leveraged to report standard IAPs
         * as well as those triggered by AdColony’s IAP Promo (IAPP) advertisements and will improve overall ad targeting.
+        *
         * @param transactionID An NSString representing the unique SKPaymentTransaction identifier for the IAP. Must be 128 chars or less.
         * @param productID An NSString identifying the purchased product. Must be 128 chars or less.
         * @param quantity An int indicating the number of items.

@@ -2,6 +2,7 @@
 #define __SDKBOX_LUA_HELPER_H__
 
 #include "cocos2d.h"
+#include "CCLuaValue.h"
 
 #if COCOS2D_VERSION >= 0x00030000
 #include "LuaBasicConversions.h"
@@ -13,6 +14,7 @@
 #define nullptr NULL
 
 #define LuaValueDict CCLuaValueDict
+#define LuaValueDictIterator CCLuaValueDictIterator
 #define LuaValueArray CCLuaValueArray
 #define LuaValue CCLuaValue
 #define LuaEngine CCLuaEngine
@@ -79,5 +81,9 @@ void ccvector_float_to_luaval(lua_State* L, const std::vector<float>& inValue);
 void ccvector_ushort_to_luaval(lua_State* L, const std::vector<unsigned short>& inValue);
 
 #endif // COCOS2D_VERSION < 0x00030000
+
+extern bool luaval_to_ccluavaluemap(lua_State* L, int lo, LuaValueDict* ret, const char* funcName = "");
+
+extern bool luaval_to_ccluavaluevector(lua_State* L, int lo, LuaValueArray* ret, const char* funcName = "'");
 
 #endif //__SDKBOX_LUA_HELPER_H__

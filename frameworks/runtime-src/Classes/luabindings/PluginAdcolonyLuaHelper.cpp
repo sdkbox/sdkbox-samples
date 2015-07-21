@@ -148,7 +148,7 @@ int extern_PluginAdcolony(lua_State* L) {
     return 1;
 }
 
-TOLUA_API int register_PluginAdcolonyLua_helper(lua_State* L) {
+TOLUA_API int register_PluginAdColonyLua_helper(lua_State* L) {
 	tolua_module(L,"sdkbox",0);
 	tolua_beginmodule(L,"sdkbox");
 

@@ -1,7 +1,7 @@
 /****************************************************************************
- 
+
  Copyright (c) 2014-2015 Chukong Technologies
- 
+
  ****************************************************************************/
 
 #ifndef _SDKBOX_IAP_H_
@@ -26,6 +26,9 @@ namespace sdkbox
 
         // The description of the IAP item
         std::string description;
+        
+        // Price value in float
+        float priceValue;
 
         // Localized price
         std::string price;
@@ -68,7 +71,7 @@ namespace sdkbox
         */
         virtual void onProductRequestFailure(const std::string& msg) = 0;
     };
-    
+
     class IAP
     {
     public:
@@ -85,6 +88,7 @@ namespace sdkbox
 
         /**
         * Make a purchase request
+        *
         * @Param name is the name of the item specified in sdkbox_config.json
         */
         static void purchase(const std::string& name);

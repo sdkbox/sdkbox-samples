@@ -159,6 +159,24 @@ function MyPluginMgr:ctor()
 	        print("onVungleAdViewed:", isComplete)
 	    end
 	end)
+
+	-- -- Facebook
+	-- sdkbox.PluginFacebook:init()
+	-- sdkbox.PluginFacebook:setListener(function(event)
+	-- 	print("PluginFacebook callback")
+	-- 	print(event)
+	-- end)
+
+	-- -- AgeCheq
+	-- sdkbox.PluginAgeCheq:init()
+	-- sdkbox.PluginAgeCheq:setListener(function(data)
+	-- 	print("PluginAgeCheq callback")
+	--     if "checkResponse" == data.event then
+	--         print(data)
+	--     elseif "associateDataResponse" == data.event then
+	--         print(data)
+	--     end
+	-- end)
 end
 
 
@@ -213,15 +231,6 @@ function MyPluginMgr:onTuneTest()
 
     sdkbox.PluginTune:measureEventName("login")
     sdkbox.PluginTune:measureEventId(0123456789)
-
-    -- var event = {}
-    -- event.eventName = "purchase"
-    -- event.refId = "RJ1357"
-    -- event.searchString = "sweet srisp red apples"
-    -- event.attribute1 = "srisp"
-    -- event.attribute2 = "red"
-    -- event.quantity = 3
-    -- sdkbox.PluginTune:measureEvent(JSON.stringify(event))
 end
 function MyPluginMgr:onVungleVideo()
     print("Vungle: show video")
@@ -231,5 +240,31 @@ function MyPluginMgr:onVungleReward()
     print("Vungle: show reward")
     sdkbox.PluginVungle:show("reward")
 end
+function MyPluginMgr:onFacebookLogin()
+	sdkbox.PluginFacebook:login()
+end
+function MyPluginMgr:onFacebookCheckStatus()
+	print("onFacebookCheckStatus")
+
+	print("> permission: ", sdkbox.PluginFacebook:getPermissionList());
+	print("> token: ", sdkbox.PluginFacebook:getAccessToken());
+	print("> user id: ", sdkbox.PluginFacebook:getUserID());
+	print("> FBSDK version:", sdkbox.PluginFacebook:getSDKVersion());
+end
+function MyPluginMgr:onFacebookShareLink()
+	print("onFacebookShareLink")
+
+	local t = {}
+	t.link = "http://www.cocos2d-x.org"
+	t.title = "cocos2d-x"
+	t.text = "The Best Game Engine"
+	t.imageUrl = "http://cocos2d-x.org/images/logo.png"
+	sdkbox.PluginFacebook:dialog(t)
+end
+function MyPluginMgr:onAgeCheqCheck()
+	print("onAgeCheqCheck")
+	sdkbox.PluginAgeCheq:check("1426")
+end
+
 
 return MyPluginMgr

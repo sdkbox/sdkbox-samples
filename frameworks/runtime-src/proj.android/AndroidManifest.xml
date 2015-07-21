@@ -88,6 +88,20 @@
           android:name="com.vungle.publisher.FullScreenAdActivity"
           android:configChanges="keyboardHidden|orientation"
           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+          <!--
+            Facebook
+          -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+          android:configChanges=
+                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar"
+          android:label="@string/app_name" />
+
+          <provider android:authorities="com.facebook.app.FacebookContentProvider280194012150923"
+          android:name="com.facebook.FacebookContentProvider"
+          android:exported="true" />
     </application>
 
     <supports-screens android:anyDensity="true"

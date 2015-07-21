@@ -2,6 +2,7 @@
 #include "PluginVungle/PluginVungle.h"
 #include "tolua_fix.h"
 #include "SDKBoxLuaHelper.h"
+#include "sdkbox/sdkbox.h"
 
 
 
@@ -214,6 +215,8 @@ TOLUA_API int register_all_PluginVungleLua(lua_State* tolua_S)
 	lua_register_PluginVungleLua_PluginVungle(tolua_S);
 
 	tolua_endmodule(tolua_S);
+
+	sdkbox::Sdkbox::setProjectType("lua");
 	return 1;
 }
 

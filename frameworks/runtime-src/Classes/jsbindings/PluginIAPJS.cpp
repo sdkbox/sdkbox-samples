@@ -2,6 +2,8 @@
 #include "cocos2d_specifics.hpp"
 #include "PluginIAP/PluginIAP.h"
 #include "SDKBoxJSHelper.h"
+#include "sdkbox/sdkbox.h"
+
 
 #if defined(MOZJS_MAJOR_VERSION)
 #if MOZJS_MAJOR_VERSION >= 33
@@ -469,6 +471,8 @@ void register_all_PluginIAPJS(JSContext* cx, JS::HandleObject obj) {
     get_or_create_js_obj(cx, obj, "sdkbox", &ns);
 
     js_register_PluginIAPJS_IAP(cx, ns);
+
+    sdkbox::Sdkbox::setProjectType("js");
 }
 #else
 void register_all_PluginIAPJS(JSContext* cx, JSObject* obj) {
@@ -486,6 +490,8 @@ void register_all_PluginIAPJS(JSContext* cx, JSObject* obj) {
     obj = ns;
 
     js_register_PluginIAPJS_IAP(cx, obj);
+
+    sdkbox::Sdkbox::setProjectType("js");
 }
 #endif
 #elif defined(JS_VERSION)
@@ -504,5 +510,7 @@ void register_all_PluginIAPJS(JSContext* cx, JSObject* obj) {
     obj = ns;
 
     js_register_PluginIAPJS_IAP(cx, obj);
+
+    sdkbox::Sdkbox::setProjectType("js");
 }
 #endif

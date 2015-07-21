@@ -110,56 +110,152 @@ class ChartboostListener
 {
 public:
 
-    //Ad callbacks
+    /*!
+     * there is cached content
+     */
     virtual void onChartboostCached(const std::string& name) = 0;
+    /*!
+     * should Chartboost display
+     */
     virtual bool onChartboostShouldDisplay(const std::string& name) = 0;
+    /*!
+     * Charboost ad has displayed
+     */
     virtual void onChartboostDisplay(const std::string& name) = 0;
+    /*!
+     * Chartboost ad has been dismissed
+     */
     virtual void onChartboostDismiss(const std::string& name) = 0;
+    /*!
+     * Chartboost is not running
+     */
     virtual void onChartboostClose(const std::string& name) = 0;
+    /*!
+     * Chartboost ad was clicked on
+     */
     virtual void onChartboostClick(const std::string& name) = 0;
+    /*!
+     * Chartboost reward was given
+     */
     virtual void onChartboostReward(const std::string& name, int reward) = 0;
+    /*!
+     * Chartboost failed to load
+     */
     virtual void onChartboostFailedToLoad(const std::string& name, CB_LoadError e) = 0;
+    /*!
+     * Chartboost failed to record click
+     */
     virtual void onChartboostFailToRecordClick(const std::string& name, CB_ClickError e) = 0;
-
-    //Miscellaneous callbacks
+    /*!
+     * Chartboost confirmation
+     */
     virtual void onChartboostConfirmation() = 0;
+    /*!
+     * Chartboost complete store
+     */
     virtual void onChartboostCompleteStore() = 0;
 };
-    
+
 class PluginChartboost
 {
 public:
-    
-    /*! \brief init
-     *  init the instance.
-     *
-     *
+
+    /*!
+     * initialize the plugin instance.
      */
     static void init();
-    
-    /** @name Playing Video Ads */
+
+    /*!
+     * show ad by specifying ad name.
+     */
     static void show(const std::string& name);
+
+    /*!
+     * creates the an optional listener.
+     */
     static void setListener(ChartboostListener* listener);
     static ChartboostListener* getListener();
+    /*!
+     * removed the listener.
+     */
     static void removeListener();
 
+    /*!
+     * check to see if any views are visible.
+     */
     static bool isAnyViewVisible();
+
+    /*!
+     * is the specified ad available?
+     */
     static bool isAvailable(const std::string& name);
 
     static void cache(const std::string& name);
+
+    /*!
+     * set to enable and disable the auto cache feature (Enabled by default).
+     */
     static void setAutoCacheAds(bool shouldCache);
+
+    /*!
+     * get the current auto cache behavior (Enabled by default).
+     */
     static bool getAutoCacheAds();
+
+    /*!
+     * close any visible Chartboost impressions (interstitials, more apps, rewarded
+     * video, etc..) and the loading view (if visible).
+     */
     static void closeImpression();
+
+    /*!
+     * set to control how the fullscreen ad units should interact with the status bar.
+     * (CBStatusBarBehaviorIgnore by default).
+     */
     static void setStatusBarBehavior(CB_StatusBarBehavior behavior);
 
+    /*!
+     * confirm if an age gate passed or failed. When specified Chartboost will wait for
+     * call before showing the IOS App Store.
+     */
     static void didPassAgeGate(bool pass);
+
+    /*!
+     * decide if Chartboost SDK should block for an age gate.
+     */
     static void setShouldPauseClickForConfirmation(bool shouldPause);
 
+    /*!
+     * opens a "deep link" URL for a Chartboost Custom Scheme.
+     */
     static bool handleOpenURL(const std::string& url, const std::string& sourceApp);
+
+    /*!
+     * set a custom identifier to send in the POST body for all Chartboost API server requests.
+     */
     static void setCustomID(const std::string& customID);
+
+    /*!
+     * get the current custom identifier being sent in the POST body for all Chartboost
+     * API server requests.
+     */
     static std::string getCustomID();
+
+    /*!
+     * decide if Chartboost SDK should show interstitials in the first session.
+     */
     static void setShouldRequestInterstitialsInFirstSession(bool shouldRequest);
+
+    /*!
+     * decide if Chartboost SDK should show a loading view while preparing to display
+     * the "more applications" UI.
+     */
     static void setShouldDisplayLoadingViewForMoreApps(bool shouldDisplay);
+
+    /*!
+     * decide if Chartboost SDK will attempt to fetch videos from the Chartboost API
+     * servers.
+     */
     static void setShouldPrefetchVideoContent(bool shouldPrefetch);
 
     #ifdef OBFUSCATED

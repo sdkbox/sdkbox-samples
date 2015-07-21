@@ -57,7 +57,7 @@ private:
 	int mLuaHandler;
 };
 
-int lua_PluginVungelLua_PluginVungel_setListener(lua_State* tolua_S) {
+int lua_PluginVungleLua_PluginVungle_setListener(lua_State* tolua_S) {
 	int argc = 0;
 
 #if COCOS2D_DEBUG >= 1
@@ -99,7 +99,7 @@ tolua_lerror:
 
 
 
-int extern_PluginVungel(lua_State* L) {
+int extern_PluginVungle(lua_State* L) {
 	if (nullptr == L) {
 		return 0;
 	}
@@ -108,18 +108,18 @@ int extern_PluginVungel(lua_State* L) {
     lua_rawget(L, LUA_REGISTRYINDEX);
     if (lua_istable(L,-1))
     {
-        tolua_function(L,"setListener", lua_PluginVungelLua_PluginVungel_setListener);
+        tolua_function(L,"setListener", lua_PluginVungleLua_PluginVungle_setListener);
     }
      lua_pop(L, 1);
 
     return 1;
 }
 
-TOLUA_API int register_PluginVungelLua_helper(lua_State* L) {
+TOLUA_API int register_PluginVungleLua_helper(lua_State* L) {
 	tolua_module(L,"sdkbox",0);
 	tolua_beginmodule(L,"sdkbox");
 
-	extern_PluginVungel(L);
+	extern_PluginVungle(L);
 
 	tolua_endmodule(L);
 	return 1;

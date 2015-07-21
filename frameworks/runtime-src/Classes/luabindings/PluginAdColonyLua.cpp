@@ -2,6 +2,7 @@
 #include "PluginAdColony/PluginAdColony.h"
 #include "tolua_fix.h"
 #include "SDKBoxLuaHelper.h"
+#include "sdkbox/sdkbox.h"
 
 
 
@@ -656,6 +657,8 @@ TOLUA_API int register_all_PluginAdColonyLua(lua_State* tolua_S)
 	lua_register_PluginAdColonyLua_PluginAdColony(tolua_S);
 
 	tolua_endmodule(tolua_S);
+
+	sdkbox::Sdkbox::setProjectType("lua");
 	return 1;
 }
 
