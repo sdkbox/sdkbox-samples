@@ -1300,6 +1300,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
 				SDKROOT = iphoneos;
@@ -1348,6 +1350,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				PRODUCT_NAME = "sdkbox-starter-kit iOS copy";
 				SDKROOT = iphoneos;
@@ -1396,6 +1400,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
 				SDKROOT = iphoneos;
@@ -1444,6 +1450,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				PRODUCT_NAME = "sdkbox-starter-kit iOS Lua copy";
 				SDKROOT = iphoneos;
@@ -1539,6 +1547,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1585,6 +1595,8 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-force_load",
+					AdColony.framework/AdColony,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

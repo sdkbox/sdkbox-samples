@@ -3,7 +3,6 @@
     {
         "AdColony":{
             "id":"appbdee68ae27024084bb334a",
-            "debug":true,
             "ads":{
                 "video":{
                     "zone": "vzf8fb4670a60e4a139d01b5",
@@ -35,8 +34,6 @@
         "FlurryAnalytics":{
             "APIKey":"GCFCB72BPD76GHXWQZWT",
             "AppVersion":"V0.1",
-            "Debug":false,
-            "Level":2,
             "SessionTimeout":10,
             "CrashReport":true
         },
@@ -62,7 +59,7 @@
         "kochava" :
         {
             "kochavaAppId" : "<YOUR APP ID>",
-            "enableLogging" : 1,
+            "enableLogging" : 0,
             "retrieveAttribution" : 1
         },
         "Tune":{
