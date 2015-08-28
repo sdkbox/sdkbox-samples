@@ -1,4 +1,4 @@
-# Welcome to sdkbox sampels
+# Welcome to sdkbox samples
 
 run `git submodule update --init` first
 
